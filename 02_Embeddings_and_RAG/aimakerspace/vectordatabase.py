@@ -1,4 +1,4 @@
-import numpy as np
+import numpy as np # type: ignore
 from collections import defaultdict
 from typing import List, Tuple, Callable
 from aimakerspace.openai_utils.embedding import EmbeddingModel
