@@ -1,6 +1,13 @@
 import os
 from typing import List
 
+# Import PDF functionality from the dedicated module
+try:
+    from .pdf_utils import extract_text_from_pdf
+    PDF_SUPPORT = True
+except ImportError:
+    PDF_SUPPORT = False
+
 
 class TextFileLoader:
     def __init__(self, path: str, encoding: str = "utf-8"):
@@ -13,23 +20,46 @@ class TextFileLoader:
             self.load_directory()
         elif os.path.isfile(self.path) and self.path.endswith(".txt"):
             self.load_file()
+        elif os.path.isfile(self.path) and self.path.endswith(".pdf"):
+            self.load_pdf_file()
         else:
+            supported_types = ".txt"
+            if PDF_SUPPORT:
+                supported_types += " or .pdf"
             raise ValueError(
-                "Provided path is neither a valid directory nor a .txt file."
+                f"Provided path is neither a valid directory nor a supported file type ({supported_types})."
             )
 
     def load_file(self):
         with open(self.path, "r", encoding=self.encoding) as f:
             self.documents.append(f.read())
 
+    def load_pdf_file(self):
+        """Load and extract text from a PDF file."""
+        if not PDF_SUPPORT:
+            raise ValueError("PDF support not available. Please install pypdf: pip install pypdf")
+        
+        try:
+            text = extract_text_from_pdf(self.path)
+            self.documents.append(text)
+        except Exception as e:
+            raise ValueError(f"Error reading PDF file {self.path}: {str(e)}")
+
     def load_directory(self):
         for root, _, files in os.walk(self.path):
             for file in files:
+                file_path = os.path.join(root, file)
                 if file.endswith(".txt"):
-                    with open(
-                        os.path.join(root, file), "r", encoding=self.encoding
-                    ) as f:
+                    with open(file_path, "r", encoding=self.encoding) as f:
                         self.documents.append(f.read())
+                elif file.endswith(".pdf") and PDF_SUPPORT:
+                    try:
+                        text = extract_text_from_pdf(file_path)
+                        self.documents.append(text)
+                    except Exception as e:
+                        print(f"Warning: Error reading PDF file {file_path}: {str(e)}")
+                elif file.endswith(".pdf") and not PDF_SUPPORT:
+                    print(f"Warning: Skipping PDF file {file_path} - PDF support not available")
 
     def load_documents(self):
         self.load()
@@ -60,18 +90,3 @@ class CharacterTextSplitter:
         for text in texts:
             chunks.extend(self.split(text))
         return chunks
-
-
-if __name__ == "__main__":
-    loader = TextFileLoader("data/KingLear.txt")
-    loader.load()
-    splitter = CharacterTextSplitter()
-    chunks = splitter.split_texts(loader.documents)
-    print(len(chunks))
-    print(chunks[0])
-    print("--------")
-    print(chunks[1])
-    print("--------")
-    print(chunks[-2])
-    print("--------")
-    print(chunks[-1])
