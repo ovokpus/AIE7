@@ -2,28 +2,31 @@
 
 ---
 
-## Question 1
+## ❓Question #1
 
-The default embedding dimension of `text-embedding-3-small` is 1536.
+The default embedding dimension of text-embedding-3-small is 1536, as noted above.
 
-### **1. Can you modify this dimension?**
+1. Is there any way to modify this dimension?
+2. What technique does OpenAI use to achieve this?
 
-**Yes we can.** OpenAI's new embedding models support a `dimensions` API parameter that allows developers to shorten embeddings without the embedding losing its concept-representing properties. Here's how it works:
+>NOTE: Check out this API documentation for the answer to question #1, and this documentation for an answer to question #2!
 
-```python
-# Example using the dimensions parameter
-response = client.embeddings.create(
-    input="Your text here",
-    model="text-embedding-3-small",
-    dimensions=512  # Shortened from default 1536
-)
-```
+### ✅ Answer #1
 
-You can specify any dimension size you want, though certain sizes (like 256, 512, 1024) perform better as they align with the training granularities.
+1. **Yes we can.** OpenAI's new embedding models support a `dimensions` API parameter that allows developers to shorten embeddings without the embedding losing its concept-representing properties. Here's how it works:
 
-### **2. What technique does OpenAI use to achieve this?**
+    ```python
+    # Example using the dimensions parameter
+    response = client.embeddings.create(
+        input="Your text here",
+        model="text-embedding-3-small",
+        dimensions=512  # Shortened from default 1536
+    )
+    ```
 
-**Matryoshka Representation Learning (MRL)** - OpenAI confirmed that they achieved the dimension flexibility via Matryoshka Representation Learning (MRL). MRL encodes information at different embedding dimensionalities, enabling up to 14x smaller embedding sizes with negligible degradation in accuracy.
+    You can specify any dimension size you want, though certain sizes (like 256, 512, 1024) perform better as they align with the training granularities.
+
+2. **Matryoshka Representation Learning (MRL)** . OpenAI confirmed that they achieved the dimension flexibility via Matryoshka Representation Learning (MRL). MRL encodes information at different embedding dimensionalities, enabling up to 14x smaller embedding sizes with negligible degradation in accuracy.
 
 #### **How MRL Works:**
 
@@ -41,7 +44,11 @@ During model training with MRL, instead of optimizing just one loss function as 
 
 ---
 
-## Question 2
+## ❓Question #2
+
+What are the benefits of using an async approach to collecting our embeddings?
+
+### ✅ Answer #2
 
 ### **Key Benefits of Async Embeddings:**
 
@@ -99,11 +106,38 @@ async def abuild_from_list(self, list_of_text: List[str]) -> "VectorDatabase":
 
 ---
 
-## Question 3
+## ❓Question #3
+
+When calling the OpenAI API - are there any ways we can achieve more reproducible outputs?
+
+### ✅ Answer #3
 
 ### **Key Parameters for near-reproducible Outputs:**
 
-#### **1. Temperature = 0**
+#### **1. Structured Outputs**
+
+You can have the model return structured data in JSON format
+
+#### **2. Reusable Prompts**
+
+Create reuable prompts that you can insert into the `prompt` parameter in the API client request object. This parameter contains variables that can be substituted for values
+
+```python
+
+response = client.responses.create(
+    model="gpt-4.1",
+    prompt={
+        "id": "pmpt_abc123",
+        "version": "2",
+        "variables": {
+            "customer_name": "Jane Doe",
+            "product": "40oz juice box"
+        }
+    }
+)
+```
+
+#### **3. Temperature = 0**
 
 Most important for deterministic responses:
 
@@ -117,7 +151,7 @@ def run(self, messages, text_only: bool = True):
     return response.choices[0].message.content if text_only else response
 ```
 
-#### **2. Seed Parameter**
+#### **4. Seed Parameter**
 
 OpenAI's newer reproducibility feature:
 
@@ -132,7 +166,7 @@ def run(self, messages, text_only: bool = True, seed: int = 42):
     return response.choices[0].message.content if text_only else response
 ```
 
-#### **3. Additional Deterministic Controls**
+#### **5. Additional Deterministic Controls**
 
 ```python
 def run(self, messages, text_only: bool = True):
@@ -165,7 +199,13 @@ def run(self, messages, text_only: bool = True):
 
 ---
 
-## Question 4
+## ❓Question #4
+
+What prompting strategies could you use to make the LLM have a more thoughtful, detailed response?
+
+What is that strategy called?
+
+### ✅ Answer #4
 
 The strategy or technique we could use to make the LLM more thoughtful and detailed is called:
 
@@ -356,7 +396,6 @@ Following notebook best practices, the enhanced cells (47-54) feature:
 - **Independent Execution**: Cells can be run independently for testing
 - **Progressive Complexity**: Gradual introduction of advanced features
 - **Comprehensive Coverage**: All major features thoroughly demonstrated
-
 
 ---
 
