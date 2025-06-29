@@ -281,6 +281,8 @@ def run_as_expert(self, user_message: str, expertise_domain: str, text_only: boo
 
 ### ✅ Refactoring Completed: Enhanced RAG System
 
+![image](./images/RAG-diagram.png)
+
 ## 🚀 Enhanced RAG System: Architecture & Implementation Guide
 
 ### 📋 **Development Journey Overview**
