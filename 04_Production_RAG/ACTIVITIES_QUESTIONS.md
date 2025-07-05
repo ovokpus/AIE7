@@ -17,10 +17,10 @@ Brainstorm some ideas that would split large single documents into smaller docum
 This approach uses natural language processing to identify logical content boundaries, ensuring chunks maintain semantic coherence. Instead of splitting at arbitrary character counts, it identifies topic transitions, paragraph breaks, and section headers.
 
 **Process:**
-• Parse document structure (headers, paragraphs, sections)
-• Use sentence tokenization to identify natural breakpoints
-• Apply sliding window with overlap to maintain context
-• Validate chunk size constraints while preserving meaning
+- Parse document structure (headers, paragraphs, sections)
+- Use sentence tokenization to identify natural breakpoints
+- Apply sliding window with overlap to maintain context
+- Validate chunk size constraints while preserving meaning
 
 ```python
 import spacy
@@ -45,10 +45,10 @@ def semantic_chunk(text, max_size=1000, overlap=200):
 This method leverages document structure (tables, lists, code blocks, headers) to create chunks that respect the document's logical organization. It's particularly effective for technical documentation and structured content.
 
 **Process:**
-• Parse markdown/HTML structure to identify elements
-• Group related elements (tables with captions, code with explanations)
-• Maintain parent-child relationships in metadata
-• Create variable-sized chunks based on content type
+- Parse markdown/HTML structure to identify elements
+- Group related elements (tables with captions, code with explanations)
+- Maintain parent-child relationships in metadata
+- Create variable-sized chunks based on content type
 
 ```python
 import re
@@ -82,10 +82,10 @@ def structure_aware_chunk(text: str) -> List[Dict]:
 This strategy optimizes for LLM token limits while maintaining context continuity. It uses actual tokenization to ensure precise token counts and implements intelligent overlap strategies.
 
 **Process:**
-• Use model-specific tokenizer for accurate token counting
-• Implement sliding window with contextual overlap
-• Preserve sentence boundaries within token constraints
-• Add metadata for chunk relationships and context
+- Use model-specific tokenizer for accurate token counting
+- Implement sliding window with contextual overlap
+- Preserve sentence boundaries within token constraints
+- Add metadata for chunk relationships and context
 
 ```python
 import tiktoken
@@ -128,10 +128,10 @@ def token_optimized_chunk(text: str, model="gpt-4", max_tokens=512, overlap_toke
 This advanced strategy uses vector embeddings to group semantically related content, even when it's not physically adjacent. It creates more coherent chunks by understanding content similarity at a deeper level than simple text analysis.
 
 **Process:**
-• Generate embeddings for sentences/paragraphs using sentence transformers
-• Apply clustering algorithms (K-means, DBSCAN) to group similar content
-• Create chunks from clusters while respecting size constraints
-• Maintain topic coherence across non-contiguous text sections
+- Generate embeddings for sentences/paragraphs using sentence transformers
+- Apply clustering algorithms (K-means, DBSCAN) to group similar content
+- Create chunks from clusters while respecting size constraints
+- Maintain topic coherence across non-contiguous text sections
 
 ```python
 from sentence_transformers import SentenceTransformer
@@ -175,10 +175,10 @@ def embedding_based_chunk(text: str, max_size=1000, min_similarity=0.7):
 This sophisticated approach recognizes different content types (code blocks, tables, lists, prose) and applies specialized chunking strategies for each, maintaining the integrity of structured content while optimizing for downstream processing.
 
 **Process:**
-• Parse and classify content blocks by type (markdown, code, tables, etc.)
-• Apply type-specific chunking rules and size constraints
-• Maintain content relationships and dependencies
-• Create unified metadata schema across content types
+- Parse and classify content blocks by type (markdown, code, tables, etc.)
+- Apply type-specific chunking rules and size constraints
+- Maintain content relationships and dependencies
+- Create unified metadata schema across content types
 
 ```python
 import re
@@ -285,10 +285,10 @@ def _detect_language(code: str) -> str:
 This cutting-edge approach models document content as a knowledge graph, identifying relationships and dependencies between concepts to create chunks that maintain logical coherence and reference integrity.
 
 **Process:**
-• Extract entities and relationships using NLP (spaCy, Stanford NER)
-• Build directed graph of content dependencies and references
-• Apply graph clustering algorithms to identify cohesive subgraphs
-• Generate chunks that preserve critical relationships and minimize broken references
+- Extract entities and relationships using NLP (spaCy, Stanford NER)
+- Build directed graph of content dependencies and references
+- Apply graph clustering algorithms to identify cohesive subgraphs
+- Generate chunks that preserve critical relationships and minimize broken references
 
 ```python
 import networkx as nx
@@ -425,9 +425,9 @@ Based on the OpenAI documentation and search results, **`text-embedding-3-small`
 
 Key details about the dimensions:
 
-• **Default dimensions**: 1536 (same as the previous `text-embedding-ada-002` model)
-• **Configurable dimensions**: Can be shortened to as few as 512 dimensions using the `dimensions` parameter
-• **Flexible sizing**: You can specify any dimension size between 512 and 1536 without losing the concept-representing properties
+- **Default dimensions**: 1536 (same as the previous `text-embedding-ada-002` model)
+- **Configurable dimensions**: Can be shortened to as few as 512 dimensions using the `dimensions` parameter
+- **Flexible sizing**: You can specify any dimension size between 512 and 1536 without losing the concept-representing properties
 
 The model creates embeddings with 1536 dimensions by default, but OpenAI implemented Matryoshka Representation Learning (MRL) which allows you to truncate the embeddings to smaller sizes while maintaining most of the semantic quality.
 
