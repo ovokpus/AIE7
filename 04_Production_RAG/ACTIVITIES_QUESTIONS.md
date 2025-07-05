@@ -519,6 +519,74 @@ Include a screenshot of your trace and explain what it means.
 
 ![image](img/eval-results.png)
 
+Based on the LangSmith trace results shown in the screenshots, I can explain what these evaluation metrics mean:
+
+## LangSmith Trace Results Analysis
+
+### **What the Traces Show:**
+
+#### 1. **Individual Run Details**
+
+The traces show individual evaluations of the RAG system, with each run containing:
+
+- **Input**: The question being asked
+- **Output**: The generated response
+- **Evaluation Scores**: Three different metrics measuring performance
+
+#### 2. **The Three Evaluation Metrics:**
+
+**1. COT Contextual (Chain of Thought Context)**
+
+- **Score Range**: Binary (correct/incorrect)
+- **What it measures**: Whether the response is properly grounded in the provided context
+- **the Results**: All showing "correct" - meaning 100% contextual faithfulness
+- **Significance**: the enhanced prompt is successfully preventing hallucination and ensuring responses stay grounded to source material
+
+**2. Dopeness (Custom Criteria)**
+
+- **Score Range**: 0-1 scale
+- **What it measures**: Custom subjective evaluation asking "Is the answer dope, meaning cool - awesome - and legit?"
+- **the Results**: Mixed scores (many around 0.26-0.46 range)
+- **Significance**: Lower scores suggest responses are more conservative/professional rather than "cool" or engaging
+
+**3. Score_string:accuracy**
+
+- **Score Range**: 0-10 scale
+- **What it measures**: How well the generated answer matches the reference answer
+- **the Results**: High scores (many 7-10, with perfect 10s visible)
+- **Significance**: Strong semantic accuracy - the system is providing correct information
+
+### **What These Specific Results Tell Us:**
+
+#### **Excellent Context Adherence**
+
+- Every single "COT Contextual" evaluation shows "correct"
+- This means the enhanced prompt with structured instructions is working perfectly
+- No hallucination or off-topic responses detected
+
+#### **High Factual Accuracy**
+
+- The "score_string:accuracy" scores are consistently high (7-10 range)
+- This indicates the system is retrieving and presenting correct information
+- The RAG pipeline is effectively matching expected answers
+
+#### **Conservative Response Style**
+
+- The "dopeness" scores are moderate (0.2-0.5 range)
+- This suggests responses are factual but not particularly engaging or "cool"
+- For a financial aid system, this conservative approach is actually appropriate
+
+### **Key Insights:**
+
+1. **Perfect Grounding**: the enhanced prompt successfully prevents the system from answering questions outside its knowledge base
+2. **Reliable Accuracy**: The system consistently provides correct information when it does answer
+3. **Appropriate Tone**: The moderate "dopeness" scores suggest professional, reliable responses rather than flashy ones
+
+### **Overall Assessment:**
+
+These traces show a very well-performing RAG system that prioritizes accuracy and reliability over engagement - exactly what you'd want for a student loan/financial aid assistant. The perfect contextual grounding combined with high accuracy scores indicates the prompt engineering was highly effective.
+
+
 ---
 
 ### 🏗️ Activity #2
