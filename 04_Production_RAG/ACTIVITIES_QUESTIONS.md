@@ -473,7 +473,7 @@ LangGraph's graph-based approach lets us visualize and manage complex flows natu
 What if the retriever finds no relevant context?
 What if the response needs fact-checking? Consider how you would modify the graph to handle these scenarios.
 
-### Answer #2
+#### ✅ Answer
 
 ## Enhanced LangGraph RAG with Edge Case Handling
 
