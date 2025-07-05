@@ -10,6 +10,8 @@ While there's nothing specifically wrong with the chunking method used above - i
 
 Brainstorm some ideas that would split large single documents into smaller documents.
 
+### ✅ Answer
+
 ## Sophisticated Document Chunking Strategies
 
 ## 1. **Semantic Boundary Chunking**
@@ -17,6 +19,7 @@ Brainstorm some ideas that would split large single documents into smaller docum
 This approach uses natural language processing to identify logical content boundaries, ensuring chunks maintain semantic coherence. Instead of splitting at arbitrary character counts, it identifies topic transitions, paragraph breaks, and section headers.
 
 **Process:**
+
 - Parse document structure (headers, paragraphs, sections)
 - Use sentence tokenization to identify natural breakpoints
 - Apply sliding window with overlap to maintain context
@@ -45,6 +48,7 @@ def semantic_chunk(text, max_size=1000, overlap=200):
 This method leverages document structure (tables, lists, code blocks, headers) to create chunks that respect the document's logical organization. It's particularly effective for technical documentation and structured content.
 
 **Process:**
+
 - Parse markdown/HTML structure to identify elements
 - Group related elements (tables with captions, code with explanations)
 - Maintain parent-child relationships in metadata
@@ -82,6 +86,7 @@ def structure_aware_chunk(text: str) -> List[Dict]:
 This strategy optimizes for LLM token limits while maintaining context continuity. It uses actual tokenization to ensure precise token counts and implements intelligent overlap strategies.
 
 **Process:**
+
 - Use model-specific tokenizer for accurate token counting
 - Implement sliding window with contextual overlap
 - Preserve sentence boundaries within token constraints
@@ -128,6 +133,7 @@ def token_optimized_chunk(text: str, model="gpt-4", max_tokens=512, overlap_toke
 This advanced strategy uses vector embeddings to group semantically related content, even when it's not physically adjacent. It creates more coherent chunks by understanding content similarity at a deeper level than simple text analysis.
 
 **Process:**
+
 - Generate embeddings for sentences/paragraphs using sentence transformers
 - Apply clustering algorithms (K-means, DBSCAN) to group similar content
 - Create chunks from clusters while respecting size constraints
@@ -175,6 +181,7 @@ def embedding_based_chunk(text: str, max_size=1000, min_similarity=0.7):
 This sophisticated approach recognizes different content types (code blocks, tables, lists, prose) and applies specialized chunking strategies for each, maintaining the integrity of structured content while optimizing for downstream processing.
 
 **Process:**
+
 - Parse and classify content blocks by type (markdown, code, tables, etc.)
 - Apply type-specific chunking rules and size constraints
 - Maintain content relationships and dependencies
@@ -285,6 +292,7 @@ def _detect_language(code: str) -> str:
 This cutting-edge approach models document content as a knowledge graph, identifying relationships and dependencies between concepts to create chunks that maintain logical coherence and reference integrity.
 
 **Process:**
+
 - Extract entities and relationships using NLP (spaCy, Stanford NER)
 - Build directed graph of content dependencies and references
 - Apply graph clustering algorithms to identify cohesive subgraphs
@@ -413,13 +421,15 @@ These sophisticated strategies leverage machine learning, graph theory, and adva
 
 ---
 
-## ❓ Question #1:
+## ❓ Question #1
 
 What is the embedding dimension, given that we're using text-embedding-3-small?
 
 You will need to fill the next cell out correctly with your embedding dimension for the rest of the notebook to run.
 
 HINT: Check out the docs to help you answer this question.
+
+### ✅ Answer
 
 Based on the OpenAI documentation and search results, **`text-embedding-3-small` has a default embedding dimension of 1536**.
 
@@ -507,6 +517,8 @@ The enhanced graph uses LangGraph's conditional routing capabilities to create a
 
 Include a screenshot of your trace and explain what it means.
 
+### ✅ Answer
+
 ## 1. Trace main page
 
 ![image](img/trace01.png)
@@ -593,6 +605,8 @@ These traces show a very well-performing RAG system that prioritizes accuracy an
 
 Complete the prompt so that your RAG application answers queries based on the context provided, but *does not* answer queries if the context is unrelated to the query.
 
+### ✅ Answer
+
 ## Original Prompt
 
 ```python
@@ -657,6 +671,8 @@ chat_prompt = ChatPromptTemplate.from_messages([
 What conclusions can you draw about the above results?
 
 Describe in your own words what the metrics are expressing.
+
+### ✅ Answer
 
 ## Evaluation Results Analysis
 
