@@ -413,7 +413,7 @@ These sophisticated strategies leverage machine learning, graph theory, and adva
 
 ---
 
-## ❓ Question #1:![1751752268498](image/ACTIVITIES_QUESTIONS/1751752268498.png)
+## ❓ Question #1:
 
 What is the embedding dimension, given that we're using text-embedding-3-small?
 
