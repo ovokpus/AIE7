@@ -1,7 +1,7 @@
 [project]
-name = "06-multi-agent-with-langgraph"
-version = "0.1.0"
-description = "Multi Agent Workflow with LangGraph"
+name = "postassist"
+version = "1.0.0"
+description = "PostAssist - AI-powered LinkedIn post generation for machine learning papers"
 readme = "README.md"
 requires-python = "==3.11.*"
 dependencies = [
