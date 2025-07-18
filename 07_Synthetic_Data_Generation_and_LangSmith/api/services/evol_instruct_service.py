@@ -22,8 +22,8 @@ from langchain.prompts import ChatPromptTemplate
 from langchain_openai import ChatOpenAI
 
 # Local imports
-from ..config import settings
-from ..models.core import EvolutionType, ExecutionMode, GenerationSettings, PerformanceMetrics
+from api.config import settings
+from api.models.core import EvolutionType, ExecutionMode, GenerationSettings, PerformanceMetrics
 
 
 class EvolInstructState(TypedDict):

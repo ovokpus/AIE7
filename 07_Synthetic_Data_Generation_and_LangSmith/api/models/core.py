@@ -29,7 +29,7 @@ class DocumentInput(BaseModel):
     source: Optional[str] = Field(None, description="Document source identifier")
     
     class Config:
-        schema_extra = {
+        json_schema_extra = {
             "example": {
                 "content": "This document describes federal student loan programs and eligibility requirements...",
                 "metadata": {"source": "loan_guide.pdf", "page": 1},
@@ -47,7 +47,7 @@ class EvolvedQuestion(BaseModel):
     complexity_level: int = Field(..., ge=1, le=5, description="Question complexity level (1-5)")
     
     class Config:
-        schema_extra = {
+        json_schema_extra = {
             "example": {
                 "id": "q_12345",
                 "question": "What are the specific eligibility requirements for federal student loans that require synthesis across multiple programs?",
@@ -64,7 +64,7 @@ class QuestionAnswer(BaseModel):
     answer: str = Field(..., description="Generated answer text")
     
     class Config:
-        schema_extra = {
+        json_schema_extra = {
             "example": {
                 "question_id": "q_12345",
                 "answer": "Federal student loan eligibility requires enrollment in an eligible program, satisfactory academic progress, financial need demonstration..."
@@ -78,7 +78,7 @@ class QuestionContext(BaseModel):
     contexts: List[str] = Field(..., description="Relevant context texts")
     
     class Config:
-        schema_extra = {
+        json_schema_extra = {
             "example": {
                 "question_id": "q_12345",
                 "contexts": [
@@ -100,7 +100,7 @@ class GenerationSettings(BaseModel):
     max_tokens: int = Field(default=500, ge=100, le=2000, description="Maximum tokens for LLM responses")
     
     class Config:
-        schema_extra = {
+        json_schema_extra = {
             "example": {
                 "execution_mode": "concurrent",
                 "max_base_questions_per_doc": 3,
@@ -123,7 +123,7 @@ class PerformanceMetrics(BaseModel):
     execution_mode: str = Field(..., description="Execution mode used")
     
     class Config:
-        schema_extra = {
+        json_schema_extra = {
             "example": {
                 "execution_time_seconds": 25.64,
                 "questions_generated": 7,

@@ -6,7 +6,7 @@ Pydantic models for API response validation
 from typing import List, Optional, Dict, Any
 from pydantic import BaseModel, Field
 from datetime import datetime
-from .core import EvolvedQuestion, QuestionAnswer, QuestionContext, PerformanceMetrics
+from api.models.core import EvolvedQuestion, QuestionAnswer, QuestionContext, PerformanceMetrics
 
 
 class GenerationResponse(BaseModel):
@@ -20,7 +20,7 @@ class GenerationResponse(BaseModel):
     timestamp: datetime = Field(default_factory=datetime.now, description="Generation timestamp")
     
     class Config:
-        schema_extra = {
+        json_schema_extra = {
             "example": {
                 "success": True,
                 "evolved_questions": [
@@ -67,7 +67,7 @@ class EvaluationResponse(BaseModel):
     timestamp: datetime = Field(default_factory=datetime.now, description="Evaluation timestamp")
     
     class Config:
-        schema_extra = {
+        json_schema_extra = {
             "example": {
                 "success": True,
                 "evaluation_id": "eval_12345",
@@ -106,7 +106,7 @@ class HealthResponse(BaseModel):
     dependencies: Dict[str, str] = Field(..., description="Status of external dependencies")
     
     class Config:
-        schema_extra = {
+        json_schema_extra = {
             "example": {
                 "status": "healthy",
                 "version": "1.0.0",
@@ -128,7 +128,7 @@ class ErrorResponse(BaseModel):
     timestamp: datetime = Field(default_factory=datetime.now, description="Error timestamp")
     
     class Config:
-        schema_extra = {
+        json_schema_extra = {
             "example": {
                 "success": False,
                 "error": "ValidationError",
@@ -152,7 +152,7 @@ class BatchGenerationResponse(BaseModel):
     timestamp: datetime = Field(default_factory=datetime.now, description="Batch processing timestamp")
     
     class Config:
-        schema_extra = {
+        json_schema_extra = {
             "example": {
                 "success": True,
                 "batch_results": [
@@ -182,7 +182,7 @@ class StatusResponse(BaseModel):
     estimated_completion: Optional[datetime] = Field(default=None, description="Estimated completion time")
     
     class Config:
-        schema_extra = {
+        json_schema_extra = {
             "example": {
                 "generation_id": "gen_12345",
                 "status": "running", 

@@ -3,7 +3,7 @@ Validation utilities for the EvolSynth API
 """
 
 from typing import List, Dict, Any, Tuple
-from ..models.requests import GenerationRequest, EvaluationRequest
+from api.models.requests import GenerationRequest, EvaluationRequest
 
 
 def validate_generation_request(request: GenerationRequest) -> Tuple[bool, List[str]]:
