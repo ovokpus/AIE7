@@ -13,16 +13,16 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import JSONResponse
 
 # Local imports
-from .config import settings, validate_api_keys, setup_environment
-from .models.requests import GenerationRequest, EvaluationRequest, BatchGenerationRequest
-from .models.responses import (
+from api.config import settings, validate_api_keys, setup_environment
+from api.models.requests import GenerationRequest, EvaluationRequest, BatchGenerationRequest
+from api.models.responses import (
     GenerationResponse, EvaluationResponse, HealthResponse, 
     ErrorResponse, BatchGenerationResponse, StatusResponse
 )
-from .models.core import DocumentInput, PerformanceMetrics
-from .services.evol_instruct_service import EvolInstructService
-from .services.evaluation_service import EvaluationService
-from .services.document_service import DocumentService
+from api.models.core import DocumentInput, PerformanceMetrics
+from api.services.evol_instruct_service import EvolInstructService
+from api.services.evaluation_service import EvaluationService
+from api.services.document_service import DocumentService
 
 # Initialize FastAPI app
 app = FastAPI(

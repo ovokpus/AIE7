@@ -3,7 +3,7 @@ Error handling utilities for the EvolSynth API
 """
 
 from typing import Dict, Any, Optional
-from ..models.responses import ErrorResponse
+from api.models.responses import ErrorResponse
 
 
 def create_error_response(

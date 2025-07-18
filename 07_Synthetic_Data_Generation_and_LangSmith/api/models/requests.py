@@ -5,7 +5,7 @@ Pydantic models for API request validation
 
 from typing import List, Optional
 from pydantic import BaseModel, Field
-from .core import DocumentInput, GenerationSettings
+from api.models.core import DocumentInput, GenerationSettings
 
 
 class GenerationRequest(BaseModel):
@@ -15,7 +15,7 @@ class GenerationRequest(BaseModel):
     max_iterations: int = Field(default=1, ge=1, le=5, description="Maximum number of generation iterations")
     
     class Config:
-        schema_extra = {
+        json_schema_extra = {
             "example": {
                 "documents": [
                     {
@@ -48,7 +48,7 @@ class DocumentUploadRequest(BaseModel):
     chunk_overlap: int = Field(default=50, ge=0, le=500, description="Overlap between text chunks")
     
     class Config:
-        schema_extra = {
+        json_schema_extra = {
             "example": {
                 "files": ["document1.pdf", "document2.pdf"],
                 "extract_text": True,
@@ -69,7 +69,7 @@ class EvaluationRequest(BaseModel):
     )
     
     class Config:
-        schema_extra = {
+        json_schema_extra = {
             "example": {
                 "evolved_questions": [
                     {
@@ -103,7 +103,7 @@ class BatchGenerationRequest(BaseModel):
     batch_names: Optional[List[str]] = Field(default=None, description="Optional names for each batch")
     
     class Config:
-        schema_extra = {
+        json_schema_extra = {
             "example": {
                 "document_batches": [
                     [

@@ -12,8 +12,8 @@ from langchain.schema import Document
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from langchain_community.document_loaders import PyMuPDFLoader, TextLoader
 
-from ..config import settings
-from ..models.core import DocumentInput
+from api.config import settings
+from api.models.core import DocumentInput
 
 
 class DocumentService:

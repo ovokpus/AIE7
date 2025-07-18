@@ -10,7 +10,7 @@ from datetime import datetime
 from langchain_openai import ChatOpenAI
 from langchain.prompts import ChatPromptTemplate
 
-from ..config import settings
+from api.config import settings
 
 
 class EvaluationService:
