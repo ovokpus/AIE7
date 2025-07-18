@@ -1,0 +1,37 @@
+# EvolSynth API - Synthetic Data Generation with Evol-Instruct
+# Core FastAPI dependencies
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+pydantic==2.5.0
+python-multipart==0.0.6
+
+# LangChain and LangGraph for Evol-Instruct implementation
+langchain==0.1.0
+langchain-community==0.0.10
+langchain-openai==0.0.2
+langgraph==0.0.20
+langsmith==0.0.69
+
+# Document processing
+unstructured==0.11.8
+PyMuPDF==1.23.8
+python-magic==0.4.27
+
+# ML and embeddings
+openai==1.6.1
+qdrant-client==1.7.0
+tiktoken==0.5.2
+
+# Data processing
+pandas==2.1.4
+numpy==1.24.4
+
+# Utilities
+python-dotenv==1.0.0
+uuid==1.30
+typing-extensions==4.8.0
+
+# Development and testing
+pytest==7.4.3
+httpx==0.25.2
+pytest-asyncio==0.21.1 
