@@ -1,0 +1,46 @@
+# EvolSynth API - Requirements based on actual uv environment
+# Core FastAPI dependencies (missing from current environment)
+fastapi==0.104.1
+uvicorn[standard]==0.24.0
+python-multipart==0.0.6
+
+# Already installed LangChain ecosystem (using current versions)
+langchain==0.3.26
+langchain-community==0.3.27
+langchain-core==0.3.68
+langchain-openai==0.3.28
+langchain-qdrant==0.2.0
+langchain-text-splitters==0.3.8
+langgraph==0.5.2
+langgraph-checkpoint==2.1.0
+langgraph-prebuilt==0.5.2
+langgraph-sdk==0.1.72
+langsmith==0.4.5
+
+# Document processing (already installed)
+unstructured==0.18.5
+pymupdf==1.26.3
+
+# ML and embeddings (already installed)
+openai==1.95.1
+qdrant-client==1.14.3
+tiktoken==0.9.0
+
+# Data processing (already installed)
+pandas==2.3.1
+numpy==2.3.1
+
+# Utilities (already installed)
+python-dotenv==1.1.1
+pydantic==2.11.7
+pydantic-settings==2.10.1
+typing-extensions==4.14.1
+
+# HTTP and async support (already available)
+httpx==0.28.1
+aiohttp==3.12.14
+requests==2.32.4
+
+# Text processing (already installed)
+nltk==3.8.1
+beautifulsoup4==4.13.4 
