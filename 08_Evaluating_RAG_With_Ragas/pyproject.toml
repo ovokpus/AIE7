@@ -28,4 +28,5 @@ dependencies = [
     "tiktoken>=0.8.0",
     "pydantic>=2.9.0",
     "pydantic-settings>=2.0.0",
+    "plotly>=5.19.0",
 ]
