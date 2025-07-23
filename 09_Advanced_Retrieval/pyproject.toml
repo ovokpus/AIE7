@@ -1,5 +1,5 @@
 [project]
-name = "13-advanced-retrieval"
+name = "09-advanced-retrieval"
 version = "0.1.0"
 description = "Add your description here"
 readme = "README.md"
@@ -16,4 +16,8 @@ dependencies = [
     "langchain-qdrant>=0.2.0",
     "ragas>=0.2.0",
     "datasets>=2.14.0",
+    "langsmith>=0.1.0",
+    "pandas>=2.2.3",
+    "numpy>=1.26.4",
+    "pillow>=11.1.0",
 ]
