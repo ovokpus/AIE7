@@ -50,13 +50,13 @@ def helpfulness_node(state: AgentState) -> Dict[str, Any]:
     final_response = state["messages"][-1]
 
     prompt_template = """
-  Given an initial query and a final response, determine if the final response is extremely helpful or not. Please indicate helpfulness with a 'Y' and unhelpfulness as an 'N'.
+                    Given an initial query and a final response, determine if the final response is extremely helpful or not. Please indicate helpfulness with a 'Y' and unhelpfulness as an 'N'.
 
-  Initial Query:
-  {initial_query}
+                    Initial Query:
+                    {initial_query}
 
-  Final Response:
-  {final_response}"""
+                    Final Response:
+                    {final_response}"""
 
     helpfulness_prompt_template = PromptTemplate.from_template(prompt_template)
     helpfulness_check_model = get_chat_model(model_name="gpt-4.1-mini")
