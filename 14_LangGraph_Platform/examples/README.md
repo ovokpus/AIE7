@@ -67,51 +67,49 @@ uv run python examples/interactive_langgraph_demo.py
 
 ## Sample Messages for Student Loan Context
 
-Here are some realistic example messages you can send to the agent that will trigger multiple MCP tools while being relevant to the student loan/financial aid data in the `data/` directory:
+Here are some realistic example messages you can send to the agent that will trigger multiple MCP tools while retrieving relevant student loan/financial aid information from the vector database:
 
-### 📊 Message 1: Analysis and File Operations
+### 📊 Message 1: Research and Report Generation
 ```
-I need to understand the current student loan complaint trends. Can you analyze the complaints data in the data directory, then create a summary report file with the key findings about the most common issues borrowers are facing? I'd also like to know what the current time is so I can timestamp this analysis.
-```
-
-**Expected MCP tools used:**
-- `list_directory_contents` - to explore the data directory
-- `analyze_csv_data` - to analyze the complaints.csv file  
-- `write_file_content` - to create the summary report
-- `get_current_time` - to timestamp the analysis
-
-### 🎓 Message 2: Data Analysis and Research
-```
-I'm researching Federal Pell Grant eligibility requirements for my school's financial aid office. Can you retrieve information about Pell Grant policies from our database, then analyze the complaints data to see what specific issues students have with Pell Grants? Please save your findings to a file called 'pell_grant_analysis.txt' with today's timestamp.
+I need to research Federal Pell Grant eligibility requirements and common borrower complaints. Can you retrieve information about Pell Grant policies from our knowledge base, then create a comprehensive report file with your findings? Please include the current timestamp in the report.
 ```
 
-**Expected MCP tools used:**
-- `retrieve_information` (RAG tool) - to get Pell Grant policy information
-- `analyze_csv_data` - to examine complaints for Pell Grant issues
-- `get_current_time` - to get timestamp
-- `write_file_content` - to save the analysis
+**Expected tools used:**
+- `retrieve_information` (RAG) - to get Pell Grant policy information from vector DB
+- `write_file_content` - to create the comprehensive report
+- `get_current_time` - to timestamp the report
 
-### 🌐 Message 3: File Management and URL Validation
+### 🎓 Message 2: Policy Analysis and Documentation
 ```
-I need to validate that the Department of Education's student aid website (https://studentaid.gov) is accessible, then check what files we have in our data directory. After that, create a summary report of our available resources and include the current timestamp.
+I'm preparing training materials for our financial aid staff. Can you research Direct Loan Program policies from our database, validate that the official studentaid.gov website is accessible for reference, and then create a training document with the key points? Please timestamp the document.
 ```
 
-**Expected MCP tools used:**
+**Expected tools used:**
+- `retrieve_information` (RAG) - to get Direct Loan Program information from vector DB
 - `validate_url` - to check studentaid.gov accessibility
-- `list_directory_contents` - to check available files
-- `get_current_time` - to get timestamp
-- `write_file_content` - to create the resource summary
+- `write_file_content` - to create the training document
+- `get_current_time` - to timestamp the document
 
-### 📈 Message 4: Statistical Analysis and Environment Check
+### 🌐 Message 3: Environment Setup and Knowledge Retrieval
 ```
-I want to run some statistics on student loan complaint volumes. First, can you analyze the complaints data to get statistical summaries, then check our system environment to make sure we have the right setup for data analysis? Please save a technical report with these findings.
+I need to check our system environment to ensure it's properly configured for financial aid data analysis, then research complaint patterns about loan servicing issues from our knowledge base. Please save a technical summary with both the system info and the complaint analysis.
 ```
 
-**Expected MCP tools used:**
-- `analyze_csv_data` with operation='stats' - for statistical analysis
-- `get_environment_info` - to check system setup
-- `calculate_statistics` - if numerical data is extracted
-- `write_file_content` - to save the technical report
+**Expected tools used:**
+- `get_environment_info` - to check system configuration
+- `retrieve_information` (RAG) - to research loan servicing complaints from vector DB
+- `write_file_content` - to save the technical summary
+
+### 📈 Message 4: Statistical Analysis and Research Combo
+```
+I want to analyze some numerical data and also research academic calendar policies. First, calculate statistics for these loan amounts: [5500, 6500, 7500, 12500, 20500]. Then retrieve information about academic calendar requirements from our knowledge base and save everything to a comprehensive analysis file with today's timestamp.
+```
+
+**Expected tools used:**
+- `calculate_statistics` - to analyze the loan amount data
+- `retrieve_information` (RAG) - to get academic calendar policy info from vector DB
+- `get_current_time` - to timestamp the analysis
+- `write_file_content` - to save the comprehensive analysis
 
 ## Generated Files
 
