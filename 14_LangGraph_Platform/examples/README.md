@@ -135,7 +135,7 @@ I'm conducting a comprehensive study on income-driven repayment plans. Please se
 
 ## Generated Files
 
-The demos create sample files in this directory:
+The demo scripts create sample files in this directory:
 
 - `test_demo.txt` - Basic file operations test
 - `sample_data.csv` - Sample CSV for analysis  
