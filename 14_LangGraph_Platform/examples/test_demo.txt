@@ -1,0 +1,2 @@
+Hello from MCP tools demo!
+This is a test file created by the MCP server.

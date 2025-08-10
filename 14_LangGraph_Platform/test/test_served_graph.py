@@ -1,3 +1,9 @@
+import sys
+from pathlib import Path
+
+# Add the parent directory to the path
+sys.path.append(str(Path(__file__).parent.parent))
+
 from langgraph_sdk import get_sync_client
 
 
