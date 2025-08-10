@@ -67,49 +67,71 @@ uv run python examples/interactive_langgraph_demo.py
 
 ## Sample Messages for Student Loan Context
 
-Here are some realistic example messages you can send to the agent that will trigger multiple MCP tools while retrieving relevant student loan/financial aid information from the vector database:
+Here are some realistic example messages you can send to the agent that will trigger multiple tools including web search, academic research, vector database retrieval, and MCP utilities:
 
-### 📊 Message 1: Research and Report Generation
+### 📊 Message 1: Comprehensive Research and Report Generation
 ```
-I need to research Federal Pell Grant eligibility requirements and common borrower complaints. Can you retrieve information about Pell Grant policies from our knowledge base, then create a comprehensive report file with your findings? Please include the current timestamp in the report.
+I need to research Federal Pell Grant eligibility requirements from multiple sources. Please retrieve information about Pell Grant policies from our knowledge base, search the web for the latest news about Pell Grant changes in 2024, and also find recent academic research papers about financial aid effectiveness. Then create a comprehensive report file with all your findings and include the current timestamp.
 ```
 
 **Expected tools used:**
 - `retrieve_information` (RAG) - to get Pell Grant policy information from vector DB
+- `TavilySearchResults` (Web Search) - to find latest news about Pell Grant changes
+- `ArxivQueryRun` (Academic Search) - to find research papers on financial aid effectiveness
 - `write_file_content` - to create the comprehensive report
 - `get_current_time` - to timestamp the report
 
-### 🎓 Message 2: Policy Analysis and Documentation
+### 🎓 Message 2: Multi-Source Policy Analysis and Documentation
 ```
-I'm preparing training materials for our financial aid staff. Can you research Direct Loan Program policies from our database, validate that the official studentaid.gov website is accessible for reference, and then create a training document with the key points? Please timestamp the document.
+I'm preparing training materials for our financial aid staff about student loan default rates and prevention strategies. Can you research Direct Loan Program policies from our database, search for recent academic studies on student loan default prevention, look up current news about loan default trends, and validate that the official studentaid.gov website is accessible? Then create a training document with all the key points and timestamp it.
 ```
 
 **Expected tools used:**
 - `retrieve_information` (RAG) - to get Direct Loan Program information from vector DB
+- `ArxivQueryRun` (Academic Search) - to find studies on loan default prevention
+- `TavilySearchResults` (Web Search) - to find news about default trends
 - `validate_url` - to check studentaid.gov accessibility
 - `write_file_content` - to create the training document
 - `get_current_time` - to timestamp the document
 
-### 🌐 Message 3: Environment Setup and Knowledge Retrieval
+### 🌐 Message 3: Technology and Research Integration Analysis
 ```
-I need to check our system environment to ensure it's properly configured for financial aid data analysis, then research complaint patterns about loan servicing issues from our knowledge base. Please save a technical summary with both the system info and the complaint analysis.
+I need to understand the current state of financial aid technology systems. Please check our system environment configuration, search for recent academic papers about fintech in education, look up current news about student loan management platforms, and research complaint patterns about loan servicing technology issues from our knowledge base. Save a comprehensive technical analysis with all findings.
 ```
 
 **Expected tools used:**
 - `get_environment_info` - to check system configuration
-- `retrieve_information` (RAG) - to research loan servicing complaints from vector DB
-- `write_file_content` - to save the technical summary
+- `ArxivQueryRun` (Academic Search) - to find papers about fintech in education
+- `TavilySearchResults` (Web Search) - to find news about loan management platforms
+- `retrieve_information` (RAG) - to research loan servicing tech complaints from vector DB
+- `write_file_content` - to save the technical analysis
 
-### 📈 Message 4: Statistical Analysis and Research Combo
+### 📈 Message 4: Complete Multi-Source Statistical and Policy Analysis
 ```
-I want to analyze some numerical data and also research academic calendar policies. First, calculate statistics for these loan amounts: [5500, 6500, 7500, 12500, 20500]. Then retrieve information about academic calendar requirements from our knowledge base and save everything to a comprehensive analysis file with today's timestamp.
+I want to do a comprehensive analysis combining numerical data with research from multiple sources. First, calculate statistics for these loan amounts: [5500, 6500, 7500, 12500, 20500]. Then search for recent academic research on optimal loan amounts for student success, look up current web news about student debt trends, retrieve information about academic calendar policies from our knowledge base, and save everything to a comprehensive analysis file with today's timestamp.
 ```
 
 **Expected tools used:**
 - `calculate_statistics` - to analyze the loan amount data
+- `ArxivQueryRun` (Academic Search) - to find research on optimal loan amounts
+- `TavilySearchResults` (Web Search) - to find news about student debt trends
 - `retrieve_information` (RAG) - to get academic calendar policy info from vector DB
 - `get_current_time` - to timestamp the analysis
 - `write_file_content` - to save the comprehensive analysis
+
+### 🔍 Message 5: Advanced Multi-Tool Research Workflow
+```
+I'm conducting a comprehensive study on income-driven repayment plans. Please search for recent academic papers about IDR plan effectiveness, find current news about IDR program changes, retrieve our internal policy information about income-driven repayment from the knowledge base, verify that the Federal Student Aid website is accessible, check our system environment for data analysis capabilities, and create a detailed research report with current timestamp.
+```
+
+**Expected tools used:**
+- `ArxivQueryRun` (Academic Search) - to find papers about IDR effectiveness
+- `TavilySearchResults` (Web Search) - to find news about IDR program changes
+- `retrieve_information` (RAG) - to get IDR policy info from vector DB
+- `validate_url` - to check Federal Student Aid website accessibility
+- `get_environment_info` - to verify system capabilities
+- `write_file_content` - to create the research report
+- `get_current_time` - to timestamp the report
 
 ## Generated Files
 
