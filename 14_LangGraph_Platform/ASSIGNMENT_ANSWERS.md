@@ -47,7 +47,9 @@ graph LR
 
 ### ❓ Question 1: chunk_overlap Parameter in RecursiveCharacterTextSplitter
 
-**Answer:**
+What is the purpose of the chunk_overlap parameter when using RecursiveCharacterTextSplitter to prepare documents for RAG, and what trade-offs arise as you increase or decrease its value?
+
+**✅ Answer:**
 
 The `chunk_overlap` parameter maintains **contextual continuity** by creating overlapping regions between adjacent chunks, preventing information loss at boundaries.
 
@@ -72,7 +74,9 @@ The `chunk_overlap` parameter maintains **contextual continuity** by creating ov
 
 ### ❓ Question 2: Impact of k Parameter on RAGAS Metrics
 
-**Answer:**
+Your retriever is configured with search_kwargs={"k": 5}. How would adjusting k likely affect RAGAS metrics such as Context Precision and Context Recall in practice, and why?
+
+**✅ Answer:**
 
 The retriever is configured with `search_kwargs={"k": 5}`, retrieving 5 chunks per query. Adjusting `k` creates a fundamental **precision-recall trade-off** that directly impacts RAGAS metrics.
 
@@ -104,7 +108,9 @@ The retriever is configured with `search_kwargs={"k": 5}`, retrieving 5 chunks p
 
 ### ❓ Question 3: Agent vs Agent_Helpful Comparison
 
-**Answer:**
+Compare the agent and agent_helpful assistants defined in langgraph.json. Where does the helpfulness evaluator fit in the graph, and under what condition should execution route back to the agent vs. terminate?
+
+**✅ Answer:**
 
 **System Prompts & Architecture:**
 
