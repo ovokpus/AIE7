@@ -59,11 +59,11 @@ def demo_data_analysis():
     
     # Create sample CSV data
     csv_content = """name,age,score
-Alice,25,85.5
-Bob,30,92.0
-Charlie,22,78.5
-Diana,28,96.0
-Eve,26,89.5"""
+                Alice,25,85.5
+                Bob,30,92.0
+                Charlie,22,78.5
+                Diana,28,96.0
+                Eve,26,89.5"""
     
     csv_file = "examples/sample_data.csv"
     
