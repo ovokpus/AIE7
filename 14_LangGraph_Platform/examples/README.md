@@ -65,6 +65,54 @@ uv run python examples/interactive_langgraph_demo.py
 - "Get system info and save to a report file"
 - "Calculate statistics for [10, 20, 30, 40, 50]"
 
+## Sample Messages for Student Loan Context
+
+Here are some realistic example messages you can send to the agent that will trigger multiple MCP tools while being relevant to the student loan/financial aid data in the `data/` directory:
+
+### 📊 Message 1: Analysis and File Operations
+```
+I need to understand the current student loan complaint trends. Can you analyze the complaints data in the data directory, then create a summary report file with the key findings about the most common issues borrowers are facing? I'd also like to know what the current time is so I can timestamp this analysis.
+```
+
+**Expected MCP tools used:**
+- `list_directory_contents` - to explore the data directory
+- `analyze_csv_data` - to analyze the complaints.csv file  
+- `write_file_content` - to create the summary report
+- `get_current_time` - to timestamp the analysis
+
+### 🎓 Message 2: Data Analysis and Research
+```
+I'm researching Federal Pell Grant eligibility requirements for my school's financial aid office. Can you retrieve information about Pell Grant policies from our database, then analyze the complaints data to see what specific issues students have with Pell Grants? Please save your findings to a file called 'pell_grant_analysis.txt' with today's timestamp.
+```
+
+**Expected MCP tools used:**
+- `retrieve_information` (RAG tool) - to get Pell Grant policy information
+- `analyze_csv_data` - to examine complaints for Pell Grant issues
+- `get_current_time` - to get timestamp
+- `write_file_content` - to save the analysis
+
+### 🌐 Message 3: File Management and URL Validation
+```
+I need to validate that the Department of Education's student aid website (https://studentaid.gov) is accessible, then check what files we have in our data directory. After that, create a summary report of our available resources and include the current timestamp.
+```
+
+**Expected MCP tools used:**
+- `validate_url` - to check studentaid.gov accessibility
+- `list_directory_contents` - to check available files
+- `get_current_time` - to get timestamp
+- `write_file_content` - to create the resource summary
+
+### 📈 Message 4: Statistical Analysis and Environment Check
+```
+I want to run some statistics on student loan complaint volumes. First, can you analyze the complaints data to get statistical summaries, then check our system environment to make sure we have the right setup for data analysis? Please save a technical report with these findings.
+```
+
+**Expected MCP tools used:**
+- `analyze_csv_data` with operation='stats' - for statistical analysis
+- `get_environment_info` - to check system setup
+- `calculate_statistics` - if numerical data is extracted
+- `write_file_content` - to save the technical report
+
 ## Generated Files
 
 The demos create sample files in this directory:
