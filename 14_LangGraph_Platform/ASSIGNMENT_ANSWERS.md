@@ -1,5 +1,21 @@
 # Session 14 Assignment Answers
 
+---
+
+## 📚 Project Navigation
+
+| Document | Description |
+|----------|-------------|
+| [📖 Project Overview](README.md) | Session overview and quick start |
+| [🚀 Complete Guide](LANGGRAPH_MCP_GUIDE.md) | Comprehensive technical documentation and architecture |
+| **[📋 Assignment Details](ASSIGNMENT_ANSWERS.md)** | **You are here** - Implementation details and technical answers |
+| [🔀 Deployment Guide](MERGE.md) | Development workflow and deployment instructions |
+| [💡 Examples & Demos](examples/README.md) | Usage examples and interactive demos |
+| [🧪 Testing Guide](test/README.md) | Testing framework and validation |
+| [⚙️ App Documentation](app/README.md) | Core application architecture |
+
+---
+
 ## Agent Structure Overview - Enhanced with MCP Tools
 
 ### Simplified Tool Overview

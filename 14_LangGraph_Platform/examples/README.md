@@ -1,5 +1,21 @@
 # MCP Integration Examples 🚀
 
+---
+
+## 📚 Project Navigation
+
+| Document | Description |
+|----------|-------------|
+| [📖 Project Overview](../README.md) | Session overview and quick start |
+| [🚀 Complete Guide](../LANGGRAPH_MCP_GUIDE.md) | Comprehensive technical documentation and architecture |
+| [📋 Assignment Details](../ASSIGNMENT_ANSWERS.md) | Implementation details and technical answers |
+| [🔀 Deployment Guide](../MERGE.md) | Development workflow and deployment instructions |
+| **[💡 Examples & Demos](README.md)** | **You are here** - Usage examples and interactive demos |
+| [🧪 Testing Guide](../test/README.md) | Testing framework and validation |
+| [⚙️ App Documentation](../app/README.md) | Core application architecture |
+
+---
+
 This directory contains demonstration scripts that show how to use the Model Context Protocol (MCP) integration with LangGraph.
 
 ## Overview

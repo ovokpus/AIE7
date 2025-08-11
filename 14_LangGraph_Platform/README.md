@@ -5,6 +5,22 @@
 
 ## <h1 align="center" id="heading">Session 14: Build & Serve Agentic Graphs with LangGraph</h1>
 
+---
+
+## 📚 Project Navigation
+
+| Document | Description |
+|----------|-------------|
+| **[📖 Project Overview](README.md)** | **You are here** - Session overview and quick start |
+| [🚀 Complete Guide](LANGGRAPH_MCP_GUIDE.md) | Comprehensive technical documentation and architecture |
+| [📋 Assignment Details](ASSIGNMENT_ANSWERS.md) | Implementation details and technical answers |
+| [🔀 Deployment Guide](MERGE.md) | Development workflow and deployment instructions |
+| [💡 Examples & Demos](examples/README.md) | Usage examples and interactive demos |
+| [🧪 Testing Guide](test/README.md) | Testing framework and validation |
+| [⚙️ App Documentation](app/README.md) | Core application architecture |
+
+---
+
 | 🤓 Pre-work | 📰 Session Sheet | ⏺️ Recording     | 🖼️ Slides        | 👨‍💻 Repo         | 📝 Homework      | 📁 Feedback       |
 |:-----------------|:-----------------|:-----------------|:-----------------|:-----------------|:-----------------|:-----------------|
 | [Session 14: Pre-Work](https://www.notion.so/Session-14-Deploying-Agents-to-Production-21dcd547af3d80aba092fcb6c649c150?source=copy_link#247cd547af3d80709683ff380f4cba62)| [Session 14: Deploying Agents to Production](https://www.notion.so/Session-14-Deploying-Agents-to-Production-21dcd547af3d80aba092fcb6c649c150) | [Recording!](https://us02web.zoom.us/rec/share/1YepNUK3kqQnYLY8InMfHv84JeiOMyjMRWOZQ9jfjY86dDPvHMhyoz5Zo04w_tn-.91KwoSPyP6K6u0DC)  (@@5J6DVQ)| [Session 14 Slides](https://www.canva.com/design/DAGvVPg7-mw/IRwoSgDXPEqU-PKeIw8zLg/edit?utm_content=DAGvVPg7-mw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) | You are here! | [Session 14 Assignment: Production Agents](https://forms.gle/nZ7ugE4W9VsC1zXE8) | [AIE7 Feedback 8/7](https://forms.gle/juo8SF5y5XiojFyC9)

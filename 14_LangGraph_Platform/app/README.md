@@ -1,4 +1,22 @@
-## App package structure
+# App Package Documentation ⚙️
+
+---
+
+## 📚 Project Navigation
+
+| Document | Description |
+|----------|-------------|
+| [📖 Project Overview](../README.md) | Session overview and quick start |
+| [🚀 Complete Guide](../LANGGRAPH_MCP_GUIDE.md) | Comprehensive technical documentation and architecture |
+| [📋 Assignment Details](../ASSIGNMENT_ANSWERS.md) | Implementation details and technical answers |
+| [🔀 Deployment Guide](../MERGE.md) | Development workflow and deployment instructions |
+| [💡 Examples & Demos](../examples/README.md) | Usage examples and interactive demos |
+| [🧪 Testing Guide](../test/README.md) | Testing framework and validation |
+| **[⚙️ App Documentation](README.md)** | **You are here** - Core application architecture |
+
+---
+
+## App Package Structure
 
 This `app` package organizes LangGraph/LangChain agent graphs, shared state, model configuration, and tool integrations into focused modules. The goal is to keep each concern small and composable so you can mix and match graphs and capabilities without duplicating wiring.
 
