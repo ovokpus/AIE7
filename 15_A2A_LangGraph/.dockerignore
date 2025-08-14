@@ -1,0 +1,96 @@
+# Docker ignore file for LangGraph A2A Agent
+# Exclude unnecessary files from build context
+
+# Python cache and virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual environments
+.env
+.venv/
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Git
+.git/
+.gitignore
+
+# Documentation (not needed in container)
+README.md
+ASSIGNMENT_ANSWERS.md
+demo_setup.md
+*.md
+
+# Second agent (not part of main container)
+second_agent/
+
+# Development and testing files
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Log files
+*.log
+logs/
+
+# Environment files (will be provided via docker-compose or runtime)
+.env*
+
+# Temporary files
+*.tmp
+*.temp
+
+# Development scripts
+quickstart.sh
+setup.py
+check_env.py
+
+# Lock files that might conflict
+Pipfile*
+poetry.lock
+requirements*.txt

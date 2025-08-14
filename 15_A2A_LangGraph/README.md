@@ -81,6 +81,17 @@ Complete the following tasks to understand A2A protocol implementation:
 
 ## 🚀 Quick Start {#quick-start}
 
+### Option 1: 🐳 Docker Deployment (Recommended)
+
+```bash
+# Quick Docker deployment
+docker-compose up --build
+```
+
+📚 **[Complete Docker Guide](./DOCKER_DEPLOYMENT.md)** - Full setup and deployment instructions
+
+### Option 2: 🛠️ Local Development
+
 ```bash
 # Setup and run
 ./quickstart.sh
@@ -126,16 +137,12 @@ Example:
 
 ## 📁 Implementation Details {#implementation-details}
 
-For detailed technical documentation, file structure, and implementation guides, see:
+For detailed technical documentation, deployment guides, and implementation details:
 
-**➡️ [app/README.md](./app/README.md)**
-
-This contains:
-- Complete file structure breakdown
-- Technical implementation details
-- Tool configuration guides
-- Troubleshooting instructions
-- Advanced customization options
+- **🐳 [Docker Deployment](./DOCKER_DEPLOYMENT.md)** - Production containerized deployment
+- **🔧 [Technical Implementation](./app/README.md)** - Code structure and development guides
+- **🤖 [Expert Agent System](./second_agent/README.md)** - Advanced A2A client implementation
+- **🎬 [Demo Setup](./demo_setup.md)** - Side-by-side demonstration instructions
 
 **Navigation**: [🔝 Top](#heading) | [🏗️ Build](#build) | [🚀 Quick Start](#quick-start)
 
