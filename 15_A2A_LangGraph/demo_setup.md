@@ -51,6 +51,37 @@ You'll need **TWO terminal windows** side by side:
 
 ### Terminal 1 (Left): Start Main Agent Server
 
+#### Option 1: 🐳 Docker Deployment (Recommended)
+
+```bash
+# Navigate to project directory
+cd /Users/ovookpubuluku/project-repos/ai-makerspace/AIE7/15_A2A_LangGraph
+
+# Start with Docker Compose (development mode)
+docker-compose up --build
+
+# OR: Use the automated deployment script
+./deploy.sh
+
+# OR: Production mode with Nginx proxy
+docker-compose --profile production up --build -d
+```
+
+**Docker output shows:**
+```
+🐳 CONTAINERIZED A2A AGENT SERVER
+============================================================
+✅ Agent running on: http://localhost:10000
+🔍 Health check: http://localhost:10000/.well-known/agent-card.json
+📊 Container logs show all processing steps
+🔄 Waiting for requests from the expert agent system...
+============================================================
+langgraph-a2a-agent  | INFO     Starting server at http://0.0.0.0:10000
+langgraph-a2a-agent  | INFO     Agent card available at /.well-known/agent-card.json
+```
+
+#### Option 2: 🛠️ Local Development
+
 ```bash
 # Navigate to project directory
 cd /Users/ovookpubuluku/project-repos/ai-makerspace/AIE7/15_A2A_LangGraph
@@ -59,7 +90,7 @@ cd /Users/ovookpubuluku/project-repos/ai-makerspace/AIE7/15_A2A_LangGraph
 uv run python start_main_agent_with_logging.py
 ```
 
-**You should see:**
+**Local development output:**
 ```
 🏭 MAIN AGENT SERVER - ENHANCED LOGGING MODE
 ============================================================
@@ -74,20 +105,31 @@ INFO     | MainAgent | INFO | 📊 All agent interactions will be logged below
 
 ### Terminal 2 (Right): Start Expert Agent System
 
+#### Connecting to Dockerized Main Agent
+
+The expert agent system automatically connects to the main agent server at `http://localhost:10000` - it works seamlessly with both Docker and local deployments!
+
 ```bash
 # Navigate to project directory (in a new terminal)
 cd /Users/ovookpubuluku/project-repos/ai-makerspace/AIE7/15_A2A_LangGraph
 
-# Start the expert agent system
+# Start the expert agent system (connects to Docker or local server)
 uv run python second_agent/main.py
 ```
 
-**You'll see:**
+**Connection validation output:**
 ```
 🎓 EXPERT AGENT SYSTEM - Advanced A2A Communication
 ============================================================
 🎯 Goal-oriented experts with specific research missions!
 📊 Featuring: Dr. Sarah Chen studying Kimi K2 (Assignment Example)
+
+🔗 Initializing A2A client connection...
+📡 Connecting to: http://localhost:10000
+✅ A2A server connection successful
+📄 Agent card retrieved: General Purpose Agent v1.0.0
+🎯 Available capabilities: streaming, push_notifications
+🛠️ Available skills: web_search, arxiv_search, rag_search
 ✅ A2A agent server is running
 
 Choose demo type:
@@ -180,6 +222,61 @@ Enter choice (1, 2, or 3):
 - Different experts have **different approaches** to similar topics
 - **Persistent goals** and **quality standards** per expert
 - **Context switching** maintains expert identity
+
+## 🐳 Docker Deployment Demo Features
+
+### Why Use Docker for Demos?
+
+**Enhanced Demo Experience:**
+- ✅ **Consistent Environment** - Same behavior across different machines
+- ✅ **Professional Setup** - Production-ready containerized deployment
+- ✅ **Easy Reset** - Quick restart with `docker-compose restart`
+- ✅ **Log Management** - Centralized logging via Docker Compose
+- ✅ **Health Monitoring** - Built-in health checks and status endpoints
+
+### Docker-Specific Demo Commands
+
+#### Health Check During Demo
+```bash
+# Verify agent is healthy (in a third terminal)
+curl -s http://localhost:10000/.well-known/agent-card.json | jq '.'
+
+# Check container health status
+docker-compose ps
+
+# View real-time logs
+docker-compose logs -f a2a-agent
+```
+
+#### Production Demo with Nginx
+```bash
+# Start production setup with proxy
+docker-compose --profile production up -d
+
+# Expert agent connects to the same endpoint
+uv run python second_agent/main.py
+# (Demo works identically but through Nginx proxy)
+```
+
+#### Demo Reset and Cleanup
+```bash
+# Quick restart of just the main agent
+docker-compose restart a2a-agent
+
+# Full reset (rebuilds containers)
+docker-compose down && docker-compose up --build
+
+# Check resource usage during demo
+docker stats langgraph-a2a-agent
+```
+
+### Showcasing Production Features
+
+**During the demo, highlight:**
+1. **Container Isolation** - Agent runs in secure, isolated environment
+2. **Health Monitoring** - Show health check endpoints
+3. **Scalability** - Explain how it can be scaled with multiple replicas
+4. **Professional Deployment** - This is how it would run in production
 
 ## 🎭 Advanced Demo Flow
 
@@ -288,6 +385,78 @@ Please provide a response that meets my standards: not satisfied with surface le
 ### 🎭 **Expert Switching Script**:
 *"Now let me show you Alex Kim, our startup founder. Same topic, but watch how his business perspective leads to completely different questions about costs and ROI rather than academic papers."*
 
+## 🔧 Docker Demo Troubleshooting
+
+### Common Docker Demo Issues
+
+#### Issue: Second Agent Can't Connect
+```bash
+# Check if main agent container is running
+docker-compose ps
+
+# Expected output:
+# NAME                    STATUS
+# langgraph-a2a-agent     Up (healthy)
+
+# Check container logs
+docker-compose logs a2a-agent
+
+# Test connectivity manually
+curl http://localhost:10000/.well-known/agent-card.json
+```
+
+#### Issue: Port Already in Use
+```bash
+# Find what's using port 10000
+lsof -i :10000
+
+# Stop conflicting process or change port in docker-compose.yml
+# ports:
+#   - "10001:10000"  # Use different external port
+```
+
+#### Issue: Container Health Check Failing
+```bash
+# Check container health
+docker inspect langgraph-a2a-agent | grep -A 10 Health
+
+# View detailed health check logs
+docker-compose exec a2a-agent curl -f localhost:10000/.well-known/agent-card.json
+```
+
+#### Issue: Environment Variables Not Set
+```bash
+# Verify environment variables in container
+docker-compose exec a2a-agent env | grep OPENAI
+
+# If missing, check your .env file
+cat .env | grep OPENAI_API_KEY
+```
+
+### Demo Recovery Commands
+
+```bash
+# Quick restart during demo
+docker-compose restart a2a-agent
+
+# Complete reset (takes ~30 seconds)
+docker-compose down && docker-compose up -d
+
+# Emergency fallback to local development
+uv run python start_main_agent_with_logging.py
+```
+
+### Performance During Demos
+
+```bash
+# Monitor resource usage
+docker stats --format "table {{.Container}}\t{{.CPUPerc}}\t{{.MemUsage}}"
+
+# Expected resource usage:
+# CONTAINER              CPU %    MEM USAGE / LIMIT
+# langgraph-a2a-agent    1-5%     150MiB / 2GiB
+```
+
 ## 🎪 Advanced Demo Techniques
 
 ### 🖥️ **Terminal Setup**:
@@ -310,4 +479,31 @@ Please provide a response that meets my standards: not satisfied with surface le
 - **Explain quality evaluation** scoring system
 
 This demonstrates a **production-ready expert agent system** that goes far beyond simple persona switching - it shows true goal-oriented AI behavior! 🎉
+
+---
+
+## 📋 Quick Reference: Docker vs Local
+
+| Feature | 🐳 Docker Deployment | 🛠️ Local Development |
+|---------|----------------------|----------------------|
+| **Setup Time** | `docker-compose up --build` (2-3 min) | `uv run python start_main_agent_with_logging.py` (30 sec) |
+| **Environment** | Isolated container | Local Python environment |
+| **Production Ready** | ✅ Yes | ❌ Development only |
+| **Health Checks** | ✅ Built-in | ❌ Manual |
+| **Log Management** | ✅ Centralized | ✅ Enhanced console |
+| **Reset/Restart** | `docker-compose restart` | Ctrl+C, restart script |
+| **Professional Demo** | ✅ Shows containerization | ✅ Shows development flow |
+| **Resource Usage** | ~150MB RAM | ~100MB RAM |
+| **Nginx Proxy** | ✅ Available with production profile | ❌ Not available |
+
+### 🎯 Recommendation for Demos:
+
+- **🐳 Use Docker** for client presentations, professional demos, production showcases
+- **🛠️ Use Local** for development tutorials, debugging sessions, rapid iteration
+
+Both approaches work identically from the expert agent's perspective - the A2A protocol seamlessly connects to either deployment! 🔄
+
+---
+
+**Navigation**: [🏠 Main README](./README.md) | [📋 Assignment Answers](./ASSIGNMENT_ANSWERS.md) | [🤖 Expert Agent](./second_agent/README.md) | [🐳 Docker Guide](./DOCKER_DEPLOYMENT.md)
 
