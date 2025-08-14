@@ -1,9 +1,32 @@
-# second_agent/modules/a2a_client.py
 """
-A2A Client wrapper for communication with the main agent server
+A2A Client Wrapper for Expert Agent Communication.
+
+This module provides a wrapper around the A2A protocol client to facilitate
+communication between the Expert Agent System and the main A2A agent server.
+It handles connection management, message formatting, and response processing
+while maintaining proper A2A protocol compliance.
+
+Key Features:
+    - A2A protocol-compliant communication
+    - Automatic connection management and retry logic
+    - Expert persona context integration
+    - Response parsing and error handling
+    - Server connectivity validation
+
+The wrapper abstracts the complexity of the A2A protocol and provides a
+clean interface for expert agents to communicate with the main agent.
+
+Example:
+    >>> client = A2AClientWrapper()
+    >>> await client.initialize()
+    >>> response = await client.send_message_with_context(
+    ...     "What is machine learning?",
+    ...     persona_context="You are an ML expert..."
+    ... )
 """
+
 import time
-from typing import Dict, Any
+from typing import Dict, Any, Optional
 from uuid import uuid4
 
 import httpx
@@ -16,15 +39,44 @@ logger, _ = get_loggers()
 
 
 class A2AClientWrapper:
-    """Client for communicating with the local A2A agent server"""
+    """A2A protocol client wrapper for expert agent communication.
     
-    def __init__(self, base_url: str = 'http://localhost:10000'):
+    This class provides a high-level interface for expert agents to communicate
+    with the main A2A agent server. It handles the complexity of A2A protocol
+    message formatting, connection management, and response parsing.
+    
+    The wrapper integrates expert persona context into A2A communications,
+    enabling sophisticated agent-to-agent interactions with goal-oriented
+    behavior and quality evaluation.
+    
+    Attributes:
+        base_url (str): The base URL of the A2A agent server
+        client (A2AProtocolClient): The underlying A2A protocol client
+        agent_card (AgentCard): The retrieved agent capability metadata
+        httpx_client (httpx.AsyncClient): HTTP client for making requests
+        
+    Example:
+        >>> client = A2AClientWrapper('http://localhost:10000')
+        >>> await client.initialize()
+        >>> response = await client.send_message_with_context(
+        ...     message="Explain transformers",
+        ...     persona_context="You are an ML researcher..."
+        ... )
+    """
+    
+    def __init__(self, base_url: str = 'http://localhost:10000') -> None:
+        """Initialize the A2A client wrapper.
+        
+        Args:
+            base_url (str): Base URL of the A2A agent server. 
+                Defaults to 'http://localhost:10000'
+        """
         self.base_url = base_url
         self.client = None
         self.agent_card = None
         self.httpx_client = None
 
-    async def initialize(self):
+    async def initialize(self) -> None:
         """Initialize the A2A client connection"""
         try:
             logger.info("🔗 Initializing A2A client connection...")

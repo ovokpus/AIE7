@@ -1,19 +1,87 @@
-# second_agent/modules/expert_profiles.py
 """
-Expert Profile definitions for goal-oriented agent behavior
+Expert Profile Definitions for Goal-Oriented Agent Behavior.
+
+This module defines the ExpertProfile class and a collection of specialized
+expert agents that demonstrate goal-oriented behavior in A2A communications.
+Each expert has specific research missions, quality standards, and follow-up
+strategies that drive persistent, high-quality interactions.
+
+The module includes 4 predefined expert profiles covering different domains:
+    - Machine Learning Research (Dr. Sarah Chen)
+    - AI Architecture Research (Prof. Marcus Rodriguez)  
+    - Business/Startup Applications (Alex Kim)
+    - AI Security and Safety (Dr. Emma Watson)
+
+Key Features:
+    - Goal-oriented expert behavior with specific missions
+    - Quality evaluation using domain-specific criteria
+    - Automatic follow-up question generation
+    - Persistent expert personality across conversations
+    - Comprehensive persona context generation
+
+Example:
+    >>> profile = EXPERT_PROFILES['ml_expert_kimi']
+    >>> context = profile.get_persona_context()
+    >>> quality_score = profile.evaluate_response_quality(response)
 """
+
 from typing import List, Dict
 
 
 class ExpertProfile:
-    """Represents a specific expert agent with goals and standards"""
+    """Goal-oriented expert agent with specific research missions and quality standards.
+    
+    This class represents a specialized expert agent that maintains persistent
+    behavior across conversations. Each expert has specific goals, quality 
+    standards, and domain expertise that drives their interaction patterns
+    and evaluation criteria.
+    
+    The expert profiles demonstrate sophisticated agent behavior including:
+        - Persistent research missions and goals
+        - Quality evaluation based on domain expertise
+        - Automatic follow-up question generation
+        - Learning and adaptation over time
+        
+    Attributes:
+        name (str): The expert's professional name/identity
+        identity (str): Detailed description of the expert's role and background
+        current_goal (str): Specific research mission or objective
+        quality_standards (List[str]): Criteria for evaluating response quality
+        follow_up_strategy (str): Approach for generating follow-up questions
+        domain_expertise (List[str]): Areas of specialized knowledge
+        questions_asked (int): Counter for tracking conversation depth
+        satisfaction_level (int): Current satisfaction with responses (0-10 scale)
+        
+    Example:
+        >>> expert = ExpertProfile(
+        ...     name="Dr. Sarah Chen",
+        ...     identity="an expert in Machine Learning",
+        ...     current_goal="learn about what makes Kimi K2 so incredible",
+        ...     quality_standards=["not satisfied with surface level answers"],
+        ...     follow_up_strategy="Ask for technical details if initial answer lacks depth",
+        ...     domain_expertise=["machine learning", "neural networks"]
+        ... )
+        >>> context = expert.get_persona_context()
+        >>> score = expert.evaluate_response_quality("Brief response about ML")
+    """
+    
     def __init__(self, 
                  name: str,
                  identity: str, 
                  current_goal: str, 
                  quality_standards: List[str],
                  follow_up_strategy: str,
-                 domain_expertise: List[str]):
+                 domain_expertise: List[str]) -> None:
+        """Initialize an expert profile with goals and standards.
+        
+        Args:
+            name (str): Professional name/identity of the expert
+            identity (str): Detailed role description (e.g., "an expert in Machine Learning")
+            current_goal (str): Specific research mission or objective
+            quality_standards (List[str]): List of quality criteria for evaluating responses
+            follow_up_strategy (str): Strategy for generating follow-up questions
+            domain_expertise (List[str]): Areas of specialized knowledge and expertise
+        """
         self.name = name
         self.identity = identity
         self.current_goal = current_goal
@@ -24,7 +92,22 @@ class ExpertProfile:
         self.satisfaction_level = 0  # 0-10 scale
         
     def get_persona_context(self) -> str:
-        """Generate persona context for A2A calls"""
+        """Generate comprehensive persona context for A2A communications.
+        
+        Creates a detailed persona description that will be included in A2A
+        calls to provide context about the expert's goals, standards, and
+        approach. This context helps the receiving agent tailor its response
+        to meet the expert's specific requirements.
+        
+        Returns:
+            str: Formatted persona context string containing identity, goals,
+                quality standards, domain expertise, and follow-up strategy
+                
+        Example:
+            >>> expert = ExpertProfile(...)
+            >>> context = expert.get_persona_context()
+            >>> # Context includes: "You are an expert in Machine Learning..."
+        """
         standards_text = " and ".join(self.quality_standards)
         return f"""You are {self.identity}. Your current goal is: {self.current_goal}.
         
@@ -37,7 +120,36 @@ class ExpertProfile:
                     Remember: You are a persistent expert who won't settle for superficial answers. Ask follow-up questions if needed."""
 
     def evaluate_response_quality(self, response: str) -> int:
-        """Evaluate if response meets quality standards (0-10)"""
+        """Evaluate response quality against expert's standards and domain expertise.
+        
+        Analyzes the response content to determine if it meets the expert's
+        quality standards and contains sufficient depth for their research goals.
+        Uses multiple criteria including length, domain relevance, source 
+        citations, and alignment with specific quality standards.
+        
+        Args:
+            response (str): The response content to evaluate
+            
+        Returns:
+            int: Quality score from 0-10 where:
+                - 0-3: Poor quality, definitely needs follow-up
+                - 4-6: Moderate quality, may need follow-up
+                - 7-10: High quality, likely satisfactory
+                
+        Evaluation Criteria:
+            - Response length and depth
+            - Presence of research/study references
+            - Source citations and links
+            - Domain expertise keyword matching
+            - Alignment with specific quality standards
+            
+        Example:
+            >>> expert = ExpertProfile(...)
+            >>> score = expert.evaluate_response_quality("Brief ML overview")
+            >>> # Returns lower score due to lack of depth
+            >>> score = expert.evaluate_response_quality("Detailed ML paper with sources...")
+            >>> # Returns higher score due to depth and sources
+        """
         score = 5  # baseline
         
         # Check for depth indicators

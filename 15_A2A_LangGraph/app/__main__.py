@@ -1,3 +1,19 @@
+"""
+A2A LangGraph Agent Server Entry Point.
+
+This module provides the main entry point for starting the A2A-compliant 
+LangGraph agent server. It sets up the complete agent infrastructure including
+capabilities, skills, and request handling.
+
+Dependencies:
+    - OpenAI API key for LLM functionality
+    - Optional: Tavily API key for web search
+    - Optional: Qdrant vector database for RAG
+
+Usage:
+    python -m app --host localhost --port 10000
+"""
+
 import logging
 import os
 import sys
@@ -31,14 +47,37 @@ logger = logging.getLogger(__name__)
 
 
 class MissingAPIKeyError(Exception):
-    """Exception for missing API key."""
+    """Exception raised when required API keys are missing.
+    
+    This exception is thrown during server startup when the OPENAI_API_KEY
+    environment variable is not set, which is required for the LLM functionality.
+    """
 
 
 @click.command()
-@click.option('--host', 'host', default='localhost')
-@click.option('--port', 'port', default=10000)
-def main(host, port):
-    """Starts the General Agent server with A2A protocol support."""
+@click.option('--host', 'host', default='localhost', help='Server host address')
+@click.option('--port', 'port', default=10000, help='Server port number')
+def main(host: str, port: int) -> None:
+    """Start the General Agent server with A2A protocol support.
+    
+    This function initializes and starts a complete A2A-compliant agent server
+    with web search, academic search, and document retrieval capabilities.
+    
+    Args:
+        host (str): The host address to bind the server to. Defaults to 'localhost'.
+        port (int): The port number to bind the server to. Defaults to 10000.
+        
+    Raises:
+        MissingAPIKeyError: If OPENAI_API_KEY environment variable is not set.
+        SystemExit: If server startup fails for any reason.
+        
+    Returns:
+        None: The function runs the server indefinitely until interrupted.
+        
+    Example:
+        >>> main('localhost', 8080)
+        # Starts server on localhost:8080
+    """
     try:
         if not os.getenv('OPENAI_API_KEY'):
             raise MissingAPIKeyError(

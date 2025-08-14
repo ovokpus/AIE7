@@ -1,10 +1,36 @@
-# second_agent/main.py - Modular Expert Agent System Entry Point
 """
-Expert Agent System for A2A Communication
-A modular LangGraph-based client that acts as goal-oriented expert agents
+Expert Agent System - Modular A2A Client Entry Point.
+
+This module provides the main entry point for the Expert Agent System, a sophisticated
+LangGraph-based client that communicates with A2A agents using goal-oriented expert
+personas. The system demonstrates advanced agent-to-agent communication patterns
+with quality evaluation and follow-up questioning.
+
+Key Features:
+    - Goal-oriented expert personas with specific research missions
+    - Quality evaluation and automatic follow-up questioning
+    - Modular architecture with clean separation of concerns
+    - Interactive and demo modes for testing and demonstration
+    - Comprehensive logging for visibility into agent interactions
+
+The system includes 4 specialized expert profiles:
+    - Dr. Sarah Chen: ML Expert studying Kimi K2 (Assignment Example)
+    - Prof. Marcus Rodriguez: Transformer Architecture Researcher
+    - Alex Kim: AI Startup Founder  
+    - Dr. Emma Watson: AI Security Expert
+
+Usage:
+    python second_agent/main.py
+
+Dependencies:
+    - Main A2A agent server running on localhost:10000
+    - OpenAI API key for LLM functionality
+    - All module dependencies in modules/ directory
 """
+
 import asyncio
 import sys
+from typing import NoReturn
 from dotenv import load_dotenv
 
 # Load environment variables
@@ -19,8 +45,31 @@ from modules.demo_modes import demo_single_query, demo_different_query_types, in
 logger, interaction_logger = setup_expert_logging()
 
 
-async def main():
-    """Main demo function with expert agent system"""
+async def main() -> None:
+    """Run the Expert Agent System with interactive demo options.
+    
+    This function serves as the main entry point for the Expert Agent System.
+    It provides a menu-driven interface for users to choose between different
+    demonstration modes, including single queries, multi-persona demos, and
+    the full interactive expert agent experience.
+    
+    The function handles:
+        - Server connectivity verification
+        - A2A client initialization
+        - User interface for demo selection
+        - Proper cleanup and error handling
+        
+    Demo Options:
+        1. Single Query Demo: Quick test with minimal interaction
+        2. Multi-Persona Demo: Original query classification system  
+        3. Expert Agent Mode: Full goal-oriented expert behavior (Assignment compliant)
+        
+    Raises:
+        SystemExit: If server is unavailable or fatal errors occur
+        
+    Returns:
+        None: Runs until user exits or encounters an error
+    """
     print("🎓 EXPERT AGENT SYSTEM - Advanced A2A Communication")
     print("=" * 60)
     print("🎯 Goal-oriented experts with specific research missions!")
