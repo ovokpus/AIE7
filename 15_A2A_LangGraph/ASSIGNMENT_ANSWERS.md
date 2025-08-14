@@ -119,6 +119,8 @@ graph TD
 
 ### **Q1: What is an AgentCard and what are its key components?**
 
+### ✅ Answer
+
 **Answer**: An **AgentCard** is a metadata object that describes an agent's capabilities, skills, and endpoints in the A2A protocol. It serves as a "business card" for agents to discover and understand each other's abilities.
 
 **Key Components of AgentCard**:
@@ -149,6 +151,8 @@ graph TD
 ```
 
 ### **Q2: Why is the A2A protocol important for agent communication?**
+
+### ✅ Answer
 
 **Answer**: The **A2A (Agent-to-Agent) protocol** is crucial for creating interoperable, intelligent multi-agent systems.
 
