@@ -37,21 +37,29 @@ second_agent/
 
 ```mermaid
 graph TD
-    A[User Query] --> B[Expert Selection]
-    B --> C[Expert Profile]
-    C --> D[A2A Protocol Client]
-    D --> E[Your Main Agent]
-    E --> F[Quality Evaluation]
-    F --> G{Satisfied?}
-    G -->|No| H[Generate Follow-up]
+    A[👤 User Query] --> B[🔬 Expert Selection<br/>Dr. Sarah Chen<br/>Prof. Rodriguez<br/>Alex Kim<br/>Dr. Watson]
+    B --> C[👨‍🔬 Expert Profile<br/>Goals & Standards<br/>Domain Expertise]
+    C --> D[📡 A2A Client<br/>modules/a2a_client.py]
+    D --> E[🏭 Main Agent Server<br/>Tools: Tavily/ArXiv/RAG]
+    E --> F[📊 Quality Evaluation<br/>Score: 0-10<br/>Against Expert Standards]
+    F --> G{🎯 Satisfied?<br/>Score ≥ 7?}
+    G -->|❌ No| H[🔄 Generate Follow-up<br/>Ask for sources<br/>Demand details<br/>Request specifics]
     H --> D
-    G -->|Yes| I[Response Enhancement]
-    I --> J[Enhanced Output]
+    G -->|✅ Yes| I[✨ Response Enhancement<br/>Add Expert Metadata<br/>Format Output]
+    I --> J[🎉 Enhanced Expert Response<br/>Quality Score Displayed<br/>Expert Standards Met]
+    
+    %% Module annotations
+    K[📁 modules/expert_profiles.py<br/>- ExpertProfile class<br/>- Quality evaluation<br/>- Follow-up strategies]
+    L[📁 modules/langgraph_nodes.py<br/>- Workflow nodes<br/>- Conditional routing<br/>- State management]
+    M[📁 modules/demo_modes.py<br/>- Interactive mode<br/>- Expert selection<br/>- Session management]
     
     style A fill:#1e3a5f,stroke:#ffffff,color:#ffffff
     style C fill:#4a148c,stroke:#ffffff,color:#ffffff
     style E fill:#4a148c,stroke:#ffffff,color:#ffffff
     style J fill:#c62828,stroke:#ffffff,color:#ffffff
+    style K fill:#e8f5e8,stroke:#4caf50,color:#000000
+    style L fill:#e8f5e8,stroke:#4caf50,color:#000000
+    style M fill:#e8f5e8,stroke:#4caf50,color:#000000
 ```
 
 ### Key Components:
