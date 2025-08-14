@@ -1,5 +1,21 @@
 # 🎬 Expert Agent Demo Setup Guide
 
+---
+
+## 📑 Table of Contents
+
+- [🎯 What You'll Demonstrate](#what-youll-demonstrate)
+- [🖥️ Terminal Setup](#️-terminal-setup)
+- [🚀 Step-by-Step Instructions](#-step-by-step-instructions)
+- [📋 Demo Scenarios Guide](#-demo-scenarios-guide)
+- [🎭 Advanced Demo Flow](#-advanced-demo-flow)
+- [🎯 Key Demo Points to Highlight](#-key-demo-points-to-highlight)
+- [🎪 Advanced Demo Techniques](#-advanced-demo-techniques)
+
+**Navigation**: [🏠 Main README](./README.md) | [📋 Assignment Answers](./ASSIGNMENT_ANSWERS.md) | [🤖 Expert Agent](./second_agent/README.md) | [🏭 App Docs](./app/README.md)
+
+---
+
 This guide shows you how to run impressive demos of our **Goal-Oriented Expert Agent System** with comprehensive side-by-side terminal logging.
 
 ## 🎯 What You'll Demonstrate

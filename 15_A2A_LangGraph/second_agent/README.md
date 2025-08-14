@@ -1,8 +1,28 @@
 # 🤖 Expert Agent System - Goal-Oriented A2A Client
 
+---
+
+## 📑 Table of Contents
+
+- [🎯 What This Expert System Does](#what-this-expert-system-does)
+- [🏗️ Modular Architecture](#modular-architecture)
+- [🔧 Expert Agent Features](#expert-agent-features)
+- [🚀 Usage](#usage)
+- [📝 Expert Interaction Examples](#expert-interaction-examples)
+- [🔄 Expert LangGraph Workflow](#expert-langgraph-workflow)
+- [🆚 Comparison with Other A2A Clients](#comparison-with-other-a2a-clients)
+- [🏗️ Modular Benefits](#modular-benefits)
+- [🛠️ Customization & Extension](#customization--extension)
+- [🧪 Testing & Development](#testing--development)
+- [🔗 Integration with Main Agent](#integration-with-main-agent)
+
+**Navigation**: [🏠 Main README](../README.md) | [📋 Assignment Answers](../ASSIGNMENT_ANSWERS.md) | [🎬 Demo Setup](../demo_setup.md) | [🏭 App Docs](../app/README.md)
+
+---
+
 This is a **modular, LangGraph-based expert agent system** that communicates with your main A2A agent using the official A2A protocol. It demonstrates advanced agent-to-agent communication with **goal-oriented expert personas**, **quality evaluation**, and **follow-up questioning**.
 
-## 🎯 What This Expert System Does
+## 🎯 What This Expert System Does {#what-this-expert-system-does}
 
 The Expert Agent System acts as **specialized AI experts** with specific research missions:
 
@@ -17,7 +37,7 @@ Each expert has:
 - **Follow-up strategies** when unsatisfied
 - **Persistent behavior** across conversations
 
-## 🏗️ Modular Architecture
+## 🏗️ Modular Architecture {#modular-architecture}
 
 The system has been **modularized** from a 900+ line monolithic file into clean, focused modules:
 
@@ -70,7 +90,9 @@ graph TD
 4. **A2A Client Wrapper**: Enhanced A2A protocol communication
 5. **Modular Architecture**: Clean separation of concerns for maintainability
 
-## 🔧 Expert Agent Features
+## 🔧 Expert Agent Features {#expert-agent-features}
+
+**Navigation**: [🔝 Top](#expert-agent-system---goal-oriented-a2a-client) | [🏗️ Architecture](#modular-architecture) | [🚀 Usage](#usage)
 
 ### 🎯 **Goal-Oriented Expert Behavior**
 - **Persistent research missions** - Each expert has specific goals they pursue
@@ -106,7 +128,9 @@ graph TD
 - **Threshold-based follow-up** (score < 7 triggers follow-up)
 - **Learning behavior** - experts track satisfaction over time
 
-## 🚀 Usage
+## 🚀 Usage {#usage}
+
+**Navigation**: [🔝 Top](#expert-agent-system---goal-oriented-a2a-client) | [🔧 Features](#expert-agent-features) | [📝 Examples](#expert-interaction-examples)
 
 ### 1. Start Your Main A2A Agent
 ```bash
@@ -323,7 +347,9 @@ uv run python second_agent/main.py
 - **Expert Specialization**: Fine-tune experts based on domain-specific feedback
 - **Quality Prediction**: Predict response quality before follow-up decisions
 
-## 🔗 Integration with Main Agent
+## 🔗 Integration with Main Agent {#integration-with-main-agent}
+
+**Navigation**: [🔝 Top](#expert-agent-system---goal-oriented-a2a-client) | [🧪 Testing](#testing--development) | [📑 TOC](#table-of-contents)
 
 This expert system works seamlessly with your main agent's capabilities:
 - ✅ **Web Search** (Tavily) - Enhanced with expert context
@@ -348,6 +374,17 @@ This expert system works seamlessly with your main agent's capabilities:
 ✅ **Enhanced maintainability** through focused modules  
 ✅ **Production ready** with proper error handling  
 ✅ **Extensible** framework for new experts and features  
+
+---
+
+## 📚 Additional Resources
+
+- **🏠 [Main Project README](../README.md)** - Project overview and learning objectives
+- **📋 [Assignment Answers](../ASSIGNMENT_ANSWERS.md)** - Complete Q&A with diagrams
+- **🎬 [Demo Setup Guide](../demo_setup.md)** - Step-by-step demo instructions
+- **🏭 [App Documentation](../app/README.md)** - Technical implementation details
+
+**Final Navigation**: [🔝 Top](#expert-agent-system---goal-oriented-a2a-client) | [📑 Table of Contents](#table-of-contents) | [🏠 Main README](../README.md)
 
 ---
 

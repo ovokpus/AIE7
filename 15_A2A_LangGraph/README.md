@@ -9,17 +9,34 @@
 |:-----------------|:-----------------|:-----------------|:-----------------|:-----------------|:-----------------|:-----------------|
 | [Session 15: Pre-Work](https://www.notion.so/Session-15-Agent2Agent-Protocol-Agent-Ops-247cd547af3d8066bc5be493bc0c7eda?source=copy_link#247cd547af3d81369191e4e6cd62f875)| [Session 15: Agent2Agent Protocol & Agent Ops](https://www.notion.so/Session-15-Agent2Agent-Protocol-Agent-Ops-247cd547af3d8066bc5be493bc0c7eda) | [Recording!](https://us02web.zoom.us/rec/share/lgZHp8jqB5D5ytsi1gKH-wwdoz6fX0yBlJFOz5tuoGa1TMU0x7e9rKkkH4a75uUx.RC9C31cDG5Bl4UR2) (mttc.$6G)| [Session 15 Slides](https://www.canva.com/design/DAGv5Xxl3Vw/CRpCrhpika6yPjcQHwB_MQ/edit?utm_content=DAGv5Xxl3Vw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton) | You are here! | [Session 15 Assignment: A2A](https://forms.gle/RPC6sNh2WXE6984j9) | [AIE7 Feedback 8/12](https://forms.gle/AZT2usWxqzfa1JNc8)
 
+---
+
+## 📑 Table of Contents
+
+- [🎯 Learning Objectives](#learning-objectives)
+- [🧠 A2A Protocol with Helpfulness Loop](#a2a-protocol-with-helpfulness-loop)
+- [🏗️ Build](#build)
+- [🚀 Quick Start](#quick-start)
+- [📁 Implementation Details](#implementation-details)
+- [🚢 Ship](#ship)
+- [🚀 Share](#share)
+- [📝 Submitting Homework](#submitting-homework)
+
+**Navigation**: [🏠 Main](#heading) | [📋 Assignment Answers](./ASSIGNMENT_ANSWERS.md) | [🤖 Expert Agent](./second_agent/README.md) | [🎬 Demo Setup](./demo_setup.md)
+
+---
+
 # A2A Protocol Implementation with LangGraph
 
 This session focuses on implementing the **A2A (Agent-to-Agent) Protocol** using LangGraph, featuring intelligent helpfulness evaluation and multi-turn conversation capabilities.
 
-## 🎯 Learning Objectives
+## 🎯 Learning Objectives {#learning-objectives}
 
 By the end of this session, you'll understand:
 
 - **🔄 A2A Protocol**: How agents communicate and evaluate response quality
 
-## 🧠 A2A Protocol with Helpfulness Loop
+## 🧠 A2A Protocol with Helpfulness Loop {#a2a-protocol-with-helpfulness-loop}
 
 The core learning focus is this intelligent evaluation cycle:
 
@@ -56,11 +73,13 @@ graph TD
     style L fill:#f57c00,stroke:#ffffff,stroke-width:3px,color:#ffffff
 ```
 
-# Build 🏗️
+# Build 🏗️ {#build}
 
 Complete the following tasks to understand A2A protocol implementation:
 
-## 🚀 Quick Start
+**Navigation**: [🔝 Top](#heading) | [🎯 Learning Objectives](#learning-objectives) | [🧠 A2A Protocol](#a2a-protocol-with-helpfulness-loop)
+
+## 🚀 Quick Start {#quick-start}
 
 ```bash
 # Setup and run
@@ -105,7 +124,7 @@ Example:
 "You are an expert in Machine Learning, and you want to learn about what makes Kimi K2 so incredible. You are not satisfied with surface level answers, and you wish to have sources you can read to verify information."
 </details>
 
-## 📁 Implementation Details
+## 📁 Implementation Details {#implementation-details}
 
 For detailed technical documentation, file structure, and implementation guides, see:
 
@@ -118,17 +137,19 @@ This contains:
 - Troubleshooting instructions
 - Advanced customization options
 
-# Ship 🚢
+**Navigation**: [🔝 Top](#heading) | [🏗️ Build](#build) | [🚀 Quick Start](#quick-start)
+
+# Ship 🚢 {#ship}
 
 - Short demo showing running Client
 
-# Share 🚀
+# Share 🚀 {#share}
 
 - Explain the A2A protocol implementation
 - Share 3 lessons learned about agent evaluation
 - Discuss 3 lessons not learned (areas for improvement)
 
-# Submitting Your Homework
+# Submitting Your Homework {#submitting-homework}
 
 ## Main Homework Assignment
 
@@ -156,4 +177,14 @@ Follow these steps to prepare and submit your homework assignment:
     + The URL to your Loom Video
     + Your Three lessons learned/not yet learned
     + The URLs to any social media posts (LinkedIn, X, Discord, etc.) ⬅️ _easy Extra Credit points!_
-=======
+
+---
+
+## 📖 Additional Documentation {#additional-documentation}
+
+- **📋 [Assignment Answers](./ASSIGNMENT_ANSWERS.md)** - Complete answers to assignment questions with diagrams
+- **🤖 [Expert Agent System](./second_agent/README.md)** - Modular expert agent implementation
+- **🎬 [Demo Setup Guide](./demo_setup.md)** - Step-by-step demo instructions
+- **🏭 [App Documentation](./app/README.md)** - Technical implementation details
+
+**Navigation**: [🔝 Top](#heading) | [📑 TOC](#table-of-contents) | [🏗️ Build](#build) | [🚢 Ship](#ship)

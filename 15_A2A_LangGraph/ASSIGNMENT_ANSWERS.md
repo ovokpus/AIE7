@@ -1,10 +1,27 @@
 # 📋 Assignment Answers: Agent-to-Agent Communication with LangGraph
 
+---
+
+## 📑 Table of Contents
+
+- [🎯 Assignment Overview](#assignment-overview)
+- [📊 System Architecture Diagram](#system-architecture-diagram)
+- [📋 Assignment Questions & Answers](#assignment-questions--answers)
+- [🔄 Detailed Interaction Flow](#detailed-interaction-flow)
+- [🎯 Expert Agent Selection Logic](#expert-agent-selection-logic)
+- [🔧 Modular LangGraph Workflow Structure](#modular-langgraph-workflow-structure)
+- [🎭 Persona Context Examples](#persona-context-examples)
+- [📝 Implementation Summary](#implementation-summary)
+
+**Navigation**: [🏠 Main README](./README.md) | [🤖 Expert Agent](./second_agent/README.md) | [🎬 Demo Setup](./demo_setup.md) | [🏭 App Docs](./app/README.md)
+
+---
+
 ## 🎯 Assignment Overview
 
 This document contains the complete answers and implementation for **Session 15: Build & Serve an A2A Endpoint for Our LangGraph Agent**. We successfully built a sophisticated **second agent** that communicates with the main A2A agent using the official A2A protocol, demonstrating advanced agent-to-agent communication patterns.
 
-## 📊 System Architecture Diagram
+## 📊 System Architecture Diagram {#system-architecture-diagram}
 
 ### Updated Expert Agent System Architecture
 
@@ -96,7 +113,9 @@ graph TD
 
 **Description**: This diagram shows the complete architecture of our agent-to-agent communication system. The **Expert Agent System** acts as an intelligent orchestrator with goal-oriented expert personas that communicate with the **Main Agent** via the A2A protocol. The Main Agent then uses its tools (web search, academic search, document retrieval) to generate responses.
 
-## 📋 Assignment Questions & Answers
+## 📋 Assignment Questions & Answers {#assignment-questions--answers}
+
+**Navigation**: [🔝 Top](#assignment-answers-agent-to-agent-communication-with-langgraph) | [📊 Architecture](#system-architecture-diagram) | [🔄 Interaction Flow](#detailed-interaction-flow)
 
 ### **Q1: What is an AgentCard and what are its key components?**
 
@@ -187,7 +206,9 @@ graph TD
 **🔮 Future Implications**:
 These lessons inform our approach to building **production-grade agent ecosystems** where multiple specialized agents collaborate intelligently to solve complex problems.
 
-## 🔄 Detailed Interaction Flow
+## 🔄 Detailed Interaction Flow {#detailed-interaction-flow}
+
+**Navigation**: [🔝 Top](#assignment-answers-agent-to-agent-communication-with-langgraph) | [📋 Q&A](#assignment-questions--answers) | [🎯 Expert Logic](#expert-agent-selection-logic)
 
 ### Expert Agent Communication Sequence (Updated)
 
@@ -255,7 +276,9 @@ sequenceDiagram
 
 **Description**: This sequence diagram illustrates the complete flow of a research query from user input to final response. It shows how the Second Agent adds intelligence by classifying the query, selecting an appropriate persona, and enhancing the context before calling the Main Agent. The Main Agent then uses this enhanced context to provide more targeted responses.
 
-## 🎯 Expert Agent Selection Logic (Updated)
+## 🎯 Expert Agent Selection Logic (Updated) {#expert-agent-selection-logic}
+
+**Navigation**: [🔝 Top](#assignment-answers-agent-to-agent-communication-with-langgraph) | [🔄 Interaction](#detailed-interaction-flow) | [🔧 Workflow](#modular-langgraph-workflow-structure)
 
 ### Expert Selection & Quality Evaluation Flow
 
@@ -325,7 +348,9 @@ flowchart TD
 
 **Description**: This updated flowchart shows how the Expert Agent System selects and manages goal-oriented expert profiles. Unlike simple persona routing, this system implements persistent expert behavior with quality evaluation and follow-up questioning. Each expert has specific research missions and won't settle for surface-level answers.
 
-## 🔧 Modular LangGraph Workflow Structure (Updated)
+## 🔧 Modular LangGraph Workflow Structure (Updated) {#modular-langgraph-workflow-structure}
+
+**Navigation**: [🔝 Top](#assignment-answers-agent-to-agent-communication-with-langgraph) | [🎯 Expert Logic](#expert-agent-selection-logic) | [🎭 Persona Examples](#persona-context-examples)
 
 ### Expert Agent Internal Graph with Modules
 
@@ -374,7 +399,9 @@ graph TD
 
 **Description**: This diagram shows the updated modular LangGraph workflow of the Expert Agent System. The graph implements sophisticated expert behavior with quality evaluation and follow-up logic. Each node maps to specific modules, demonstrating clean separation of concerns and professional software architecture.
 
-## 🎭 Persona Context Examples
+## 🎭 Persona Context Examples {#persona-context-examples}
+
+**Navigation**: [🔝 Top](#assignment-answers-agent-to-agent-communication-with-langgraph) | [🔧 Workflow](#modular-langgraph-workflow-structure) | [📝 Summary](#implementation-summary)
 
 ### Research Scientist Persona
 **Trigger Words**: `paper`, `research`, `study`, `academic`, `publication`
@@ -490,17 +517,19 @@ Based on our implementation, the **core components of an AgentCard** are:
 
 ### Key Achievements
 
-✅ **Successful A2A Communication**: Second agent communicates with main agent using official A2A protocol
+**Navigation**: [🔝 Top](#assignment-answers-agent-to-agent-communication-with-langgraph) | [📑 TOC](#table-of-contents) | [🏠 Main README](./README.md)
 
-✅ **Intelligent Routing**: Automatic query classification and persona selection
+✅ **Successful A2A Communication**: Expert agent communicates with main agent using official A2A protocol
 
-✅ **Enhanced Responses**: Context-aware responses based on user intent
+✅ **Goal-Oriented Expert Behavior**: Sophisticated expert personas with specific research missions and quality standards
 
-✅ **Comprehensive Logging**: Full visibility into agent-to-agent interactions
+✅ **Quality Evaluation & Follow-up**: Automated response scoring and intelligent follow-up questioning
 
-✅ **Interactive Demo**: Real-time demonstration of sophisticated agent communication
+✅ **Modular Architecture**: 95% code reduction with clean separation of concerns across 6 focused modules
 
-✅ **Production-Ready**: Robust error handling, logging, and documentation
+✅ **Enhanced Context Communication**: Expert personas enhance A2A calls with domain-specific context
+
+✅ **Production-Ready**: Comprehensive logging, error handling, and professional software architecture
 
 ## 🎯 Lessons Learned
 

@@ -1,5 +1,21 @@
 # 🤖 LangGraph Agent Implementation
 
+---
+
+## 📑 Table of Contents
+
+- [📁 File Structure](#-file-structure)
+- [🔧 Core Components](#-core-components)
+- [🛠️ Tools & Integrations](#️-tools--integrations)
+- [🚀 Getting Started](#-getting-started)
+- [⚙️ Configuration](#️-configuration)
+- [🧪 Testing](#-testing)
+- [🐛 Troubleshooting](#-troubleshooting)
+
+**Navigation**: [🏠 Main README](../README.md) | [📋 Assignment Answers](../ASSIGNMENT_ANSWERS.md) | [🤖 Expert Agent](../second_agent/README.md) | [🎬 Demo Setup](../demo_setup.md)
+
+---
+
 This directory contains the complete implementation of a LangGraph agent with A2A protocol and helpfulness evaluation. This README provides detailed technical documentation for understanding and extending the codebase.
 
 ## 📁 File Structure
