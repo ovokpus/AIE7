@@ -1,11 +1,36 @@
-"""Retrieval-Augmented Generation (RAG) utilities and tool.
+"""Retrieval-Augmented Generation (RAG) Implementation.
 
-This module builds an in-memory RAG pipeline that:
-- Loads PDF documents from `RAG_DATA_DIR` (default: "data").
-- Splits documents into chunks using a token-aware splitter.
-- Embeds chunks with OpenAI and stores vectors in an in-memory Qdrant store.
-- Exposes a LangChain Tool `retrieve_information` that retrieves relevant
-  context and generates a response constrained to that context.
+This module provides a complete RAG (Retrieval-Augmented Generation) pipeline
+for document-based question answering. It combines document ingestion, vector
+storage, similarity search, and context-aware response generation.
+
+The RAG system architecture:
+    1. Document Loading: PDF files loaded from configurable directory
+    2. Text Chunking: Token-aware splitting for optimal retrieval
+    3. Vector Embedding: OpenAI embeddings stored in Qdrant vector database
+    4. Retrieval: Similarity search for relevant document chunks
+    5. Generation: Context-constrained LLM responses
+
+Key Components:
+    - PDF document loader with automatic text extraction
+    - Token-aware text chunking using tiktoken
+    - In-memory Qdrant vector store for fast retrieval
+    - LangChain tool integration for agent workflows
+    - Context-aware response generation with source attribution
+
+Environment Configuration:
+    - RAG_DATA_DIR: Directory containing PDF documents (default: "data")
+    - OPENAI_API_KEY: Required for embeddings and LLM generation
+    - Optional: Qdrant connection settings for persistent storage
+
+Usage:
+    The module exposes `retrieve_information` as a LangChain tool that can be
+    called by agents to search documents and generate contextual responses.
+
+Example:
+    >>> # Tool is automatically loaded in agent workflow
+    >>> response = retrieve_information("What are student loan requirements?")
+    >>> # Returns context-aware answer based on loaded PDF documents
 """
 from __future__ import annotations
 

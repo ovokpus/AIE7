@@ -1,7 +1,29 @@
-"""Agent graph with a post-response helpfulness check loop for A2A protocol compatibility.
+"""LangGraph Agent with Intelligent Helpfulness Evaluation Loop.
 
-After the agent responds, a secondary node evaluates helpfulness ('Y'/'N').
-If helpful, end; otherwise, continue the loop or terminate after a safe limit.
+This module implements a sophisticated LangGraph workflow that includes an
+intelligent helpfulness evaluation system. After generating responses, the
+agent evaluates whether the response adequately addresses the user's query
+and can iteratively improve responses based on helpfulness assessment.
+
+The helpfulness loop is designed for A2A protocol compatibility, enabling
+sophisticated agent-to-agent interactions where response quality is
+continuously evaluated and improved.
+
+Workflow Architecture:
+    1. call_model: Generate initial response using tools if needed
+    2. helpfulness_node: Evaluate response quality and helpfulness
+    3. Conditional routing: Continue loop if unhelpful, end if helpful
+    4. Safety mechanisms: Maximum iteration limits to prevent infinite loops
+
+Key Features:
+    - Tool-enabled response generation (web search, ArXiv, RAG)
+    - Intelligent helpfulness evaluation using LLM assessment
+    - Iterative response improvement through feedback loops
+    - A2A protocol compatibility with structured response formats
+    - Safety guards against infinite improvement cycles
+
+The system demonstrates advanced agent behavior with self-evaluation
+capabilities and quality-driven response generation.
 """
 from __future__ import annotations
 
@@ -16,19 +38,51 @@ from langchain_core.messages import AIMessage
 
 
 class AgentState(TypedDict):
-    """State schema for agent graphs, storing a message list with add_messages."""
+    """State schema for LangGraph agent workflows with message history and response tracking.
+    
+    This TypedDict defines the state structure used throughout the LangGraph
+    workflow, maintaining conversation history and structured response data
+    for A2A protocol compatibility.
+    
+    Attributes:
+        messages (Annotated[List, add_messages]): Conversation message history
+            with automatic message accumulation using LangGraph's add_messages
+        structured_response (Any): Optional ResponseFormat object containing
+            status and message for A2A protocol compliance
+    """
     messages: Annotated[List, add_messages]
     structured_response: Any  # ResponseFormat | None
 
 
 def build_model_with_tools(model):
-    """Return a model instance bound to the tool belt."""
+    """Bind the complete tool belt to a language model for agent capabilities.
+    
+    Args:
+        model: A LangChain ChatModel instance to bind tools to
+        
+    Returns:
+        The model instance with tools bound, enabling tool calling capabilities
+        including web search, academic search, and document retrieval
+    """
     from app.tools import get_tool_belt
     return model.bind_tools(get_tool_belt())
 
 
 def call_model(state: Dict[str, Any], model) -> Dict[str, Any]:
-    """Invoke the model with the accumulated messages and append its response."""
+    """Generate response using the language model with tool capabilities.
+    
+    This node function invokes the tool-enabled language model with the current
+    conversation state. The model can call tools (web search, ArXiv, RAG) as
+    needed to generate comprehensive responses.
+    
+    Args:
+        state (Dict[str, Any]): Current agent state containing message history
+        model: The language model instance to use for generation
+        
+    Returns:
+        Dict[str, Any]: Updated state with the model's response appended
+            to the message history
+    """
     model_with_tools = build_model_with_tools(model)
     messages = state["messages"]
     response = model_with_tools.invoke(messages)
