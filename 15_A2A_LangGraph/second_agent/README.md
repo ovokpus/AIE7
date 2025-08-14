@@ -42,10 +42,10 @@ graph TD
     C --> D[📡 A2A Client<br/>modules/a2a_client.py]
     D --> E[🏭 Main Agent Server<br/>Tools: Tavily/ArXiv/RAG]
     E --> F[📊 Quality Evaluation<br/>Score: 0-10<br/>Against Expert Standards]
-    F --> G{🎯 Satisfied?<br/>Score ≥ 7?}
-    G -->|❌ No| H[🔄 Generate Follow-up<br/>Ask for sources<br/>Demand details<br/>Request specifics]
+    F --> G{Satisfied?<br/>Score >= 7?}
+    G -->|No| H[Generate Follow-up<br/>Ask for sources<br/>Demand details<br/>Request specifics]
     H --> D
-    G -->|✅ Yes| I[✨ Response Enhancement<br/>Add Expert Metadata<br/>Format Output]
+    G -->|Yes| I[Response Enhancement<br/>Add Expert Metadata<br/>Format Output]
     I --> J[🎉 Enhanced Expert Response<br/>Quality Score Displayed<br/>Expert Standards Met]
     
     %% Module annotations

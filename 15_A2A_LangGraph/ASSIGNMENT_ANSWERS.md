@@ -188,11 +188,11 @@ flowchart TD
     
     EvaluateQuality["📊 Evaluate Response Quality<br/>Score: 0-10 against expert standards<br/>Check for sources, depth, specifics"]
     
-    QualityCheck{"🎯 Quality Score ≥ 7?<br/>Expert satisfied?"}
+    QualityCheck{"Quality Score >= 7?<br/>Expert satisfied?"}
     
-    GenerateFollowUp["🔄 Generate Follow-up Question<br/>- Ask for sources<br/>- Demand technical details<br/>- Request specific examples<br/>- Challenge surface answers"]
+    GenerateFollowUp["Generate Follow-up Question<br/>- Ask for sources<br/>- Demand technical details<br/>- Request specific examples<br/>- Challenge surface answers"]
     
-    EnhanceResponse["✨ Enhance Final Response<br/>- Add expert metadata<br/>- Show satisfaction score<br/>- Display interaction count<br/>- Mark standards met"]
+    EnhanceResponse["Enhance Final Response<br/>- Add expert metadata<br/>- Show satisfaction score<br/>- Display interaction count<br/>- Mark standards met"]
     
     Start --> SelectExpert
     SelectExpert --> DrSarah
@@ -209,9 +209,9 @@ flowchart TD
     CallA2A --> EvaluateQuality
     EvaluateQuality --> QualityCheck
     
-    QualityCheck -->|No (< 7)| GenerateFollowUp
+    QualityCheck -->|No less than 7| GenerateFollowUp
     GenerateFollowUp --> CallA2A
-    QualityCheck -->|Yes (≥ 7)| EnhanceResponse
+    QualityCheck -->|Yes 7 or higher| EnhanceResponse
     
     %% Examples with quality scores
     Example1["Example: Dr. Sarah asks about Kimi K2<br/>1st response: 6/10 (no sources)<br/>Follow-up: 'Need references to verify'<br/>2nd response: 9/10 (ArXiv papers provided)"]
@@ -246,13 +246,13 @@ graph TD
     
     CallA2ANode --> EvaluateQualityNode["📊 Evaluate Quality Node<br/>modules/expert_profiles.py<br/>- Score response (0-10)<br/>- Check against standards<br/>- Update satisfaction level"]
     
-    EvaluateQualityNode --> QualityRouter{"🎯 Quality Router<br/>Score ≥ 7?<br/>Max attempts reached?"}
+    EvaluateQualityNode --> QualityRouter{"Quality Router<br/>Score >= 7?<br/>Max attempts reached?"}
     
-    QualityRouter -->|"No, < 7"| FollowUpNode["🔄 Generate Follow-up Node<br/>modules/expert_profiles.py<br/>- Analyze what's missing<br/>- Generate targeted question<br/>- Apply follow-up strategy"]
+    QualityRouter -->|No less than 7| FollowUpNode["Generate Follow-up Node<br/>modules/expert_profiles.py<br/>- Analyze what's missing<br/>- Generate targeted question<br/>- Apply follow-up strategy"]
     
     FollowUpNode --> CallA2ANode
     
-    QualityRouter -->|"Yes, ≥ 7"| EnhanceNode["✨ Enhance Response Node<br/>modules/langgraph_nodes.py<br/>- Add expert metadata<br/>- Format final output<br/>- Include satisfaction score"]
+    QualityRouter -->|Yes 7 or higher| EnhanceNode["Enhance Response Node<br/>modules/langgraph_nodes.py<br/>- Add expert metadata<br/>- Format final output<br/>- Include satisfaction score"]
     
     EnhanceNode --> End["🏁 End"]
     
