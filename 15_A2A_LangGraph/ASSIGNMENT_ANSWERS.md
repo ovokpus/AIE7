@@ -94,7 +94,98 @@ graph TD
     class A2AProtocol protocolClass
 ```
 
-**Description**: This diagram shows the complete architecture of our agent-to-agent communication system. The **Second Agent** acts as an intelligent orchestrator that analyzes user queries, selects appropriate personas, and communicates with the **Main Agent** via the A2A protocol. The Main Agent then uses its tools (web search, academic search, document retrieval) to generate responses.
+**Description**: This diagram shows the complete architecture of our agent-to-agent communication system. The **Expert Agent System** acts as an intelligent orchestrator with goal-oriented expert personas that communicate with the **Main Agent** via the A2A protocol. The Main Agent then uses its tools (web search, academic search, document retrieval) to generate responses.
+
+## 📋 Assignment Questions & Answers
+
+### **Q1: What is an AgentCard and what are its key components?**
+
+**Answer**: An **AgentCard** is a metadata object that describes an agent's capabilities, skills, and endpoints in the A2A protocol. It serves as a "business card" for agents to discover and understand each other's abilities.
+
+**Key Components of AgentCard**:
+1. **`name`**: Human-readable agent identifier
+2. **`description`**: What the agent does and its purpose
+3. **`url`**: Base URL where the agent can be reached
+4. **`version`**: Agent version for compatibility tracking
+5. **`skills`**: Array of available capabilities with descriptions and examples
+6. **`capabilities`**: Technical features (streaming, push notifications)
+7. **`defaultInputModes`** & **`defaultOutputModes`**: Supported content types
+8. **`preferredTransport`**: Communication protocol (JSON-RPC)
+
+**Our AgentCard Example**:
+```json
+{
+  "name": "General Purpose Agent",
+  "description": "A helpful AI assistant with web search, academic paper search, and document retrieval capabilities",
+  "url": "http://localhost:10000/",
+  "version": "1.0.0",
+  "skills": [
+    {"id": "web_search", "name": "Web Search Tool", "description": "Search the web for current information"},
+    {"id": "arxiv_search", "name": "Academic Paper Search", "description": "Search for academic papers on arXiv"},
+    {"id": "rag_search", "name": "Document Retrieval", "description": "Search through loaded documents"}
+  ],
+  "capabilities": {"streaming": true, "pushNotifications": true},
+  "preferredTransport": "JSONRPC"
+}
+```
+
+### **Q2: Why is the A2A protocol important for agent communication?**
+
+**Answer**: The **A2A (Agent-to-Agent) protocol** is crucial for creating interoperable, intelligent multi-agent systems.
+
+**Key Importance**:
+
+1. **🔌 Standardized Communication**: Provides a common language for diverse agents to communicate, regardless of their internal implementation
+
+2. **📊 Capability Discovery**: AgentCards allow agents to discover each other's skills and capabilities automatically
+
+3. **🔄 Protocol Flexibility**: Supports multiple transport layers (HTTP, WebSocket) and content types (text, JSON, binary)
+
+4. **🎯 Context Preservation**: Enables rich context sharing between agents, allowing for sophisticated workflows
+
+5. **⚡ Streaming Support**: Allows real-time communication and progressive response delivery
+
+6. **🔐 Security & Trust**: Provides framework for agent authentication and secure communication
+
+7. **📈 Scalability**: Enables complex multi-agent orchestration and hierarchical agent systems
+
+**Our Implementation Benefits**:
+- **Expert Context Enhancement**: Our Expert Agent System adds sophisticated persona context to A2A calls
+- **Quality-Driven Communication**: Implements feedback loops with quality evaluation and follow-up questions  
+- **Modular Architecture**: Clean separation allows easy integration with different A2A-compliant agents
+- **Professional Standards**: Demonstrates production-ready A2A protocol implementation
+
+### **Q3: What lessons did you learn from building this A2A system?**
+
+**Answer**: Building the Expert Agent System taught us valuable lessons about **agent architecture**, **communication protocols**, and **software engineering best practices**.
+
+**🏗️ Architecture Lessons**:
+1. **Modular Design is Critical**: Breaking the 900+ line monolith into focused modules (95% size reduction) dramatically improved maintainability and testability
+2. **Separation of Concerns**: Clear boundaries between communication (`a2a_client.py`), business logic (`expert_profiles.py`), and workflow (`langgraph_nodes.py`) enable independent evolution
+3. **State Management Complexity**: LangGraph's state management requires careful design to avoid data inconsistencies across nodes
+
+**🤖 Agent Communication Lessons**:
+4. **Context is Everything**: Adding expert personas to A2A calls transformed generic responses into targeted, high-quality answers
+5. **Quality Evaluation Matters**: Implementing automated quality scoring (0-10) and follow-up logic creates truly intelligent agent behavior
+6. **Protocol Compliance**: Strict adherence to A2A standards (JSON-RPC, AgentCard format) ensures interoperability with other agents
+
+**💡 AI Behavior Lessons**:
+7. **Goal-Oriented > Reactive**: Expert agents with persistent research missions outperform simple persona-switching approaches
+8. **Persistence Drives Quality**: Experts that won't settle for surface-level answers and ask follow-up questions deliver superior results
+9. **Multi-Turn Conversations**: Real intelligence emerges from sustained expert-driven conversations, not single query-response pairs
+
+**🛠️ Engineering Lessons**:
+10. **Comprehensive Logging**: Enhanced logging with color formatting was essential for debugging complex agent interactions
+11. **Interactive Testing**: Building multiple demo modes (single query, multi-expert, interactive) accelerated development and debugging
+12. **Documentation Matters**: Detailed README and architecture diagrams are crucial for complex agent systems
+
+**🎯 Strategic Lessons**:
+13. **Expert Specialization**: Different experts (ML researcher, startup founder, security expert) provide genuinely different perspectives and value
+14. **Framework Selection**: LangGraph's flexibility enabled sophisticated workflows while maintaining A2A protocol compliance
+15. **Production Readiness**: Professional error handling, graceful shutdowns, and comprehensive testing distinguish demos from production systems
+
+**🔮 Future Implications**:
+These lessons inform our approach to building **production-grade agent ecosystems** where multiple specialized agents collaborate intelligently to solve complex problems.
 
 ## 🔄 Detailed Interaction Flow
 
