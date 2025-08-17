@@ -3,7 +3,7 @@
 A library for LangGraph agents with caching, monitoring, and agent integration.
 """
 
-from .agents import create_langgraph_agent, create_helpfulness_agent, get_default_tools
+from .agents import create_langgraph_agent, create_helpfulness_agent, get_default_tools, create_input_guardrails_node, create_output_guardrails_node, enhance_helpfulness_agent_with_guardrails, GUARDRAILS_AVAILABLE
 from .caching import CacheBackedEmbeddings, setup_llm_cache
 from .rag import ProductionRAGChain
 from .models import get_openai_model
@@ -18,5 +18,9 @@ __all__ = [
     "ProductionRAGChain",
     "get_openai_model",
     "get_default_tools",
+    "create_input_guardrails_node",
+    "create_output_guardrails_node",
+    "enhance_helpfulness_agent_with_guardrails",
+    "GUARDRAILS_AVAILABLE",
 ]
 
