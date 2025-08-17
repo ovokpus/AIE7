@@ -44,7 +44,7 @@ class CacheBackedEmbeddings:
             self.base_embeddings, 
             store, 
             namespace=safe_namespace,
-            batch_size=batch_size
+            batch_size=batch_size,
         )
     
     def get_embeddings(self):
