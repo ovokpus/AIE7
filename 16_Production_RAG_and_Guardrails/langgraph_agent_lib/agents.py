@@ -25,11 +25,13 @@ from .rag import ProductionRAGChain
 try:
     import guardrails as gd
     from guardrails import Guard
-    from guardrails.hub import ToxicLanguage, DetectPII, RestrictToTopic, NSFWText, CompetitorCheck
+    from guardrails.hub import ProfanityFree, GuardrailsPII, RestrictToTopic, CompetitorCheck, DetectJailbreak
     GUARDRAILS_AVAILABLE = True
+    print("✅ Guardrails available - using real implementation")
 except ImportError:
     GUARDRAILS_AVAILABLE = False
-    print("⚠️ Guardrails not available - some functionality will use mock implementations")
+    print("❌ Guardrails not available - functionality will not work properly")
+    raise ImportError("Guardrails AI library is required but not available. Please install: pip install guardrails-ai")
 
 
 class AgentState(TypedDict):
@@ -88,9 +90,9 @@ def get_default_tools(rag_chain: Optional[ProductionRAGChain] = None) -> List:
 
 
 def _initialize_guardrails():
-    """Initialize guardrails guards if available."""
+    """Initialize guardrails guards - requires Guardrails to be available."""
     if not GUARDRAILS_AVAILABLE:
-        return None, None, None, None
+        raise RuntimeError("Guardrails AI library is required but not available")
     
     try:
         # Topic Restriction Guard
@@ -101,16 +103,13 @@ def _initialize_guardrails():
         )
         
         # Jailbreak Detection Guard
-        jailbreak_guard = Guard().use(
-            CompetitorCheck,
-            competitors=["ignore instructions", "jailbreak", "bypass", "unrestricted AI", "DAN", "do anything now"]
-        )
+        jailbreak_guard = Guard().use(DetectJailbreak(on_fail="exception"))
         
         # PII Protection Guard
-        pii_guard = Guard().use(DetectPII, pii_entities=["CREDIT_CARD", "SSN", "PHONE_NUMBER", "EMAIL_ADDRESS"])
+        pii_guard = Guard().use(GuardrailsPII(entities=["CREDIT_CARD", "SSN", "PHONE_NUMBER", "EMAIL_ADDRESS"], on_fail="fix"))
         
         # Content Moderation Guard
-        content_guard = Guard().use(ToxicLanguage)
+        content_guard = Guard().use(ProfanityFree(threshold=0.8, validation_method="sentence", on_fail="exception"))
         
         return topic_guard, jailbreak_guard, pii_guard, content_guard
         
@@ -153,7 +152,7 @@ def create_input_guardrails_node():
         violations = []
         guard_results = {}
         
-        if GUARDRAILS_AVAILABLE and topic_guard and jailbreak_guard and pii_guard:
+        if topic_guard and jailbreak_guard and pii_guard:
             # 1. Jailbreak Detection
             try:
                 jailbreak_result = jailbreak_guard.validate(user_input)
@@ -210,25 +209,14 @@ def create_input_guardrails_node():
                 print(f"  ⚠️ PII check error: {e}")
         
         else:
-            # Mock implementation when Guardrails not available
-            print("  🔍 Mock validation (Guardrails not configured)")
+            # Guardrails not available - should not reach this since we require it
+            print("  ❌ Guardrails not available - this should not happen")
             guard_results = {
-                "jailbreak": {"passed": True},
-                "topic": {"passed": True}, 
-                "pii": {"passed": True}
+                "jailbreak": {"passed": False, "error": "Guardrails not available"},
+                "topic": {"passed": False, "error": "Guardrails not available"}, 
+                "pii": {"passed": False, "error": "Guardrails not available"}
             }
-            
-            # Simple heuristic checks for demo
-            lower_input = user_input.lower()
-            if any(word in lower_input for word in ["ignore", "jailbreak", "hack", "bypass"]):
-                violations.append("potential_jailbreak")
-                guard_results["jailbreak"]["passed"] = False
-                print("  ⚠️ Potential jailbreak detected (mock)")
-            
-            if any(word in lower_input for word in ["crypto", "investment", "gambling", "politics"]):
-                violations.append("topic_violation")
-                guard_results["topic"]["passed"] = False
-                print("  ⚠️ Off-topic content detected (mock)")
+            violations.append("guardrails_unavailable")
         
         return {
             "input_guard_results": guard_results,
@@ -283,7 +271,7 @@ def create_output_guardrails_node(rag_chain: Optional[ProductionRAGChain] = None
                 user_query = msg.content
                 break
         
-        if GUARDRAILS_AVAILABLE and content_guard and pii_guard:
+        if content_guard and pii_guard:
             # 1. Content Moderation
             try:
                 content_result = content_guard.validate(response_content)
@@ -328,26 +316,14 @@ def create_output_guardrails_node(rag_chain: Optional[ProductionRAGChain] = None
                     print(f"  ⚠️ Factuality check error (continuing): {e}")
         
         else:
-            # Mock implementation when Guardrails not available
-            print("  🔍 Mock output validation (Guardrails not configured)")
+            # Guardrails not available - should not reach this since we require it
+            print("  ❌ Guardrails not available - this should not happen")
             guard_results = {
-                "profanity": {"passed": True},
-                "output_pii": {"passed": True},
-                "factuality": {"passed": True}
+                "profanity": {"passed": False, "error": "Guardrails not available"},
+                "output_pii": {"passed": False, "error": "Guardrails not available"},
+                "factuality": {"passed": False, "error": "Guardrails not available"}
             }
-            
-            # Simple heuristic checks for demo
-            response_lower = response_content.lower()
-            if any(word in response_lower for word in ["damn", "hell", "crap"]):
-                violations.append("mild_profanity")
-                guard_results["profanity"]["passed"] = False
-                print("  ⚠️ Mild profanity detected (mock)")
-            
-            # Check for potential PII patterns
-            if re.search(r'\b\d{3}-\d{2}-\d{4}\b', response_content):  # SSN pattern
-                violations.append("potential_pii_leakage")
-                guard_results["output_pii"]["passed"] = False
-                print("  ⚠️ Potential PII pattern detected (mock)")
+            violations.append("guardrails_unavailable")
         
         return {
             "output_guard_results": guard_results,
