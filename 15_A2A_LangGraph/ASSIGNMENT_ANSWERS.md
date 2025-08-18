@@ -180,7 +180,7 @@ graph TD
 
 ### **Q3: What lessons did you learn from building this A2A system?**
 
-**Answer**: Building the Expert Agent System taught us valuable lessons about **agent architecture**, **communication protocols**, and **software engineering best practices**.
+**✅ Answer**: Building the Expert Agent System taught us valuable lessons about **agent architecture**, **communication protocols**, and **software engineering best practices**.
 
 **🏗️ Architecture Lessons**:
 1. **Modular Design is Critical**: Breaking the 900+ line monolith into focused modules (95% size reduction) dramatically improved maintainability and testability
