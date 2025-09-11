@@ -1,0 +1,292 @@
+{
+  "evolved_questions": [
+    {
+      "question_id": "33f39893-8c36-4447-850f-2c660efc978b",
+      "question": "How does the variation in the definition of an academic year\u2014considering both credit or clock hour minimums and the specific instructional time requirements\u2014impact the determination of a student's cost of attendance and eligibility for Pell Grant awards under Title IV, especially when the school's academic calendar does not align with the federally mandated academic year standards?",
+      "evolution_type": "multi_context_evolution",
+      "complexity_level": 3
+    },
+    {
+      "question_id": "148074c6-b871-4a0a-b000-1c22c14c0193",
+      "question": "How does the method of measuring academic progress differ between non-term programs and subscription-based programs, considering their respective structures and billing practices, and what implications might these differences have for compliance with Title IV regulations?",
+      "evolution_type": "multi_context_evolution",
+      "complexity_level": 3
+    },
+    {
+      "question_id": "79ebd78a-c86f-4891-aa1c-f9da64b1efb1",
+      "question": "If a full-time undergraduate student completes exactly the minimum required credit hours to meet the academic year's standard, and the institution defines the academic year as containing 24 semester or trimester credit hours over a 30-week instructional period, what is the minimum number of credit hours the student must earn per week to meet the minimum annual requirement? Additionally, if the student earns all these hours uniformly each week, how many credit hours will they have accumulated by the end of the academic year?",
+      "evolution_type": "reasoning_evolution",
+      "complexity_level": 4
+    },
+    {
+      "question_id": "a061baa9-693f-4caa-b9f6-82714d46c782",
+      "question": "If a graduate or professional program does not have a specified minimum number of hours in an academic year, but a school defines such a year as containing 20 credit hours over 24 weeks, what could be the potential implications for a student\u2019s eligibility for federal financial aid programs, particularly in relation to Pell Grant calculations and loan disbursements? Explain the reasoning process that connects the absence of minimum hour requirements to the possible effects on financial aid processing.",
+      "evolution_type": "reasoning_evolution",
+      "complexity_level": 4
+    },
+    {
+      "question_id": "3ce01df1-5b90-414d-b488-28baca314910",
+      "question": "What is the minimum number of semester or trimester credit hours that a full-time undergraduate student must earn within an academic year, as stipulated by law and regulations, and how does this requirement differ from the standards set for graduate and professional programs?",
+      "evolution_type": "simple_evolution",
+      "complexity_level": 2
+    },
+    {
+      "question_id": "0f0eb6d1-b0f6-4e0a-83c3-84f15a79308c",
+      "question": "How does a non-term academic calendar differ from a traditional term-based calendar in terms of the flexibility of class start and end dates, and what alternative methods are used to measure academic progress within such programs?",
+      "evolution_type": "simple_evolution",
+      "complexity_level": 2
+    },
+    {
+      "question_id": "0e608766-60e4-4faf-8725-cdfa8642a27d",
+      "question": "During a term or payment period, what specific activities or events related to examinations must take place, including the minimum requirements for scheduled study days, the role of instructional materials and instructor support in asynchronous coursework, and how the timing and nature of academic engagement influence the determination of instructional time?",
+      "evolution_type": "simple_evolution",
+      "complexity_level": 2
+    },
+    {
+      "question_id": "33f39893-8c36-4447-850f-2c660efc978b",
+      "question": "How does the variation in the definition of an academic year\u2014considering both credit or clock hour minimums and the specific instructional time requirements\u2014impact the determination of a student's cost of attendance and eligibility for Pell Grant awards under Title IV, especially when the school's academic calendar does not align with the federally mandated academic year standards?",
+      "evolution_type": "multi_context_evolution",
+      "complexity_level": 3
+    },
+    {
+      "question_id": "148074c6-b871-4a0a-b000-1c22c14c0193",
+      "question": "How does the method of measuring academic progress differ between non-term programs and subscription-based programs, considering their respective structures and billing practices, and what implications might these differences have for compliance with Title IV regulations?",
+      "evolution_type": "multi_context_evolution",
+      "complexity_level": 3
+    },
+    {
+      "question_id": "79ebd78a-c86f-4891-aa1c-f9da64b1efb1",
+      "question": "If a full-time undergraduate student completes exactly the minimum required credit hours to meet the academic year's standard, and the institution defines the academic year as containing 24 semester or trimester credit hours over a 30-week instructional period, what is the minimum number of credit hours the student must earn per week to meet the minimum annual requirement? Additionally, if the student earns all these hours uniformly each week, how many credit hours will they have accumulated by the end of the academic year?",
+      "evolution_type": "reasoning_evolution",
+      "complexity_level": 4
+    },
+    {
+      "question_id": "a061baa9-693f-4caa-b9f6-82714d46c782",
+      "question": "If a graduate or professional program does not have a specified minimum number of hours in an academic year, but a school defines such a year as containing 20 credit hours over 24 weeks, what could be the potential implications for a student\u2019s eligibility for federal financial aid programs, particularly in relation to Pell Grant calculations and loan disbursements? Explain the reasoning process that connects the absence of minimum hour requirements to the possible effects on financial aid processing.",
+      "evolution_type": "reasoning_evolution",
+      "complexity_level": 4
+    },
+    {
+      "question_id": "3ce01df1-5b90-414d-b488-28baca314910",
+      "question": "What is the minimum number of semester or trimester credit hours that a full-time undergraduate student must earn within an academic year, as stipulated by law and regulations, and how does this requirement differ from the standards set for graduate and professional programs?",
+      "evolution_type": "simple_evolution",
+      "complexity_level": 2
+    },
+    {
+      "question_id": "0f0eb6d1-b0f6-4e0a-83c3-84f15a79308c",
+      "question": "How does a non-term academic calendar differ from a traditional term-based calendar in terms of the flexibility of class start and end dates, and what alternative methods are used to measure academic progress within such programs?",
+      "evolution_type": "simple_evolution",
+      "complexity_level": 2
+    },
+    {
+      "question_id": "0e608766-60e4-4faf-8725-cdfa8642a27d",
+      "question": "During a term or payment period, what specific activities or events related to examinations must take place, including the minimum requirements for scheduled study days, the role of instructional materials and instructor support in asynchronous coursework, and how the timing and nature of academic engagement influence the determination of instructional time?",
+      "evolution_type": "simple_evolution",
+      "complexity_level": 2
+    },
+    {
+      "question_id": "33f39893-8c36-4447-850f-2c660efc978b",
+      "question": "How does the variation in the definition of an academic year\u2014considering both credit or clock hour minimums and the specific instructional time requirements\u2014impact the determination of a student's cost of attendance and eligibility for Pell Grant awards under Title IV, especially when the school's academic calendar does not align with the federally mandated academic year standards?",
+      "evolution_type": "multi_context_evolution",
+      "complexity_level": 3
+    },
+    {
+      "question_id": "148074c6-b871-4a0a-b000-1c22c14c0193",
+      "question": "How does the method of measuring academic progress differ between non-term programs and subscription-based programs, considering their respective structures and billing practices, and what implications might these differences have for compliance with Title IV regulations?",
+      "evolution_type": "multi_context_evolution",
+      "complexity_level": 3
+    },
+    {
+      "question_id": "79ebd78a-c86f-4891-aa1c-f9da64b1efb1",
+      "question": "If a full-time undergraduate student completes exactly the minimum required credit hours to meet the academic year's standard, and the institution defines the academic year as containing 24 semester or trimester credit hours over a 30-week instructional period, what is the minimum number of credit hours the student must earn per week to meet the minimum annual requirement? Additionally, if the student earns all these hours uniformly each week, how many credit hours will they have accumulated by the end of the academic year?",
+      "evolution_type": "reasoning_evolution",
+      "complexity_level": 4
+    },
+    {
+      "question_id": "a061baa9-693f-4caa-b9f6-82714d46c782",
+      "question": "If a graduate or professional program does not have a specified minimum number of hours in an academic year, but a school defines such a year as containing 20 credit hours over 24 weeks, what could be the potential implications for a student\u2019s eligibility for federal financial aid programs, particularly in relation to Pell Grant calculations and loan disbursements? Explain the reasoning process that connects the absence of minimum hour requirements to the possible effects on financial aid processing.",
+      "evolution_type": "reasoning_evolution",
+      "complexity_level": 4
+    },
+    {
+      "question_id": "3ce01df1-5b90-414d-b488-28baca314910",
+      "question": "What is the minimum number of semester or trimester credit hours that a full-time undergraduate student must earn within an academic year, as stipulated by law and regulations, and how does this requirement differ from the standards set for graduate and professional programs?",
+      "evolution_type": "simple_evolution",
+      "complexity_level": 2
+    },
+    {
+      "question_id": "0f0eb6d1-b0f6-4e0a-83c3-84f15a79308c",
+      "question": "How does a non-term academic calendar differ from a traditional term-based calendar in terms of the flexibility of class start and end dates, and what alternative methods are used to measure academic progress within such programs?",
+      "evolution_type": "simple_evolution",
+      "complexity_level": 2
+    },
+    {
+      "question_id": "0e608766-60e4-4faf-8725-cdfa8642a27d",
+      "question": "During a term or payment period, what specific activities or events related to examinations must take place, including the minimum requirements for scheduled study days, the role of instructional materials and instructor support in asynchronous coursework, and how the timing and nature of academic engagement influence the determination of instructional time?",
+      "evolution_type": "simple_evolution",
+      "complexity_level": 2
+    },
+    {
+      "question_id": "33f39893-8c36-4447-850f-2c660efc978b",
+      "question": "How does the variation in the definition of an academic year\u2014considering both credit or clock hour minimums and the specific instructional time requirements\u2014impact the determination of a student's cost of attendance and eligibility for Pell Grant awards under Title IV, especially when the school's academic calendar does not align with the federally mandated academic year standards?",
+      "evolution_type": "multi_context_evolution",
+      "complexity_level": 3
+    },
+    {
+      "question_id": "148074c6-b871-4a0a-b000-1c22c14c0193",
+      "question": "How does the method of measuring academic progress differ between non-term programs and subscription-based programs, considering their respective structures and billing practices, and what implications might these differences have for compliance with Title IV regulations?",
+      "evolution_type": "multi_context_evolution",
+      "complexity_level": 3
+    },
+    {
+      "question_id": "79ebd78a-c86f-4891-aa1c-f9da64b1efb1",
+      "question": "If a full-time undergraduate student completes exactly the minimum required credit hours to meet the academic year's standard, and the institution defines the academic year as containing 24 semester or trimester credit hours over a 30-week instructional period, what is the minimum number of credit hours the student must earn per week to meet the minimum annual requirement? Additionally, if the student earns all these hours uniformly each week, how many credit hours will they have accumulated by the end of the academic year?",
+      "evolution_type": "reasoning_evolution",
+      "complexity_level": 4
+    },
+    {
+      "question_id": "a061baa9-693f-4caa-b9f6-82714d46c782",
+      "question": "If a graduate or professional program does not have a specified minimum number of hours in an academic year, but a school defines such a year as containing 20 credit hours over 24 weeks, what could be the potential implications for a student\u2019s eligibility for federal financial aid programs, particularly in relation to Pell Grant calculations and loan disbursements? Explain the reasoning process that connects the absence of minimum hour requirements to the possible effects on financial aid processing.",
+      "evolution_type": "reasoning_evolution",
+      "complexity_level": 4
+    },
+    {
+      "question_id": "3ce01df1-5b90-414d-b488-28baca314910",
+      "question": "What is the minimum number of semester or trimester credit hours that a full-time undergraduate student must earn within an academic year, as stipulated by law and regulations, and how does this requirement differ from the standards set for graduate and professional programs?",
+      "evolution_type": "simple_evolution",
+      "complexity_level": 2
+    },
+    {
+      "question_id": "0f0eb6d1-b0f6-4e0a-83c3-84f15a79308c",
+      "question": "How does a non-term academic calendar differ from a traditional term-based calendar in terms of the flexibility of class start and end dates, and what alternative methods are used to measure academic progress within such programs?",
+      "evolution_type": "simple_evolution",
+      "complexity_level": 2
+    },
+    {
+      "question_id": "0e608766-60e4-4faf-8725-cdfa8642a27d",
+      "question": "During a term or payment period, what specific activities or events related to examinations must take place, including the minimum requirements for scheduled study days, the role of instructional materials and instructor support in asynchronous coursework, and how the timing and nature of academic engagement influence the determination of instructional time?",
+      "evolution_type": "simple_evolution",
+      "complexity_level": 2
+    }
+  ],
+  "question_answers": [
+    {
+      "question_id": "33f39893-8c36-4447-850f-2c660efc978b",
+      "answer": "The variation in the definition of an academic year, which includes both minimum standards for coursework measured in credit or clock hours and specific instructional time requirements, influences the determination of a student's cost of attendance and eligibility for Pell Grant awards under Title IV in several ways. When a school's designated academic year differs from the federally mandated minimum standards\u2014either in credit or clock hours or in weeks of instructional time\u2014this can affect how the institution calculates and disburses financial aid. \n\nSpecifically, the school's defined academic year must meet the regulatory minimums for both coursework hours and instructional time to be compliant with federal requirements. If the school's academic calendar does not align with these standards\u2014for example, if the academic year is shorter or structured differently\u2014this discrepancy can impact the consistent application of Pell Grant eligibility criteria and the accurate calculation of a student's cost of attendance. \n\nThe Department emphasizes that the federally recognized academic year for Title IV purposes must meet these minimum standards, regardless of the school's specific academic calendar. Therefore, institutions must ensure their academic year definitions conform to federal minimums to maintain eligibility for federal aid, including Pell Grants. When there is a mismatch or variation, the school may need to adjust its calculation methods to align with federal standards, ensuring that aid eligibility and the student's cost of attendance are accurately determined based on the federally approved academic year, not solely on the school's internal calendar."
+    },
+    {
+      "question_id": "148074c6-b871-4a0a-b000-1c22c14c0193",
+      "answer": "The method of measuring academic progress differs between non-term programs and subscription-based programs primarily in terms of the units used and the billing structure, which can have implications for compliance with Title IV regulations.\n\nIn non-term programs, academic progress is measured in either credit hours or clock hours, and classes do not necessarily follow a set start and end date within a term. This flexible scheduling allows for continuous or irregular instruction, and progress is assessed based on accumulated credit or clock hours.\n\nIn contrast, subscription-based programs are term-based but operate on a subscription billing model. Students are charged for each term on a subscription basis with the expectation of completing a specified number of credit hours or their equivalent during that term. Although the billing is structured around terms, the classes themselves are not required to begin or end within a fixed time frame, and the program may resemble a non-term program in its scheduling.\n\nThe implications for Title IV compliance are significant. While non-term programs and subscription-based programs may both measure progress in credit or clock hours, the subscription-based model\u2019s billing and scheduling structure must align with federal requirements for the academic calendar and progress standards. For instance, a subscription-based program, despite being term-based for billing, might be treated as a non-term program for Title IV purposes if the classes do not begin and end within a set time frame. This can affect how the program is evaluated for satisfactory academic progress, how disbursements are scheduled, and how academic years are defined.\n\nTherefore, institutions must carefully consider their measurement methods and billing practices to ensure they meet Title IV regulations, particularly in distinguishing whether their program functions as a term-based or non-term program for federal financial aid purposes."
+    },
+    {
+      "question_id": "79ebd78a-c86f-4891-aa1c-f9da64b1efb1",
+      "answer": "The minimum credit hours required for a full-time undergraduate student to meet the academic year's standard is 24 semester or trimester credit hours. The institution's defined academic year is 24 credit hours over a 30-week instructional period.\n\nTo determine the minimum number of credit hours the student must earn per week:\n\n\\[\n\\text{Weekly credit hours} = \\frac{\\text{Total required credit hours}}{\\text{Number of weeks}} = \\frac{24}{30} = 0.8\n\\]\n\nTherefore, the student must earn at least 0.8 credit hours each week.\n\nIf the student earns these hours uniformly each week:\n\n\\[\n\\text{Total accumulated by the end of the year} = 0.8 \\text{ credit hours/week} \\times 30 \\text{ weeks} = 24 \\text{ credit hours}\n\\]\n\n**In summary:**\n\n- The student must earn at least **0.8 credit hours per week** to meet the minimum annual requirement.\n- If earning uniformly, the student will accumulate **exactly 24 credit hours** by the end of the academic year."
+    },
+    {
+      "question_id": "a061baa9-693f-4caa-b9f6-82714d46c782",
+      "answer": "Since graduate and professional programs are not subject to a minimum number of hours in an academic year, the school's definition of an academic year\u2014as in this case, 20 credit hours over 24 weeks\u2014is primarily a matter of institutional policy rather than regulatory compliance. However, this definition can have implications for federal financial aid programs, particularly Pell Grant calculations and loan disbursements.\n\n**Potential implications include:**\n\n1. **Pell Grant Calculations:**  \n   The Pell Grant program requires that the academic year meet specific regulatory standards for both credit hours and weeks of instructional time. If the school's defined academic year (20 credit hours over 24 weeks) does not align with or meet these minimum standards, it could affect the calculation of Pell Grant awards. Specifically, the disbursement and eligibility calculations are based on the academic year\u2019s structure; a shorter or less intensive academic year than the regulatory minimum may lead to adjustments or limitations in Pell Grant eligibility.\n\n2. **Loan Disbursements:**  \n   For federal student loans (such as Direct Loans), the timing of disbursements and the progression of annual loan limits are influenced by the academic year's definition. If the academic year is shorter or structured differently than required, it might impact when and how much a student can borrow within an award year, potentially leading to delays or adjustments in disbursements.\n\n**Reasoning process:**  \nThe absence of a regulatory minimum hour requirement for graduate and professional programs means that the school\u2019s definition of an academic year is not constrained by federal standards. However, because federal aid programs rely on standardized definitions and minimums to ensure consistent and fair disbursement, a non-standard academic year (e.g., 20 credit hours over 24 weeks) might not be recognized as a full academic year for federal purposes. This could result in the aid not being calculated or disbursed in the standard way, potentially reducing eligibility or delaying aid disbursement.\n\n**In summary:**  \nWhile the program itself does not have a minimum hours requirement, defining an academic year as 20 credit hours over 24 weeks could lead to complications with Pell Grant eligibility and loan disbursements. These effects stem from the need for the academic year to meet regulatory standards for aid calculations, and deviations from these standards can result in adjustments to students' federal aid benefits."
+    },
+    {
+      "question_id": "3ce01df1-5b90-414d-b488-28baca314910",
+      "answer": "The minimum number of semester or trimester credit hours that a full-time undergraduate student must earn within an academic year is 24 credit hours, as stipulated by law and regulations. In contrast, for graduate and professional programs, there is no minimum number of hours required in an academic year."
+    },
+    {
+      "question_id": "0f0eb6d1-b0f6-4e0a-83c3-84f15a79308c",
+      "answer": "A non-term academic calendar differs from a traditional term-based calendar primarily in its flexibility regarding the scheduling of class start and end dates. In a traditional term-based calendar, all classes are scheduled to begin and end within a predefined set time frame, such as a semester or quarter, providing a structured and fixed schedule. Conversely, in a non-term academic calendar, classes do not have fixed start and end dates within a specific period, allowing for more flexible scheduling.\n\nRegarding the measurement of academic progress within non-term programs, progress is not necessarily measured in credit hours as in traditional calendars. Instead, academic progress can be assessed using either credit hours or clock hours, depending on the program. This flexibility accommodates varying scheduling formats and makes it easier to track student advancement in programs without fixed term structures."
+    },
+    {
+      "question_id": "0e608766-60e4-4faf-8725-cdfa8642a27d",
+      "answer": "During a term or payment period, specific activities related to examinations include the occurrence of at least one scheduled day of study designated for examinations. This ensures that examinations are formally incorporated into the academic schedule. \n\nIn programs offering asynchronous coursework through distance education or correspondence courses, the institution must make available the necessary instructional materials, resources, and instructor support required for students to engage academically and achieve course objectives. This support facilitates student learning and preparedness for examinations.\n\nRegarding academic engagement, the program expects enrolled students to perform educational activities that demonstrate active participation during the week, even when coursework is completed on a flexible schedule. The term \"asynchronous coursework\" refers to coursework completed independently by students at any time, contrasting with synchronous coursework, where communication occurs in real-time.\n\nInstructional time excludes scheduled breaks, activities not classified as academic engagement, periods of orientation, or counseling. Consequently, the number of instructional weeks may be less than the total calendar weeks between the start and end of classes or examinations. Although there is no regulatory standard for the number of instructional hours constituting a day of instruction, the interpretation of instructional time is left to reasonable judgment, ensuring that the activities and timing of academic engagement, including examinations, are appropriately accounted for in determining instructional time."
+    }
+  ],
+  "question_contexts": [
+    {
+      "question_id": "33f39893-8c36-4447-850f-2c660efc978b",
+      "contexts": [
+        "Credit or Clock Hours in an Academic Year\nFor undergraduate educational programs, the law and regulations set the following minimum standards for coursework\nearned by a full-time student in an academic year:\nFor a program measured in credit hours, 24 semester or trimester credit hours or 36 quarter credit hours; or\nFor a program measured in clock hours, 900 clock hours.\nFor graduate and professional programs, there is no minimum number of hours in an academic year.\nAcademic Year Definition and Effect on Awards\nThe Title IV academic year that a school defines for a program must meet the regulatory minimums for both clock or\ncredit hours and weeks of instructional time, as described above. In some instances, the defined academic year for a\nprogram may not coincide with the academic calendar of the school. For example, a school might define the academic\nyear for a program as containing 24 semester hours and 30 weeks of instructional time but have an academic calendar\nconsisting of four 8-",
+        "for a term or payment period, at least one scheduled day of study for examinations occurs;\nor\nIn a program offered using asynchronous coursework through distance education or correspondence courses, the\nschool makes available the instructional materials, other resources, and instructor support necessary for academic\nengagement and completion of course objectives; and\nIn a program using asynchronous coursework through distance education, the school expects enrolled students to\nperform educational activities demonstrating academic engagement during the week.\nThe term \"asynchronous coursework\" refers to coursework that students generally complete on their own schedule, at any\ntime. This contrasts with \"synchronous coursework,\" in which students and their instructors are in communication at the\nsame time. For information on distance education and correspondence coursework, see Volume 2, Chapter 2.\nInstructional time excludes scheduled breaks and activities that aren't included in the defin"
+      ]
+    },
+    {
+      "question_id": "148074c6-b871-4a0a-b000-1c22c14c0193",
+      "contexts": [
+        "non-term (includes clock-hour calendars), or\nsubscription-based.\nIn a standard term or nonstandard term academic calendar, a term is generally a period in which all classes are\nscheduled to begin and end within a set time frame, and academic progress is measured in credit hours.\nIn a non-term academic calendar, classes do not begin and end within a set time frame, such as a term. Academic\nprogress in a non-term program can be measured in either credit or clock hours. In some cases (as discussed below), a\nprogram with terms must be treated as a non-term program for Title IV purposes.\nA subscription-based academic calendar is used only by subscription-based programs. A subscription-based program\nis a term-based program in which the school charges a student for each term on a subscription basis with the expectation\nthat the student will complete a specified number of credit hours (or the equivalent) during that term. However, classes in\na subscription-based program are not required to beg",
+        "non-term (includes clock-hour calendars), or\nsubscription-based.\nIn a standard term or nonstandard term academic calendar, a term is generally a period in which all classes are\nscheduled to begin and end within a set time frame, and academic progress is measured in credit hours.\nIn a non-term academic calendar, classes do not begin and end within a set time frame, such as a term. Academic\nprogress in a non-term program can be measured in either credit or clock hours. In some cases (as discussed below), a\nprogram with terms must be treated as a non-term program for Title IV purposes.\nA subscription-based academic calendar is used only by subscription-based programs. A subscription-based program\nis a term-based program in which the school charges a student for each term on a subscription basis with the expectation\nthat the student will complete a specified number of credit hours (or the equivalent) during that term. However, classes in\na subscription-based program are not required to beg"
+      ]
+    },
+    {
+      "question_id": "79ebd78a-c86f-4891-aa1c-f9da64b1efb1",
+      "contexts": [
+        "Credit or Clock Hours in an Academic Year\nFor undergraduate educational programs, the law and regulations set the following minimum standards for coursework\nearned by a full-time student in an academic year:\nFor a program measured in credit hours, 24 semester or trimester credit hours or 36 quarter credit hours; or\nFor a program measured in clock hours, 900 clock hours.\nFor graduate and professional programs, there is no minimum number of hours in an academic year.\nAcademic Year Definition and Effect on Awards\nThe Title IV academic year that a school defines for a program must meet the regulatory minimums for both clock or\ncredit hours and weeks of instructional time, as described above. In some instances, the defined academic year for a\nprogram may not coincide with the academic calendar of the school. For example, a school might define the academic\nyear for a program as containing 24 semester hours and 30 weeks of instructional time but have an academic calendar\nconsisting of four 8-week nonstandard terms (i.e., 32 weeks of instructional time). This would affect the calculation of Pell\nGrant awards, as explained in Volume 7.\nAs discussed later in this chapter and in Volume 8, Chapter 6, the timing of disbursements and, for the Direct Loan\nProgram, annual loan limit progression will be affected if a program is an academic year in length in credit or clock hours\nbut not in weeks of instructional time, or for a program longer than an academic year in length, if a student9s com"
+      ]
+    },
+    {
+      "question_id": "a061baa9-693f-4caa-b9f6-82714d46c782",
+      "contexts": [
+        "Credit or Clock Hours in an Academic Year\nFor undergraduate educational programs, the law and regulations set the following minimum standards for coursework\nearned by a full-time student in an academic year:\nFor a program measured in credit hours, 24 semester or trimester credit hours or 36 quarter credit hours; or\nFor a program measured in clock hours, 900 clock hours.\nFor graduate and professional programs, there is no minimum number of hours in an academic year.\nAcademic Year Definition and Effect on Awards\nThe Title IV academic year that a school defines for a program must meet the regulatory minimums for both clock or\ncredit hours and weeks of instructional time, as described above. In some instances, the defined academic year for a\nprogram may not coincide with the academic calendar of the school. For example, a school might define the academic\nyear for a program as containing 24 semester hours and 30 weeks of instructional time but have an academic calendar\nconsisting of four 8-week nonstandard terms (i.e., 32 weeks of instructional time). This would affect the calculation of Pell\nGrant awards, as explained in Volume 7.\nAs discussed later in this chapter and in Volume 8, Chapter 6, the timing of disbursements and, for the Direct Loan\nProgram, annual loan limit progression will be affected if a program is an academic year in length in credit or clock hours\nbut not in weeks of instructional time, or for a program longer than an academic year in length, if a student9s com"
+      ]
+    },
+    {
+      "question_id": "3ce01df1-5b90-414d-b488-28baca314910",
+      "contexts": [
+        "Credit or Clock Hours in an Academic Year\nFor undergraduate educational programs, the law and regulations set the following minimum standards for coursework\nearned by a full-time student in an academic year:\nFor a program measured in credit hours, 24 semester or trimester credit hours or 36 quarter credit hours; or\nFor a program measured in clock hours, 900 clock hours.\nFor graduate and professional programs, there is no minimum number of hours in an academic year.\nAcademic Year Definition and Effect on Awards\nThe Title IV academic year that a school defines for a program must meet the regulatory minimums for both clock or\ncredit hours and weeks of instructional time, as described above. In some instances, the defined academic year for a\nprogram may not coincide with the academic calendar of the school. For example, a school might define the academic\nyear for a program as containing 24 semester hours and 30 weeks of instructional time but have an academic calendar\nconsisting of four 8-week nonstandard terms (i.e., 32 weeks of instructional time). This would affect the calculation of Pell\nGrant awards, as explained in Volume 7.\nAs discussed later in this chapter and in Volume 8, Chapter 6, the timing of disbursements and, for the Direct Loan\nProgram, annual loan limit progression will be affected if a program is an academic year in length in credit or clock hours\nbut not in weeks of instructional time, or for a program longer than an academic year in length, if a student9s com"
+      ]
+    },
+    {
+      "question_id": "0f0eb6d1-b0f6-4e0a-83c3-84f15a79308c",
+      "contexts": [
+        "non-term (includes clock-hour calendars), or\nsubscription-based.\nIn a standard term or nonstandard term academic calendar, a term is generally a period in which all classes are\nscheduled to begin and end within a set time frame, and academic progress is measured in credit hours.\nIn a non-term academic calendar, classes do not begin and end within a set time frame, such as a term. Academic\nprogress in a non-term program can be measured in either credit or clock hours. In some cases (as discussed below), a\nprogram with terms must be treated as a non-term program for Title IV purposes.\nA subscription-based academic calendar is used only by subscription-based programs. A subscription-based program\nis a term-based program in which the school charges a student for each term on a subscription basis with the expectation\nthat the student will complete a specified number of credit hours (or the equivalent) during that term. However, classes in\na subscription-based program are not required to begin or end within a specific timeframe in each term, as is the case in a\nterm-based calendar that is not subscription-based. For more detail on subscription-based programs, see Volume 2,\nChapter 2.\nA subscription-based academic calendar consists of \"subscription periods\" that are either standard terms or substantially\nequal nonstandard terms (for guidance on when terms are considered to be substantially equal in length, see <Payment\nperiods for programs using standard terms or substantially equal"
+      ]
+    },
+    {
+      "question_id": "0e608766-60e4-4faf-8725-cdfa8642a27d",
+      "contexts": [
+        "for a term or payment period, at least one scheduled day of study for examinations occurs;\nor\nIn a program offered using asynchronous coursework through distance education or correspondence courses, the\nschool makes available the instructional materials, other resources, and instructor support necessary for academic\nengagement and completion of course objectives; and\nIn a program using asynchronous coursework through distance education, the school expects enrolled students to\nperform educational activities demonstrating academic engagement during the week.\nThe term \"asynchronous coursework\" refers to coursework that students generally complete on their own schedule, at any\ntime. This contrasts with \"synchronous coursework,\" in which students and their instructors are in communication at the\nsame time. For information on distance education and correspondence coursework, see Volume 2, Chapter 2.\nInstructional time excludes scheduled breaks and activities that aren't included in the definition of \"academic\nengagement\" (see Volume 5, Chapter 2 3 Part 1 for more information) or periods of orientation or counseling. Therefore,\nthe weeks of instructional time may be less than the number of calendar weeks that elapse between the first day of\nclasses and the last day of classes or examinations. Note that the Department has not set a regulatory standard for the\nnumber of hours of instructional time that make up one day of instruction. This has been left to the reasonable\ninterpretation"
+      ]
+    },
+    {
+      "question_id": "33f39893-8c36-4447-850f-2c660efc978b",
+      "contexts": [
+        "Credit or Clock Hours in an Academic Year\nFor undergraduate educational programs, the law and regulations set the following minimum standards for coursework\nearned by a full-time student in an academic year:\nFor a program measured in credit hours, 24 semester or trimester credit hours or 36 quarter credit hours; or\nFor a program measured in clock hours, 900 clock hours.\nFor graduate and professional programs, there is no minimum number of hours in an academic year.\nAcademic Year Definition and Effect on Awards\nThe Title IV academic year that a school defines for a program must meet the regulatory minimums for both clock or\ncredit hours and weeks of instructional time, as described above. In some instances, the defined academic year for a\nprogram may not coincide with the academic calendar of the school. For example, a school might define the academic\nyear for a program as containing 24 semester hours and 30 weeks of instructional time but have an academic calendar\nconsisting of four 8-",
+        "Volume 3\nAcademic Calendars, Cost of Attendance, and\nPackaging\nIntroduction\nThis volume of the Federal Student Aid (FSA) Handbook discusses the academic calendar, payment period, and\ndisbursement requirements for awarding aid under the Title IV student financial aid programs, determining a student9s\ncost of attendance, and packaging Title IV aid.\nThroughout this volume of the Handbook, the words \"we,\" \"our,\" and \"us\" refer to the United States Department of\nEducation (the Department). The word \"you\" refers to the primary audience of the Handbook, school financial aid\nadministrators. In other volumes of the Handbook we use \"institution,\" \"school,\" and \"college\" interchangeably, unless a\nmore specific meaning is provided. In this volume we consistently use the term \"school.\" <HEA= refers to the Higher\nEducation Act of 1965, as amended. Title IV refers to the student financial aid programs authorized under Title IV of the\nHEA.\nWe appreciate any comments that you have on this volume as wel"
+      ]
+    },
+    {
+      "question_id": "148074c6-b871-4a0a-b000-1c22c14c0193",
+      "contexts": [
+        "non-term (includes clock-hour calendars), or\nsubscription-based.\nIn a standard term or nonstandard term academic calendar, a term is generally a period in which all classes are\nscheduled to begin and end within a set time frame, and academic progress is measured in credit hours.\nIn a non-term academic calendar, classes do not begin and end within a set time frame, such as a term. Academic\nprogress in a non-term program can be measured in either credit or clock hours. In some cases (as discussed below), a\nprogram with terms must be treated as a non-term program for Title IV purposes.\nA subscription-based academic calendar is used only by subscription-based programs. A subscription-based program\nis a term-based program in which the school charges a student for each term on a subscription basis with the expectation\nthat the student will complete a specified number of credit hours (or the equivalent) during that term. However, classes in\na subscription-based program are not required to beg",
+        "for a term or payment period, at least one scheduled day of study for examinations occurs;\nor\nIn a program offered using asynchronous coursework through distance education or correspondence courses, the\nschool makes available the instructional materials, other resources, and instructor support necessary for academic\nengagement and completion of course objectives; and\nIn a program using asynchronous coursework through distance education, the school expects enrolled students to\nperform educational activities demonstrating academic engagement during the week.\nThe term \"asynchronous coursework\" refers to coursework that students generally complete on their own schedule, at any\ntime. This contrasts with \"synchronous coursework,\" in which students and their instructors are in communication at the\nsame time. For information on distance education and correspondence coursework, see Volume 2, Chapter 2.\nInstructional time excludes scheduled breaks and activities that aren't included in the defin"
+      ]
+    },
+    {
+      "question_id": "79ebd78a-c86f-4891-aa1c-f9da64b1efb1",
+      "contexts": [
+        "Credit or Clock Hours in an Academic Year\nFor undergraduate educational programs, the law and regulations set the following minimum standards for coursework\nearned by a full-time student in an academic year:\nFor a program measured in credit hours, 24 semester or trimester credit hours or 36 quarter credit hours; or\nFor a program measured in clock hours, 900 clock hours.\nFor graduate and professional programs, there is no minimum number of hours in an academic year.\nAcademic Year Definition and Effect on Awards\nThe Title IV academic year that a school defines for a program must meet the regulatory minimums for both clock or\ncredit hours and weeks of instructional time, as described above. In some instances, the defined academic year for a\nprogram may not coincide with the academic calendar of the school. For example, a school might define the academic\nyear for a program as containing 24 semester hours and 30 weeks of instructional time but have an academic calendar\nconsisting of four 8-week nonstandard terms (i.e., 32 weeks of instructional time). This would affect the calculation of Pell\nGrant awards, as explained in Volume 7.\nAs discussed later in this chapter and in Volume 8, Chapter 6, the timing of disbursements and, for the Direct Loan\nProgram, annual loan limit progression will be affected if a program is an academic year in length in credit or clock hours\nbut not in weeks of instructional time, or for a program longer than an academic year in length, if a student9s com"
+      ]
+    },
+    {
+      "question_id": "a061baa9-693f-4caa-b9f6-82714d46c782",
+      "contexts": [
+        "Credit or Clock Hours in an Academic Year\nFor undergraduate educational programs, the law and regulations set the following minimum standards for coursework\nearned by a full-time student in an academic year:\nFor a program measured in credit hours, 24 semester or trimester credit hours or 36 quarter credit hours; or\nFor a program measured in clock hours, 900 clock hours.\nFor graduate and professional programs, there is no minimum number of hours in an academic year.\nAcademic Year Definition and Effect on Awards\nThe Title IV academic year that a school defines for a program must meet the regulatory minimums for both clock or\ncredit hours and weeks of instructional time, as described above. In some instances, the defined academic year for a\nprogram may not coincide with the academic calendar of the school. For example, a school might define the academic\nyear for a program as containing 24 semester hours and 30 weeks of instructional time but have an academic calendar\nconsisting of four 8-week nonstandard terms (i.e., 32 weeks of instructional time). This would affect the calculation of Pell\nGrant awards, as explained in Volume 7.\nAs discussed later in this chapter and in Volume 8, Chapter 6, the timing of disbursements and, for the Direct Loan\nProgram, annual loan limit progression will be affected if a program is an academic year in length in credit or clock hours\nbut not in weeks of instructional time, or for a program longer than an academic year in length, if a student9s com"
+      ]
+    },
+    {
+      "question_id": "3ce01df1-5b90-414d-b488-28baca314910",
+      "contexts": [
+        "Credit or Clock Hours in an Academic Year\nFor undergraduate educational programs, the law and regulations set the following minimum standards for coursework\nearned by a full-time student in an academic year:\nFor a program measured in credit hours, 24 semester or trimester credit hours or 36 quarter credit hours; or\nFor a program measured in clock hours, 900 clock hours.\nFor graduate and professional programs, there is no minimum number of hours in an academic year.\nAcademic Year Definition and Effect on Awards\nThe Title IV academic year that a school defines for a program must meet the regulatory minimums for both clock or\ncredit hours and weeks of instructional time, as described above. In some instances, the defined academic year for a\nprogram may not coincide with the academic calendar of the school. For example, a school might define the academic\nyear for a program as containing 24 semester hours and 30 weeks of instructional time but have an academic calendar\nconsisting of four 8-week nonstandard terms (i.e., 32 weeks of instructional time). This would affect the calculation of Pell\nGrant awards, as explained in Volume 7.\nAs discussed later in this chapter and in Volume 8, Chapter 6, the timing of disbursements and, for the Direct Loan\nProgram, annual loan limit progression will be affected if a program is an academic year in length in credit or clock hours\nbut not in weeks of instructional time, or for a program longer than an academic year in length, if a student9s com"
+      ]
+    },
+    {
+      "question_id": "0f0eb6d1-b0f6-4e0a-83c3-84f15a79308c",
+      "contexts": [
+        "non-term (includes clock-hour calendars), or\nsubscription-based.\nIn a standard term or nonstandard term academic calendar, a term is generally a period in which all classes are\nscheduled to begin and end within a set time frame, and academic progress is measured in credit hours.\nIn a non-term academic calendar, classes do not begin and end within a set time frame, such as a term. Academic\nprogress in a non-term program can be measured in either credit or clock hours. In some cases (as discussed below), a\nprogram with terms must be treated as a non-term program for Title IV purposes.\nA subscription-based academic calendar is used only by subscription-based programs. A subscription-based program\nis a term-based program in which the school charges a student for each term on a subscription basis with the expectation\nthat the student will complete a specified number of credit hours (or the equivalent) during that term. However, classes in\na subscription-based program are not required to begin or end within a specific timeframe in each term, as is the case in a\nterm-based calendar that is not subscription-based. For more detail on subscription-based programs, see Volume 2,\nChapter 2.\nA subscription-based academic calendar consists of \"subscription periods\" that are either standard terms or substantially\nequal nonstandard terms (for guidance on when terms are considered to be substantially equal in length, see <Payment\nperiods for programs using standard terms or substantially equal"
+      ]
+    },
+    {
+      "question_id": "0e608766-60e4-4faf-8725-cdfa8642a27d",
+      "contexts": [
+        "for a term or payment period, at least one scheduled day of study for examinations occurs;\nor\nIn a program offered using asynchronous coursework through distance education or correspondence courses, the\nschool makes available the instructional materials, other resources, and instructor support necessary for academic\nengagement and completion of course objectives; and\nIn a program using asynchronous coursework through distance education, the school expects enrolled students to\nperform educational activities demonstrating academic engagement during the week.\nThe term \"asynchronous coursework\" refers to coursework that students generally complete on their own schedule, at any\ntime. This contrasts with \"synchronous coursework,\" in which students and their instructors are in communication at the\nsame time. For information on distance education and correspondence coursework, see Volume 2, Chapter 2.\nInstructional time excludes scheduled breaks and activities that aren't included in the definition of \"academic\nengagement\" (see Volume 5, Chapter 2 3 Part 1 for more information) or periods of orientation or counseling. Therefore,\nthe weeks of instructional time may be less than the number of calendar weeks that elapse between the first day of\nclasses and the last day of classes or examinations. Note that the Department has not set a regulatory standard for the\nnumber of hours of instructional time that make up one day of instruction. This has been left to the reasonable\ninterpretation"
+      ]
+    }
+  ]
+}
