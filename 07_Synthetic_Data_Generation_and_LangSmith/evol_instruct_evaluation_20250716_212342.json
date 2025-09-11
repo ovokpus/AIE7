@@ -1,0 +1,612 @@
+{
+  "evaluation_metadata": {
+    "evaluation_time_seconds": 149.326801776886,
+    "total_questions_evaluated": 28,
+    "evaluation_timestamp": "2025-07-16 21:23:42",
+    "concurrent_execution_focus": true
+  },
+  "question_quality_evaluation": {
+    "individual_results": [
+      {
+        "complexity_score": 4,
+        "clarity_score": 4,
+        "cognitive_challenge_score": 4,
+        "appropriateness_score": 4,
+        "overall_score": 4,
+        "explanation": "The question demonstrates a high level of complexity by requiring integration of updates from a specific volume and academic year with multiple interrelated policy aspects (cost of attendance, Title IV aid packaging, asynchronous distance education, and academic engagement requirements). It is mostly clear but somewhat dense, which may require careful reading. The cognitive challenge is significant, as it tests understanding of regulatory changes and their practical implications across different contexts, aligning well with a 'multi_context_evolution' type. The complexity level matches the expected level 3 well, slightly exceeding it but still appropriate given the multidimensional nature of the query.",
+        "question_id": "4b405670-ec39-44b3-bd72-a20c0e79b174"
+      },
+      {
+        "complexity_score": 4,
+        "clarity_score": 3,
+        "cognitive_challenge_score": 4,
+        "appropriateness_score": 4,
+        "overall_score": 3.75,
+        "explanation": "The question requires integrating knowledge of instructional resource coordination, academic engagement, compliance standards, and different academic scheduling models, indicating a high level of complexity and cognitive challenge. However, the wording is somewhat dense and could be clearer, which affects clarity. Given the multi_context_evolution type, which involves blending multiple contexts, the complexity and cognitive demand are appropriate though slightly above the expected level 3.",
+        "question_id": "dd65b149-59b9-42cc-8438-2cea985f965f"
+      },
+      {
+        "complexity_score": 4,
+        "clarity_score": 4,
+        "cognitive_challenge_score": 4,
+        "appropriateness_score": 5,
+        "overall_score": 4.25,
+        "explanation": "The question requires sophisticated reasoning about differences between asynchronous and synchronous course formats and their impact on instructional time, fitting the expected complexity well. It is mostly clear and well-formed, though somewhat dense. The cognitive challenge is meaningful, requiring understanding of academic scheduling and instructional expectations. The complexity is highly appropriate for a reasoning evolution, as it demands nuanced analysis and application of concepts.",
+        "question_id": "b302b1b9-fc21-48b5-b3a7-f07c91b2054e"
+      },
+      {
+        "complexity_score": 4,
+        "clarity_score": 5,
+        "cognitive_challenge_score": 4,
+        "appropriateness_score": 5,
+        "overall_score": 4.5,
+        "explanation": "The question requires understanding of complex regulatory compliance involving Title IV and academic structuring, which is appropriately challenging (4) and clearly stated (5). It tests meaningful application of compliance rules to specific program variations, demonstrating a high cognitive challenge (4). Given the reasoning_evolution context and expected complexity level of 4, the question is well-suited and appropriate (5). Overall, it effectively balances complexity, clarity, and relevance to the evolution type.",
+        "question_id": "1771e87e-2323-4d62-afb7-cc00dc87ad32"
+      },
+      {
+        "complexity_score": 3,
+        "clarity_score": 4,
+        "cognitive_challenge_score": 3,
+        "appropriateness_score": 2,
+        "overall_score": 3,
+        "explanation": "The question requires moderately sophisticated thinking to identify the reference of 'we' in a regulatory context and understand its implications, hence a complexity and cognitive challenge rating of 3. The question is generally clear, though slightly dense, leading to a clarity score of 4. Given the evolution type 'simple_evolution' with an expected complexity of 2, this question is somewhat more complex than appropriate, resulting in a lower appropriateness score of 2.",
+        "question_id": "c8947013-da89-46f8-a803-aadd22bc53dc"
+      },
+      {
+        "complexity_score": 3,
+        "clarity_score": 4,
+        "cognitive_challenge_score": 3,
+        "appropriateness_score": 2,
+        "overall_score": 3,
+        "explanation": "The question requires a moderate level of sophistication as it asks for specific requirements and their variations across program types, thus scoring 3 for complexity and cognitive challenge. It is generally clear and well-formed, meriting a 4 in clarity. However, given the evolution type is 'simple_evolution' with an expected complexity level of 2, the question is somewhat more complex than appropriate, resulting in a lower appropriateness score of 2.",
+        "question_id": "6444d79b-f811-4f88-8f07-140b2ac155b7"
+      },
+      {
+        "complexity_score": 4,
+        "clarity_score": 3,
+        "cognitive_challenge_score": 4,
+        "appropriateness_score": 2,
+        "overall_score": 3.25,
+        "explanation": "The question requires sophisticated thinking and meaningful understanding about instructional design and student engagement in asynchronous distance education, which justifies higher complexity and cognitive challenge scores. However, the wording is somewhat convoluted, affecting clarity. Given the evolution type 'simple_evolution' and expected complexity level 2, the question is somewhat too complex, resulting in a lower appropriateness score.",
+        "question_id": "91f02b05-b8ab-4fd8-a0f7-1f9dce226378"
+      },
+      {
+        "complexity_score": 4,
+        "clarity_score": 4,
+        "cognitive_challenge_score": 4,
+        "appropriateness_score": 4,
+        "overall_score": 4,
+        "explanation": "The question requires analysis of specific updates within Volume 3 related to Title IV aid criteria, demanding sophisticated understanding of financial aid regulations and educational program modalities. It is clearly formulated, though dense, maintaining focus on distinct regulatory changes. The cognitive challenge is high as it tests meaningful understanding of policy changes impacting asynchronous distance education and academic engagement. The complexity aligns well with the multi_context_evolution type by integrating regulatory, financial, and educational contexts.",
+        "question_id": "4b405670-ec39-44b3-bd72-a20c0e79b174"
+      },
+      {
+        "complexity_score": 4,
+        "clarity_score": 3,
+        "cognitive_challenge_score": 4,
+        "appropriateness_score": 4,
+        "overall_score": 3.75,
+        "explanation": "The question requires synthesis of multiple policy and administrative factors across different academic contexts, indicating notable complexity and cognitive challenge. However, the phrasing is somewhat dense and could be clearer, impacting clarity. The complexity aligns well with the 'multi_context_evolution' type and the expected level 3, arguably even slightly above it, but still appropriate.",
+        "question_id": "dd65b149-59b9-42cc-8438-2cea985f965f"
+      },
+      {
+        "complexity_score": 4,
+        "clarity_score": 4,
+        "cognitive_challenge_score": 4,
+        "appropriateness_score": 5,
+        "overall_score": 4.25,
+        "explanation": "The question requires sophisticated reasoning about differences in scheduling and expectations between asynchronous and synchronous courses, addressing nuances of instructional time and engagement. It is generally clear but somewhat complex in sentence structure, which may challenge some readers. The cognitive challenge is meaningful, as it tests understanding of educational instructional models and time calculation implications. The complexity is well-aligned with the reasoning_evolution type and expected level 4.",
+        "question_id": "b302b1b9-fc21-48b5-b3a7-f07c91b2054e"
+      },
+      {
+        "complexity_score": 4,
+        "clarity_score": 5,
+        "cognitive_challenge_score": 4,
+        "appropriateness_score": 5,
+        "overall_score": 4.5,
+        "explanation": "The question requires sophisticated reasoning about regulatory compliance and the implications of defining academic years across different program types, demonstrating complexity and meaningful understanding. It is clearly articulated with a specific focus, enhancing clarity. Given the reasoning_evolution type and an expected complexity of 4, the question appropriately challenges the respondent to synthesize knowledge and apply it thoughtfully.",
+        "question_id": "1771e87e-2323-4d62-afb7-cc00dc87ad32"
+      },
+      {
+        "complexity_score": 3,
+        "clarity_score": 4,
+        "cognitive_challenge_score": 3,
+        "appropriateness_score": 2,
+        "overall_score": 3,
+        "explanation": "The question requires understanding of specific terminologies and institutional references within the FSA Handbook, which raises its complexity and cognitive challenge to a moderate level (3). It is mostly clear and well-structured, earning a clarity score of 4. However, given that the evolution type is 'simple_evolution' with an expected complexity level of 2, the question is somewhat more complex than appropriate, resulting in an appropriateness score of 2.",
+        "question_id": "c8947013-da89-46f8-a803-aadd22bc53dc"
+      },
+      {
+        "complexity_score": 3,
+        "clarity_score": 4,
+        "cognitive_challenge_score": 3,
+        "appropriateness_score": 2,
+        "overall_score": 3,
+        "explanation": "The question requires moderate complexity as it asks for specific details and comparisons across program types, reflecting a need for understanding nuanced content. It is clearly phrased, though slightly dense. The cognitive challenge is moderate, testing comprehension of specific requirements and their application. However, given the 'simple_evolution' type and expected complexity level 2, the question is somewhat more complex than appropriate, hence the lower appropriateness score.",
+        "question_id": "6444d79b-f811-4f88-8f07-140b2ac155b7"
+      },
+      {
+        "complexity_score": 4,
+        "clarity_score": 3,
+        "cognitive_challenge_score": 4,
+        "appropriateness_score": 2,
+        "overall_score": 3.25,
+        "explanation": "The question requires sophisticated thinking and meaningful understanding about instructional design for asynchronous distance education, reflected in the high complexity and cognitive challenge scores. However, its clarity is moderate due to the long and somewhat convoluted phrasing, which could be simplified for better comprehension. Given the evolution type 'simple_evolution' and expected complexity level 2, the question is more complex and detailed than appropriate, resulting in a lower appropriateness score.",
+        "question_id": "91f02b05-b8ab-4fd8-a0f7-1f9dce226378"
+      },
+      {
+        "complexity_score": 4,
+        "clarity_score": 4,
+        "cognitive_challenge_score": 4,
+        "appropriateness_score": 4,
+        "overall_score": 4,
+        "explanation": "The question requires a sophisticated understanding of regulatory updates and how they impact cost of attendance and Title IV aid packaging, demanding integration of multiple contexts around academic engagement and asynchronous distance education. It is clearly phrased with sufficient specificity. The cognitive challenge is high as it tests comprehension of nuanced regulatory changes. The complexity aligns well with the 'multi_context_evolution' type and the expected level 3 complexity, warranting a slightly higher score due to the multi-layered subject matter.",
+        "question_id": "4b405670-ec39-44b3-bd72-a20c0e79b174"
+      },
+      {
+        "complexity_score": 4,
+        "clarity_score": 3,
+        "cognitive_challenge_score": 4,
+        "appropriateness_score": 4,
+        "overall_score": 3.75,
+        "explanation": "The question requires sophisticated thinking to integrate multiple regulatory and operational factors in asynchronous coursework, which raises its complexity and cognitive challenge scores. However, the sentence is somewhat long and dense, slightly reducing clarity despite being well-formed. Given the multi-context evolution type, the question's complexity is appropriate, though slightly above the expected level 3, reflecting the additional contexts integrated.",
+        "question_id": "dd65b149-59b9-42cc-8438-2cea985f965f"
+      },
+      {
+        "complexity_score": 4,
+        "clarity_score": 4,
+        "cognitive_challenge_score": 4,
+        "appropriateness_score": 5,
+        "overall_score": 4.25,
+        "explanation": "The question requires nuanced understanding of course formats and instructional time (complexity 4), and is generally clear though somewhat lengthy (clarity 4). It tests meaningful comprehension of academic scheduling and instructional implications (cognitive challenge 4). Given the reasoning_evolution type, its complexity is well-aligned (appropriateness 5). Overall, the question is well-suited for advanced reasoning but could benefit from slightly more concise wording.",
+        "question_id": "b302b1b9-fc21-48b5-b3a7-f07c91b2054e"
+      },
+      {
+        "complexity_score": 4,
+        "clarity_score": 5,
+        "cognitive_challenge_score": 4,
+        "appropriateness_score": 5,
+        "overall_score": 4.5,
+        "explanation": "The question requires sophisticated reasoning to identify and analyze specific regulatory considerations, earning a high complexity score. It is clearly and precisely phrased, making expectations and scope explicit. The question tests meaningful understanding of Title IV compliance rules related to academic years and enrollment verification, indicating a strong cognitive challenge. Additionally, the complexity aligns well with the reasoning evolution type, showing an appropriate level of difficulty. Overall, the question is well-constructed for its intended purpose.",
+        "question_id": "1771e87e-2323-4d62-afb7-cc00dc87ad32"
+      },
+      {
+        "complexity_score": 3,
+        "clarity_score": 4,
+        "cognitive_challenge_score": 3,
+        "appropriateness_score": 2,
+        "overall_score": 3,
+        "explanation": "The question requires understanding specific references within the FSA Handbook and interpreting their impact, indicating moderate complexity and cognitive challenge. It is mostly clear, though somewhat dense. However, given the evolution type 'simple_evolution' and an expected complexity level of 2, the question is somewhat more complex than appropriate for this evolution type.",
+        "question_id": "c8947013-da89-46f8-a803-aadd22bc53dc"
+      },
+      {
+        "complexity_score": 3,
+        "clarity_score": 5,
+        "cognitive_challenge_score": 3,
+        "appropriateness_score": 3,
+        "overall_score": 3.5,
+        "explanation": "The question requires an understanding of specific document requirements and the ability to differentiate how those requirements vary by program type, indicating moderate complexity and cognitive demand. It is clearly and explicitly stated, aiding comprehension. However, given that the evolution type is 'simple_evolution' with an expected complexity of 2, this question may be slightly more complex than necessary, though not excessively so, hence a moderate appropriateness score.",
+        "question_id": "6444d79b-f811-4f88-8f07-140b2ac155b7"
+      },
+      {
+        "complexity_score": 3,
+        "clarity_score": 3,
+        "cognitive_challenge_score": 3,
+        "appropriateness_score": 2,
+        "overall_score": 2.75,
+        "explanation": "The question requires moderately sophisticated thinking about instructional design in asynchronous distance education, somewhat beyond simple recall, thus a complexity and cognitive challenge score of 3. However, the question is somewhat wordy and could be clearer, leading to a clarity score of 3. Given the evolution type 'simple_evolution' and expected complexity level 2, the question is slightly more complex than appropriate, resulting in an appropriateness score of 2.",
+        "question_id": "91f02b05-b8ab-4fd8-a0f7-1f9dce226378"
+      },
+      {
+        "complexity_score": 4,
+        "clarity_score": 4,
+        "cognitive_challenge_score": 4,
+        "appropriateness_score": 4,
+        "overall_score": 4,
+        "explanation": "The question requires sophisticated analysis of specific policy updates and their implications, which reflects a higher complexity level than expected. It is mostly clear and well-structured, though the length and detail may challenge some readers. The question demands meaningful understanding of Title IV aid criteria and distance education nuances, testing the respondent\u2019s ability to integrate multiple contexts effectively. Given the evolution type 'multi_context_evolution', the complexity and depth are appropriate and relevant.",
+        "question_id": "4b405670-ec39-44b3-bd72-a20c0e79b174"
+      },
+      {
+        "complexity_score": 4,
+        "clarity_score": 3,
+        "cognitive_challenge_score": 4,
+        "appropriateness_score": 4,
+        "overall_score": 3.75,
+        "explanation": "The question involves coordinating multiple legal and operational factors across diverse academic programs, requiring sophisticated thinking and meaningful understanding, warranting relatively high complexity and cognitive challenge scores. However, the sentence structure is quite dense and somewhat convoluted, reducing clarity. The complexity aligns well with the 'multi_context_evolution' type, which involves integrating multiple contexts, justifying the appropriateness score.",
+        "question_id": "dd65b149-59b9-42cc-8438-2cea985f965f"
+      },
+      {
+        "complexity_score": 4,
+        "clarity_score": 4,
+        "cognitive_challenge_score": 4,
+        "appropriateness_score": 5,
+        "overall_score": 4.25,
+        "explanation": "The question requires students to analyze and compare asynchronous and synchronous course structures, particularly regarding scheduling and instructional time, which demands sophisticated reasoning (complexity 4). It is clearly worded and well-formed, though somewhat dense, warranting a clarity score of 4. The question tests meaningful understanding of instructional design and time management implications, meriting a cognitive challenge score of 4. Given the evolution type 'reasoning_evolution' and the expected complexity level of 4, the question aligns well with these requirements, achieving a perfect appropriateness score of 5.",
+        "question_id": "b302b1b9-fc21-48b5-b3a7-f07c91b2054e"
+      },
+      {
+        "complexity_score": 4,
+        "clarity_score": 5,
+        "cognitive_challenge_score": 4,
+        "appropriateness_score": 5,
+        "overall_score": 4.5,
+        "explanation": "The question requires integrated knowledge of Title IV compliance and academic scheduling, demonstrating complexity and meaningful understanding. It is clearly stated with a specific scenario that directs reasoning. The complexity aligns well with the 'reasoning_evolution' type, making it appropriate for the intended evolution.",
+        "question_id": "1771e87e-2323-4d62-afb7-cc00dc87ad32"
+      },
+      {
+        "complexity_score": 3,
+        "clarity_score": 4,
+        "cognitive_challenge_score": 3,
+        "appropriateness_score": 2,
+        "overall_score": 3,
+        "explanation": "The question requires moderate complexity as it asks for identification and interpretation within a specific regulatory context, necessitating understanding of the FSA Handbook's authorship and its impact on guidance. The wording is generally clear but somewhat dense due to technical terms. It tests meaningful understanding by linking pronoun reference to regulatory interpretation. However, for a 'simple_evolution' type expecting complexity level 2, the question is slightly above the intended complexity.",
+        "question_id": "c8947013-da89-46f8-a803-aadd22bc53dc"
+      },
+      {
+        "complexity_score": 4,
+        "clarity_score": 5,
+        "cognitive_challenge_score": 4,
+        "appropriateness_score": 2,
+        "overall_score": 3.75,
+        "explanation": "The question requires sophisticated thinking by asking for specific requirements and their variations across multiple program types, making it complex and cognitively challenging. It is very clear and well-formed. However, given the 'simple_evolution' type with an expected complexity level of 2, the complexity is somewhat high, so the appropriateness score is lower to reflect this mismatch.",
+        "question_id": "6444d79b-f811-4f88-8f07-140b2ac155b7"
+      },
+      {
+        "complexity_score": 3,
+        "clarity_score": 3,
+        "cognitive_challenge_score": 3,
+        "appropriateness_score": 2,
+        "overall_score": 2.75,
+        "explanation": "The question requires moderate sophistication by asking about specific materials, resources, and support in asynchronous distance education, which elevates complexity beyond the expected level of 2. However, the phrasing is somewhat convoluted, affecting clarity. It demands meaningful understanding of instructional design and student engagement strategies, representing a moderate cognitive challenge. Given its slightly higher complexity and depth, it is somewhat misaligned with the 'simple_evolution' type that expects lower complexity, thus a appropriateness score of 2.",
+        "question_id": "91f02b05-b8ab-4fd8-a0f7-1f9dce226378"
+      }
+    ],
+    "average_scores": {
+      "complexity_score": 3.6785714285714284,
+      "clarity_score": 3.9285714285714284,
+      "cognitive_challenge_score": 3.6785714285714284,
+      "appropriateness_score": 3.4642857142857144,
+      "overall_score": 3.6875
+    }
+  },
+  "answer_grounding_evaluation": {
+    "individual_results": [
+      {
+        "context_adherence_score": 5,
+        "completeness_score": 4,
+        "accuracy_score": 5,
+        "relevance_score": 5,
+        "overall_grounding_score": 4.75,
+        "explanation": "The answer correctly reflects that the provided contexts do not specify any updates or changes for 2025-2026 regarding cost of attendance or Title IV aid packaging, particularly for asynchronous distance education programs. It accurately summarizes existing requirements and explicitly states the lack of new modifications based solely on the given contexts. However, it could have acknowledged the very limited nature and repetitive content of the provided contexts, which limits the depth and completeness of the answer.",
+        "question_id": "4b405670-ec39-44b3-bd72-a20c0e79b174"
+      },
+      {
+        "context_adherence_score": 5,
+        "completeness_score": 5,
+        "accuracy_score": 5,
+        "relevance_score": 5,
+        "overall_grounding_score": 5,
+        "explanation": "The answer fully aligns with the provided contexts by accurately describing the requirements for resource availability and academic engagement in asynchronous coursework, as well as the need to define separate academic years for different programs or schedules. It thoroughly addresses how schools must coordinate these elements to ensure compliance, referencing instructional materials, engagement expectations, and defining academic years per program type, consistent with the information in the contexts.",
+        "question_id": "dd65b149-59b9-42cc-8438-2cea985f965f"
+      },
+      {
+        "context_adherence_score": 5,
+        "completeness_score": 5,
+        "accuracy_score": 5,
+        "relevance_score": 5,
+        "overall_grounding_score": 5,
+        "explanation": "The answer closely follows the provided context, accurately distinguishing asynchronous and synchronous coursework in terms of scheduling and engagement expectations. It explicitly mentions the school's provision of instructional materials and support in asynchronous courses and real-time interaction in synchronous ones. The discussion on instructional time appropriately reflects the exclusion of orientation, breaks, and non-engagement periods, as stated in the context. It thoroughly addresses both aspects of the question\u2014differences in scheduling and implications for measuring instructional time\u2014making it complete, accurate, and fully relevant.",
+        "question_id": "b302b1b9-fc21-48b5-b3a7-f07c91b2054e"
+      },
+      {
+        "context_adherence_score": 5,
+        "completeness_score": 5,
+        "accuracy_score": 5,
+        "relevance_score": 5,
+        "overall_grounding_score": 5,
+        "explanation": "The answer directly reflects the provided context regarding academic years for different versions of a program, specifically addressing key compliance points such as verifying student enrollment, consistent application of academic year definitions across Title IV awards, and maintaining proper documentation. It fully addresses the question with accurate and relevant details drawn exactly from the source.",
+        "question_id": "1771e87e-2323-4d62-afb7-cc00dc87ad32"
+      },
+      {
+        "context_adherence_score": 5,
+        "completeness_score": 5,
+        "accuracy_score": 5,
+        "relevance_score": 5,
+        "overall_grounding_score": 5,
+        "explanation": "The answer precisely identifies 'we' as the United States Department of Education based directly on the provided context. It accurately explains how this designation affects the interpretation of guidance related to academic calendars, cost of attendance, and packaging for Title IV programs, noting that it represents official federal standards that schools must follow. The response is fully aligned with the question, comprehensive, factually correct per the context, and highly relevant.",
+        "question_id": "c8947013-da89-46f8-a803-aadd22bc53dc"
+      },
+      {
+        "context_adherence_score": 5,
+        "completeness_score": 4,
+        "accuracy_score": 5,
+        "relevance_score": 5,
+        "overall_grounding_score": 4.75,
+        "explanation": "The answer fully derives from the provided context, correctly states the requirement that every eligible program must have a defined academic year, and explains how this definition can vary by program type (term-based, clock-hour, credit-hour). It also notes flexibility in academic year definitions across programs. However, it slightly omits details concerning the need for consistent application of the same academic year definition for all Title IV awards and the provisions about multiple versions of the same program, which could add nuance to completeness.",
+        "question_id": "6444d79b-f811-4f88-8f07-140b2ac155b7"
+      },
+      {
+        "context_adherence_score": 5,
+        "completeness_score": 4,
+        "accuracy_score": 5,
+        "relevance_score": 5,
+        "overall_grounding_score": 4.75,
+        "explanation": "The answer closely follows the provided context, explicitly stating the availability of instructional materials, resources, and instructor support necessary for academic engagement and completion of course objectives in asynchronous distance education programs. It correctly highlights that academic engagement must occur during designated periods and excludes breaks, orientation, or non-instructional activities. While generally complete, the answer could more explicitly specify examples of 'other resources' and clarify the nature or extent of instructor support. Nonetheless, the answer is accurate, relevant, and well grounded in the given context.",
+        "question_id": "91f02b05-b8ab-4fd8-a0f7-1f9dce226378"
+      }
+    ],
+    "average_scores": {
+      "context_adherence_score": 5.0,
+      "completeness_score": 4.571428571428571,
+      "accuracy_score": 5.0,
+      "relevance_score": 5.0,
+      "overall_grounding_score": 4.892857142857143
+    }
+  },
+  "evolution_effectiveness_evaluation": {
+    "individual_results": [
+      {
+        "transformation_quality_score": 5,
+        "type_alignment_score": 5,
+        "complexity_increase_score": 5,
+        "innovation_score": 5,
+        "overall_evolution_score": 5,
+        "explanation": "The evolved question significantly improves on the base question by focusing on a very specific regulatory update, integrating multiple contexts such as cost of attendance, Title IV aid packaging, and asynchronous distance education. This matches the multi_context_evolution type perfectly. The complexity is greatly increased by incorporating detailed policy elements and nuanced program specifics. The transformation is highly creative and unique, moving from a general inquiry to a targeted, policy-driven question.",
+        "question_id": "4b405670-ec39-44b3-bd72-a20c0e79b174"
+      },
+      {
+        "transformation_quality_score": 3,
+        "type_alignment_score": 4,
+        "complexity_increase_score": 5,
+        "innovation_score": 4,
+        "overall_evolution_score": 4,
+        "explanation": "The evolved question significantly increases complexity and detail, introducing multiple contexts related to instructional resources, academic engagement, and academic year definitions across varied program types. It aligns well with the multi_context_evolution type by incorporating several educational program facets. However, the transformation somewhat diverges from the original focus on student financial aid requirements, reducing clarity and direct relevance, which limits the improvement quality. The innovation and complexity increases are strong due to the nuanced scenario introduced.",
+        "question_id": "dd65b149-59b9-42cc-8438-2cea985f965f"
+      },
+      {
+        "transformation_quality_score": 2,
+        "type_alignment_score": 2,
+        "complexity_increase_score": 4,
+        "innovation_score": 3,
+        "overall_evolution_score": 2.75,
+        "explanation": "The evolved question deviates significantly from the base question's focus on financial aid requirements to an elaborate discussion on asynchronous versus synchronous course scheduling, which dilutes relevance. While it introduces more complexity and reasoning about course structure and instructional time, this does not align well with the original question's intent or the specified 'reasoning_evolution' as it moves to a different topic area. The elaboration adds depth but lacks direct connection to financial aid criteria, thus reducing transformation quality and type alignment.",
+        "question_id": "b302b1b9-fc21-48b5-b3a7-f07c91b2054e"
+      },
+      {
+        "transformation_quality_score": 4,
+        "type_alignment_score": 5,
+        "complexity_increase_score": 5,
+        "innovation_score": 4,
+        "overall_evolution_score": 4.5,
+        "explanation": "The evolved question significantly improves on the base by focusing on a specific, complex scenario involving compliance with Title IV requirements and nuanced considerations like enrollment verification and consistency across awards. This aligns well with the reasoning evolution type, requiring deeper analysis. The evolution increases complexity by moving from general requirements to detailed regulatory compliance, demonstrating creativity in the applied context.",
+        "question_id": "1771e87e-2323-4d62-afb7-cc00dc87ad32"
+      },
+      {
+        "transformation_quality_score": 4,
+        "type_alignment_score": 2,
+        "complexity_increase_score": 5,
+        "innovation_score": 4,
+        "overall_evolution_score": 3.75,
+        "explanation": "The evolved question significantly enhances specificity and depth by referencing Volume 3 of the FSA Handbook and focusing on the pronoun 'we' and its implications, thus providing a more detailed and challenging inquiry. However, it does not align well with the specified 'simple_evolution' type, as it introduces considerable complexity and detail rather than a straightforward, slight modification of the base question.",
+        "question_id": "c8947013-da89-46f8-a803-aadd22bc53dc"
+      },
+      {
+        "transformation_quality_score": 4,
+        "type_alignment_score": 3,
+        "complexity_increase_score": 5,
+        "innovation_score": 4,
+        "overall_evolution_score": 4,
+        "explanation": "The evolved question significantly improves specificity and detail over the base question, focusing on particular program requirements and differences across program types, which increases complexity and depth. However, since the evolution type is 'simple_evolution,' the advanced complexity and depth may somewhat misalign with the expectation of a straightforward or modest change. The transformation demonstrates creativity by addressing program structure variations, contributing to a strong innovation score.",
+        "question_id": "6444d79b-f811-4f88-8f07-140b2ac155b7"
+      },
+      {
+        "transformation_quality_score": 2,
+        "type_alignment_score": 1,
+        "complexity_increase_score": 5,
+        "innovation_score": 3,
+        "overall_evolution_score": 2.75,
+        "explanation": "The evolved question drastically changes the topic from student financial aid requirements to instructional design elements in asynchronous distance education, resulting in little improvement in relation to the base question. The evolution does not align with the specified 'simple_evolution' type, as it is a complete topic shift rather than a minor refinement. The evolved question is significantly more complex and detailed, which increases challenge. Some creative detail is present in specifying instructional and engagement requirements. Overall, the evolution fails to maintain focus and relevance to the base question.",
+        "question_id": "91f02b05-b8ab-4fd8-a0f7-1f9dce226378"
+      },
+      {
+        "transformation_quality_score": 5,
+        "type_alignment_score": 5,
+        "complexity_increase_score": 5,
+        "innovation_score": 4,
+        "overall_evolution_score": 4.75,
+        "explanation": "The evolved question significantly improves on the base question by incorporating specific regulatory updates, temporal context, and a particular focus on asynchronous distance education programs. This aligns well with a multi-context evolution by addressing different facets such as cost determination, aid packaging, and academic engagement requirements. It is considerably more complex and demands higher-level understanding, demonstrating strong creativity though improvements could be made by further broadening contexts or perspectives.",
+        "question_id": "4b405670-ec39-44b3-bd72-a20c0e79b174"
+      },
+      {
+        "transformation_quality_score": 3,
+        "type_alignment_score": 4,
+        "complexity_increase_score": 5,
+        "innovation_score": 4,
+        "overall_evolution_score": 4,
+        "explanation": "The evolved question significantly increases complexity and detail compared to the base question, focusing on coordinating instructional resources and academic engagement in asynchronous coursework with multiple program types, which is a substantial shift. It aligns well with the 'multi_context_evolution' type by incorporating multiple academic contexts and scheduling scenarios. The transformation introduces innovative multi-faceted considerations; however, it drifts somewhat from the original financial aid focus, impacting transformation quality moderately.",
+        "question_id": "dd65b149-59b9-42cc-8438-2cea985f965f"
+      },
+      {
+        "transformation_quality_score": 2,
+        "type_alignment_score": 2,
+        "complexity_increase_score": 4,
+        "innovation_score": 3,
+        "overall_evolution_score": 2.75,
+        "explanation": "The evolved question is significantly more complex and detailed compared to the base question, increasing complexity and some innovation by focusing on asynchronous vs synchronous course engagement and instructional time. However, it deviates substantially from the original topic of student financial aid requirements and does not sufficiently reflect reasoning about financial aid eligibility or considerations. Thus, the transformation quality and alignment to the reasoning_evolution type are limited.",
+        "question_id": "b302b1b9-fc21-48b5-b3a7-f07c91b2054e"
+      },
+      {
+        "transformation_quality_score": 4,
+        "type_alignment_score": 5,
+        "complexity_increase_score": 5,
+        "innovation_score": 4,
+        "overall_evolution_score": 4.5,
+        "explanation": "The evolved question significantly improves on the base by focusing on a specific scenario involving academic year definitions and compliance complexities, which aligns well with reasoning evolution. It introduces more challenging, nuanced considerations about Title IV requirements and student enrollment verification, demonstrating creative transformation beyond a basic inquiry.",
+        "question_id": "1771e87e-2323-4d62-afb7-cc00dc87ad32"
+      },
+      {
+        "transformation_quality_score": 4,
+        "type_alignment_score": 2,
+        "complexity_increase_score": 5,
+        "innovation_score": 4,
+        "overall_evolution_score": 3.75,
+        "explanation": "The evolved question substantially improves specificity and depth, focusing on a precise context within the FSA Handbook and involving interpretation of pronouns and related guidance, making it much more complex and detailed than the base question. However, it does not align well with the 'simple_evolution' type, as it significantly increases complexity and scope rather than making a minor or straightforward refinement. The creativity in linking pronoun interpretation with program guidance is notable, but the mismatch with the evolution type lowers the overall rating.",
+        "question_id": "c8947013-da89-46f8-a803-aadd22bc53dc"
+      },
+      {
+        "transformation_quality_score": 4,
+        "type_alignment_score": 3,
+        "complexity_increase_score": 5,
+        "innovation_score": 4,
+        "overall_evolution_score": 4,
+        "explanation": "The evolved question substantially improves upon the base by specifying a focus on academic planning structure requirements and differentiating between program types, which adds detail and complexity. However, it shifts away from the general financial aid requirements towards a very specific compliance aspect, making the evolution somewhat more than a simple evolution. The increased complexity is clear, and the approach is moderately creative in narrowing and deepening the inquiry.",
+        "question_id": "6444d79b-f811-4f88-8f07-140b2ac155b7"
+      },
+      {
+        "transformation_quality_score": 2,
+        "type_alignment_score": 1,
+        "complexity_increase_score": 5,
+        "innovation_score": 3,
+        "overall_evolution_score": 2.75,
+        "explanation": "The evolved question greatly increases complexity and details, shifting focus from student financial aid requirements to detailed instructional design in asynchronous distance education. However, this is a radical topic change rather than a simple evolution, resulting in poor type alignment. While somewhat creative, the transformation lacks continuity with the base question, lowering transformation quality and type alignment scores.",
+        "question_id": "91f02b05-b8ab-4fd8-a0f7-1f9dce226378"
+      },
+      {
+        "transformation_quality_score": 5,
+        "type_alignment_score": 5,
+        "complexity_increase_score": 5,
+        "innovation_score": 4,
+        "overall_evolution_score": 4.75,
+        "explanation": "The evolved question significantly deepens and broadens the scope from the base question by incorporating specific regulatory updates, academic year context, and detailed program criteria, matching the multi-context evolution type well. It is much more complex and challenging, requiring nuanced understanding of regulatory changes and distance education specifics. The transformation is creative and focused, though somewhat constrained by the formal regulatory context.",
+        "question_id": "4b405670-ec39-44b3-bd72-a20c0e79b174"
+      },
+      {
+        "transformation_quality_score": 3,
+        "type_alignment_score": 3,
+        "complexity_increase_score": 5,
+        "innovation_score": 4,
+        "overall_evolution_score": 3.75,
+        "explanation": "The evolved question significantly increases complexity and introduces a more detailed, multi-context scenario related to instructional coordination and compliance in asynchronous programs. While the base question focuses simply on student financial aid requirements, the evolved question expands into institutional operational considerations tied to academic regulations across varying program types. This represents a creative and challenging evolution, though the thematic connection to financial aid is somewhat loose, affecting transformation quality and type alignment scores.",
+        "question_id": "dd65b149-59b9-42cc-8438-2cea985f965f"
+      },
+      {
+        "transformation_quality_score": 2,
+        "type_alignment_score": 3,
+        "complexity_increase_score": 4,
+        "innovation_score": 3,
+        "overall_evolution_score": 3,
+        "explanation": "The evolved question is substantially more complex and introduces more reasoning elements compared to the base question. However, it shifts focus entirely from 'student financial aid requirements' to distinctions in course scheduling and instructional time, which is not aligned with the original topic. While it does incorporate reasoning, the evolution does not maintain thematic consistency, reducing transformation quality and type alignment scores. The transformation is moderately innovative but somewhat tangential.",
+        "question_id": "b302b1b9-fc21-48b5-b3a7-f07c91b2054e"
+      },
+      {
+        "transformation_quality_score": 4,
+        "type_alignment_score": 5,
+        "complexity_increase_score": 5,
+        "innovation_score": 4,
+        "overall_evolution_score": 4.5,
+        "explanation": "The evolved question significantly deepens the inquiry by focusing on compliance nuances related to program definitions and Title IV regulations, aligning well with reasoning evolution. It increases complexity by addressing specific considerations and compliance verification. The transformation is creative in narrowing the broad topic of financial aid requirements to a detailed, scenario-based question, though it remains within the regulatory framework.",
+        "question_id": "1771e87e-2323-4d62-afb7-cc00dc87ad32"
+      },
+      {
+        "transformation_quality_score": 4,
+        "type_alignment_score": 2,
+        "complexity_increase_score": 5,
+        "innovation_score": 4,
+        "overall_evolution_score": 3.75,
+        "explanation": "The evolved question significantly improves specificity and detail compared to the base question, introducing context around the FSA Handbook and the role of 'we', which enhances depth and complexity. However, the evolution does not align well with the indicated 'simple_evolution' type, as it transforms the question into a much more complex and technical inquiry rather than a minor or straightforward modification. The innovation is notable, creatively shifting focus from general requirements to interpretative nuances in a specific regulatory document.",
+        "question_id": "c8947013-da89-46f8-a803-aadd22bc53dc"
+      },
+      {
+        "transformation_quality_score": 4,
+        "type_alignment_score": 3,
+        "complexity_increase_score": 5,
+        "innovation_score": 4,
+        "overall_evolution_score": 4,
+        "explanation": "The evolved question significantly improves specificity by focusing on academic planning requirements for eligible programs, making it more detailed and challenging. However, labeling this as a 'simple_evolution' is somewhat misaligned since the question complexity and scope have increased substantially. The transformation is creative in introducing distinctions among program types, enhancing depth and nuance.",
+        "question_id": "6444d79b-f811-4f88-8f07-140b2ac155b7"
+      },
+      {
+        "transformation_quality_score": 3,
+        "type_alignment_score": 1,
+        "complexity_increase_score": 5,
+        "innovation_score": 4,
+        "overall_evolution_score": 3.25,
+        "explanation": "The evolved question significantly increases complexity and specificity compared to the base question, adding unique details about instructional materials and engagement requirements. However, it does not align with the 'simple_evolution' type, as it represents a substantial and complex transformation rather than a simple change. Thus, while the transformation is creative and challenging, it misses the intended evolution type.",
+        "question_id": "91f02b05-b8ab-4fd8-a0f7-1f9dce226378"
+      },
+      {
+        "transformation_quality_score": 5,
+        "type_alignment_score": 5,
+        "complexity_increase_score": 5,
+        "innovation_score": 5,
+        "overall_evolution_score": 5,
+        "explanation": "The evolved question significantly improves upon the base by specifying the context of regulatory updates for the 2025-2026 academic year, focusing on detailed aspects of cost of attendance and Title IV aid packaging. It aligns perfectly with the multi-context evolution type by integrating multiple layers of policy, academic program modalities, and engagement criteria. The complexity increases substantially due to the nuanced regulatory focus and specialized terminology, and the transformation is highly innovative by shifting from a general inquiry to a precise, regulatory-based question.",
+        "question_id": "4b405670-ec39-44b3-bd72-a20c0e79b174"
+      },
+      {
+        "transformation_quality_score": 3,
+        "type_alignment_score": 4,
+        "complexity_increase_score": 5,
+        "innovation_score": 4,
+        "overall_evolution_score": 4,
+        "explanation": "The evolved question significantly expands the scope and complexity by focusing on coordinating instructional resources and academic engagement in asynchronous programs with varying schedules, which relates to compliance and resource availability rather than directly about student financial aid requirements. This reflects a multi-context approach involving different academic programs. While the topic shift may reduce direct relevance to the base question, the evolution aligns well with multi-context complexity and introduces innovative aspects about program coordination and compliance, making it more challenging and unique.",
+        "question_id": "dd65b149-59b9-42cc-8438-2cea985f965f"
+      },
+      {
+        "transformation_quality_score": 3,
+        "type_alignment_score": 4,
+        "complexity_increase_score": 4,
+        "innovation_score": 3,
+        "overall_evolution_score": 3.5,
+        "explanation": "The evolved question significantly expands the scope from a general query about financial aid requirements to a detailed reasoning question about course scheduling and instructional time differences between asynchronous and synchronous courses. This represents a notable increase in complexity and reasoning demand, aligning fairly well with the 'reasoning_evolution' type. However, the evolved question diverges from the base topic of financial aid requirements and instead focuses on instructional mode distinctions, which reduces transformation quality and innovation since it shifts topic rather than deeply develops the original. The creativity lies in the nuanced analysis of scheduling and instructional time, but the transformation might have better connected to the base question's theme.",
+        "question_id": "b302b1b9-fc21-48b5-b3a7-f07c91b2054e"
+      },
+      {
+        "transformation_quality_score": 4,
+        "type_alignment_score": 5,
+        "complexity_increase_score": 5,
+        "innovation_score": 4,
+        "overall_evolution_score": 4.5,
+        "explanation": "The evolved question significantly expands the original by focusing on a nuanced institutional scenario involving Title IV compliance, requiring deeper reasoning. It matches the reasoning_evolution type well by demanding specific compliance considerations instead of just listing basic requirements. The complexity is markedly higher as it involves layered policy implications, and the transformation is creative in linking academic year definitions to financial aid rules.",
+        "question_id": "1771e87e-2323-4d62-afb7-cc00dc87ad32"
+      },
+      {
+        "transformation_quality_score": 4,
+        "type_alignment_score": 2,
+        "complexity_increase_score": 5,
+        "innovation_score": 4,
+        "overall_evolution_score": 3.75,
+        "explanation": "The evolved question significantly deepens and specifies the inquiry by referencing a particular handbook and focusing on interpretation issues related to 'we,' which shows a clear improvement in specificity and challenge. However, it does not align well with the 'simple_evolution' type, as the change is quite complex rather than simple. The complexity and creativity are high due to the added context and detailed focus, but the evolution type mismatch reduces the type alignment score.",
+        "question_id": "c8947013-da89-46f8-a803-aadd22bc53dc"
+      },
+      {
+        "transformation_quality_score": 4,
+        "type_alignment_score": 3,
+        "complexity_increase_score": 5,
+        "innovation_score": 4,
+        "overall_evolution_score": 4,
+        "explanation": "The evolved question provides a much more detailed and focused inquiry about academic planning requirements for financial aid eligibility, significantly improving specificity and depth. However, the evolution is more complex and detailed than what a 'simple_evolution' typically implies, leading to a moderate type alignment score. The increased challenge and nuanced distinction between program types show strong complexity and innovation.",
+        "question_id": "6444d79b-f811-4f88-8f07-140b2ac155b7"
+      },
+      {
+        "transformation_quality_score": 3,
+        "type_alignment_score": 2,
+        "complexity_increase_score": 5,
+        "innovation_score": 4,
+        "overall_evolution_score": 3.5,
+        "explanation": "The evolved question significantly increases complexity and focuses on specific instructional design aspects in distance education, which is a notable expansion from the general student financial aid topic. However, it diverges substantially from the original subject matter, thus not matching the simple_evolution type well, which would imply a minor, straightforward refinement rather than a complete thematic shift. The transformation is creative and unique but sacrifices the original question's context.",
+        "question_id": "91f02b05-b8ab-4fd8-a0f7-1f9dce226378"
+      }
+    ],
+    "average_scores": {
+      "transformation_quality_score": 3.5357142857142856,
+      "type_alignment_score": 3.25,
+      "complexity_increase_score": 4.857142857142857,
+      "innovation_score": 3.857142857142857,
+      "overall_evolution_score": 3.875
+    }
+  },
+  "system_performance": {
+    "questions_per_second": 0.18750820125268408,
+    "evaluation_efficiency": "Moderate"
+  }
+}
